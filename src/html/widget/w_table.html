@@ -1,0 +1,1053 @@
+<!doctype html>
+<html lang="en" @@bodySetup>
+  <!-- [Head] start -->
+
+  <head>
+    @@include('../layouts/head-page-meta.html', {'title': 'Table Widget'}) @@include('../layouts/head-css.html')
+  </head>
+  <!-- [Head] end -->
+  <!-- [Body] Start -->
+
+  <body>
+    @@include('../layouts/layout-vertical.html')
+
+    <!-- [ Main Content ] start -->
+    <div class="pc-container">
+      <div class="pc-content">
+        @@include('../layouts/breadcrumb.html', {'breadcrumb-item': 'Widget', 'breadcrumb-item-active': 'Table'})
+        <div class="grid grid-cols-12 gap-x-6">
+          <div class="col-span-12 xl:col-span-8">
+            <div class="card User-Activity">
+              <div class="card-header">
+                <h5>User Activity</h5>
+              </div>
+              <div class="card-body pb-0">
+                <div class="table-responsive">
+                  <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th>User</th>
+                        <th>Activity</th>
+                        <th>Time</th>
+                        <th>Status</th>
+                        <th class="ltr:!text-right rtl:!text-left"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <h6 class="m-0">
+                            <img
+                              class="rounded-full ltr:mr-2.5 rtl:ml:2.5 inline-block max-w-10"
+                              style="width: 40px"
+                              src="../assets/images/user/avatar-1.jpg"
+                              alt="activity-user"
+                            />
+                            Ida Jorgensen
+                          </h6>
+                        </td>
+                        <td>
+                          <h6 class="m-0">The quick brown fox</h6>
+                        </td>
+                        <td>
+                          <h6 class="m-0">3:28 PM</h6>
+                        </td>
+                        <td>
+                          <h6 class="m-0 text-success">Done</h6>
+                        </td>
+                        <td class="ltr:!text-right rtl:!text-left"><i class="fas fa-circle text-success text-[10px]"></i></td>
+                      </tr>
+
+                      <tr>
+                        <td>
+                          <h6 class="m-0">
+                            <img
+                              class="rounded-full ltr:mr-2.5 rtl:ml:2.5 inline-block max-w-10"
+                              style="width: 40px"
+                              src="../assets/images/user/avatar-2.jpg"
+                              alt="activity-user"
+                            />
+                            Albert Andersen
+                          </h6>
+                        </td>
+                        <td>
+                          <h6 class="m-0">Jumps over the lazy</h6>
+                        </td>
+                        <td>
+                          <h6 class="m-0">2:37 PM</h6>
+                        </td>
+                        <td>
+                          <h6 class="m-0 text-danger">Missed</h6>
+                        </td>
+                        <td class="ltr:!text-right rtl:!text-left"><i class="fas fa-circle text-danger text-[10px]"></i></td>
+                      </tr>
+
+                      <tr>
+                        <td>
+                          <h6 class="m-0">
+                            <img
+                              class="rounded-full ltr:mr-2.5 rtl:ml:2.5 inline-block max-w-10"
+                              style="width: 40px"
+                              src="../assets/images/user/avatar-3.jpg"
+                              alt="activity-user"
+                            />
+                            Silje Larsen
+                          </h6>
+                        </td>
+                        <td>
+                          <h6 class="m-0">Dog the quick brown</h6>
+                        </td>
+                        <td>
+                          <h6 class="m-0">10:23 AM</h6>
+                        </td>
+                        <td>
+                          <h6 class="m-0 text-c-purple">Delayed</h6>
+                        </td>
+                        <td class="ltr:!text-right rtl:!text-left"><i class="fas fa-circle text-c-purple text-[10px]"></i></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <h6 class="m-0">
+                            <img
+                              class="rounded-full ltr:mr-2.5 rtl:ml:2.5 inline-block max-w-10"
+                              style="width: 40px"
+                              src="../assets/images/user/avatar-1.jpg"
+                              alt="activity-user"
+                            />
+                            Ida Jorgensen
+                          </h6>
+                        </td>
+                        <td>
+                          <h6 class="m-0">The quick brown fox</h6>
+                        </td>
+                        <td>
+                          <h6 class="m-0">4:28 PM</h6>
+                        </td>
+                        <td>
+                          <h6 class="m-0 text-success">Done</h6>
+                        </td>
+                        <td class="ltr:!text-right rtl:!text-left"><i class="fas fa-circle text-success text-[10px]"></i></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-span-12 xl:col-span-4">
+            <div class="card">
+              <div class="card-header">
+                <ul class="flex flex-wrap w-full text-center nav-tabs">
+                  <li class="group active">
+                    <a href="javascript:void(0);" data-pc-toggle="tab" data-pc-target="basicpills-1"
+                      class="inline-block px-4 py-2 transition-all duration-300 ease-linear rounded-lg text-primary-500 group-[.active]:bg-primary-500 group-[.active]:text-white">
+                      Today
+                    </a>
+                  </li>
+                  <li class="group">
+                    <a href="javascript:void(0);" data-pc-toggle="tab" data-pc-target="basicpills-2"
+                      class="inline-block px-4 py-2 transition-all duration-300 ease-linear rounded-lg text-primary-500 group-[.active]:bg-primary-500 group-[.active]:text-white">
+                      This Week
+                    </a>
+                  </li>
+                  <li class="group">
+                    <a href="javascript:void(0);" data-pc-toggle="tab" data-pc-target="basicpills-3"
+                      class="inline-block px-4 py-2 transition-all duration-300 ease-linear rounded-lg text-primary-500 group-[.active]:bg-primary-500 group-[.active]:text-white">
+                      All
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <div class="tab-content">
+                  <div class="block tab-pane" id="basicpills-1">
+                    <div class="flex friendlist-box items-center justify-center mb-2.5">
+                      <div class="shrink-0">
+                        <a href="#!">
+                          <img class="rounded-full" style="width: 40px" src="../assets/images/user/avatar-1.jpg" alt="activity-user" />
+                        </a>
+                      </div>
+                      <div class="grow ltr:ml-3 rtl:mr-2">
+                        <h6 class="m-0 inline">Silje Larsen</h6>
+                        <span class="ltr:float-right rtl:float-left flex items-center">
+                          <i class="fas fa-caret-up text-[22px] ltr:mr-2.5 rtl:ml-2.5 text-success-500"></i>
+                          3784
+                        </span>
+                      </div>
+                    </div>
+                    <div class="flex friendlist-box items-center justify-center mb-2.5">
+                      <div class="shrink-0">
+                        <a href="#!">
+                          <img class="rounded-full" style="width: 40px" src="../assets/images/user/avatar-3.jpg" alt="activity-user" />
+                        </a>
+                      </div>
+                      <div class="grow ltr:ml-3 rtl:mr-2">
+                        <h6 class="m-0 inline">Storm Hanse</h6>
+                        <span class="ltr:float-right rtl:float-left flex items-center">
+                          <i class="fas fa-caret-down text-[22px] ltr:mr-2.5 rtl:ml-2.5 text-danger"></i>
+                          2739
+                        </span>
+                      </div>
+                    </div>
+                    <div class="flex friendlist-box items-center justify-center mb-2.5">
+                      <div class="shrink-0">
+                        <a href="#!">
+                          <img class="rounded-full" style="width: 40px" src="../assets/images/user/avatar-1.jpg" alt="activity-user" />
+                        </a>
+                      </div>
+                      <div class="grow ltr:ml-3 rtl:mr-2">
+                        <h6 class="m-0 inline">Frida Thomse</h6>
+                        <span class="ltr:float-right rtl:float-left flex items-center">
+                          <i class="fas fa-caret-down text-[22px] ltr:mr-2.5 rtl:ml-2.5 text-danger"></i>
+                          1032
+                        </span>
+                      </div>
+                    </div>
+                    <div class="flex friendlist-box items-center justify-center mb-2.5">
+                      <div class="shrink-0">
+                        <a href="#!">
+                          <img class="rounded-full" style="width: 40px" src="../assets/images/user/avatar-2.jpg" alt="activity-user" />
+                        </a>
+                      </div>
+                      <div class="grow ltr:ml-3 rtl:mr-2">
+                        <h6 class="m-0 inline">Silje Larsen</h6>
+                        <span class="ltr:float-right rtl:float-left flex items-center">
+                          <i class="fas fa-caret-up text-[22px] ltr:mr-2.5 rtl:ml-2.5 text-success"></i>
+                          8750
+                        </span>
+                      </div>
+                    </div>
+                    <div class="flex friendlist-box items-center justify-center mb-0">
+                      <div class="shrink-0">
+                        <a href="#!">
+                          <img class="rounded-full" style="width: 40px" src="../assets/images/user/avatar-3.jpg" alt="activity-user" />
+                        </a>
+                      </div>
+                      <div class="grow ltr:ml-3 rtl:mr-2">
+                        <h6 class="m-0 inline">Storm Hanse</h6>
+                        <span class="ltr:float-right rtl:float-left flex items-center">
+                          <i class="fas fa-caret-down text-[22px] ltr:mr-2.5 rtl:ml-2.5 text-danger"></i>
+                          8750
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hidden tab-pane" id="basicpills-2">
+                    <div class="flex friendlist-box items-center justify-center mb-2.5">
+                      <div class="shrink-0">
+                        <a href="#!">
+                          <img class="rounded-full" style="width: 40px" src="../assets/images/user/avatar-1.jpg" alt="activity-user" />
+                        </a>
+                      </div>
+                      <div class="grow ltr:ml-3 rtl:mr-2">
+                        <h6 class="m-0 inline">Silje Larsen</h6>
+                        <span class="ltr:float-right rtl:float-left flex items-center">
+                          <i class="fas fa-caret-up text-[22px] ltr:mr-2.5 rtl:ml-2.5 text-success"></i>
+                          3784
+                        </span>
+                      </div>
+                    </div>
+                    <div class="flex friendlist-box items-center justify-center mb-2.5">
+                      <div class="shrink-0">
+                        <a href="#!">
+                          <img class="rounded-full" style="width: 40px" src="../assets/images/user/avatar-3.jpg" alt="activity-user" />
+                        </a>
+                      </div>
+                      <div class="grow ltr:ml-3 rtl:mr-2">
+                        <h6 class="m-0 inline">Storm Hanse</h6>
+                        <span class="ltr:float-right rtl:float-left flex items-center">
+                          <i class="fas fa-caret-down text-[22px] ltr:mr-2.5 rtl:ml-2.5 text-danger"></i>
+                          2739
+                        </span>
+                      </div>
+                    </div>
+                    <div class="flex friendlist-box items-center justify-center mb-2.5">
+                      <div class="shrink-0">
+                        <a href="#!">
+                          <img class="rounded-full" style="width: 40px" src="../assets/images/user/avatar-1.jpg" alt="activity-user" />
+                        </a>
+                      </div>
+                      <div class="grow ltr:ml-3 rtl:mr-2">
+                        <h6 class="m-0 inline">Frida Thomse</h6>
+                        <span class="ltr:float-right rtl:float-left flex items-center">
+                          <i class="fas fa-caret-down text-[22px] ltr:mr-2.5 rtl:ml-2.5 text-danger"></i>
+                          1032
+                        </span>
+                      </div>
+                    </div>
+                    <div class="flex friendlist-box items-center justify-center mb-2.5">
+                      <div class="shrink-0">
+                        <a href="#!">
+                          <img class="rounded-full" style="width: 40px" src="../assets/images/user/avatar-2.jpg" alt="activity-user" />
+                        </a>
+                      </div>
+                      <div class="grow ltr:ml-3 rtl:mr-2">
+                        <h6 class="m-0 inline">Silje Larsen</h6>
+                        <span class="ltr:float-right rtl:float-left flex items-center">
+                          <i class="fas fa-caret-up text-[22px] ltr:mr-2.5 rtl:ml-2.5 text-success"></i>
+                          8750
+                        </span>
+                      </div>
+                    </div>
+                    <div class="flex friendlist-box items-center justify-center mb-0">
+                      <div class="shrink-0">
+                        <a href="#!">
+                          <img class="rounded-full" style="width: 40px" src="../assets/images/user/avatar-3.jpg" alt="activity-user" />
+                        </a>
+                      </div>
+                      <div class="grow ltr:ml-3 rtl:mr-2">
+                        <h6 class="m-0 inline">Storm Hanse</h6>
+                        <span class="ltr:float-right rtl:float-left flex items-center">
+                          <i class="fas fa-caret-down text-[22px] ltr:mr-2.5 rtl:ml-2.5 text-danger"></i>
+                          8750
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hidden tab-pane" id="basicpills-3">
+                    <div class="flex friendlist-box items-center justify-center mb-2.5">
+                      <div class="shrink-0">
+                        <a href="#!">
+                          <img class="rounded-full" style="width: 40px" src="../assets/images/user/avatar-1.jpg" alt="activity-user" />
+                        </a>
+                      </div>
+                      <div class="grow ltr:ml-3 rtl:mr-2">
+                        <h6 class="m-0 inline">Silje Larsen</h6>
+                        <span class="ltr:float-right rtl:float-left flex items-center">
+                          <i class="fas fa-caret-up text-[22px] ltr:mr-2.5 rtl:ml-2.5 text-success"></i>
+                          3784
+                        </span>
+                      </div>
+                    </div>
+                    <div class="flex friendlist-box items-center justify-center mb-2.5">
+                      <div class="shrink-0">
+                        <a href="#!">
+                          <img class="rounded-full" style="width: 40px" src="../assets/images/user/avatar-3.jpg" alt="activity-user" />
+                        </a>
+                      </div>
+                      <div class="grow ltr:ml-3 rtl:mr-2">
+                        <h6 class="m-0 inline">Storm Hanse</h6>
+                        <span class="ltr:float-right rtl:float-left flex items-center">
+                          <i class="fas fa-caret-down text-[22px] ltr:mr-2.5 rtl:ml-2.5 text-danger"></i>
+                          2739
+                        </span>
+                      </div>
+                    </div>
+                    <div class="flex friendlist-box items-center justify-center mb-2.5">
+                      <div class="shrink-0">
+                        <a href="#!">
+                          <img class="rounded-full" style="width: 40px" src="../assets/images/user/avatar-1.jpg" alt="activity-user" />
+                        </a>
+                      </div>
+                      <div class="grow ltr:ml-3 rtl:mr-2">
+                        <h6 class="m-0 inline">Frida Thomse</h6>
+                        <span class="ltr:float-right rtl:float-left flex items-center">
+                          <i class="fas fa-caret-down text-[22px] ltr:mr-2.5 rtl:ml-2.5 text-danger"></i>
+                          1032
+                        </span>
+                      </div>
+                    </div>
+                    <div class="flex friendlist-box items-center justify-center mb-2.5">
+                      <div class="shrink-0">
+                        <a href="#!">
+                          <img class="rounded-full" style="width: 40px" src="../assets/images/user/avatar-2.jpg" alt="activity-user" />
+                        </a>
+                      </div>
+                      <div class="grow ltr:ml-3 rtl:mr-2">
+                        <h6 class="m-0 inline">Silje Larsen</h6>
+                        <span class="ltr:float-right rtl:float-left flex items-center">
+                          <i class="fas fa-caret-up text-[22px] ltr:mr-2.5 rtl:ml-2.5 text-success"></i>
+                          8750
+                        </span>
+                      </div>
+                    </div>
+                    <div class="flex friendlist-box items-center justify-center mb-0">
+                      <div class="shrink-0">
+                        <a href="#!">
+                          <img class="rounded-full" style="width: 40px" src="../assets/images/user/avatar-2.jpg" alt="activity-user" />
+                        </a>
+                      </div>
+                      <div class="grow ltr:ml-3 rtl:mr-2">
+                        <h6 class="m-0 inline">Storm Hanse</h6>
+                        <span class="ltr:float-right rtl:float-left flex items-center">
+                          <i class="fas fa-caret-up text-[22px] ltr:mr-2.5 rtl:ml-2.5 text-success"></i>
+                          8750
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-span-12">
+            <div class="card Application-list">
+              <div class="card-header">
+                <h5>Application list</h5>
+              </div>
+              <div class="card-body pb-0">
+                <div class="table-responsive">
+                  <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th>Image</th>
+                        <th>Application</th>
+                        <th>Installs</th>
+                        <th>Created</th>
+                        <th>Budget</th>
+                        <th>Status</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <img class="rounded-full" style="width: 50px" src="../assets/images/user/avatar-2.jpg" alt="activity-user" />
+                        </td>
+                        <td>
+                          <h6 class="mb-1">Facebook</h6>
+                          <p class="m-0">Apple</p>
+                        </td>
+                        <td>
+                          <h6 class="mb-1">523.423</h6>
+                          <p class="text-success-500 m-0">+ 84 Daily</p>
+                        </td>
+                        <td>
+                          <h6 class="mb-0">Feb 11 2017</h6>
+                        </td>
+                        <td>
+                          <h6 class="mb-0">$ 16,244</h6>
+                        </td>
+                        <td><a class="text-white badge bg-theme-bg-1 text-[12px]" href="#!">Active</a></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <img class="rounded-full" style="width: 50px" src="../assets/images/user/avatar-1.jpg" alt="activity-user" />
+                        </td>
+                        <td>
+                          <h6 class="mb-1">Twitter</h6>
+                          <p class="m-0">CS Form</p>
+                        </td>
+                        <td>
+                          <h6 class="mb-1">7.239</h6>
+                          <p class="text-muted m-0">+ 5 Daily</p>
+                        </td>
+                        <td>
+                          <h6 class="mb-0">Jan 19 2017</h6>
+                        </td>
+                        <td>
+                          <h6 class="mb-0">$ 3,937</h6>
+                        </td>
+                        <td><a class="badge bg-theme-bg-2 text-[12px] text-white" href="#!">Not Active</a></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <img class="rounded-full" style="width: 50px" src="../assets/images/user/avatar-3.jpg" alt="activity-user" />
+                        </td>
+                        <td>
+                          <h6 class="mb-1">Instagram</h6>
+                          <p class="m-0">Microsoft</p>
+                        </td>
+                        <td>
+                          <h6 class="mb-1">5.877</h6>
+                          <p class="text-success m-0">+ 12 Daily</p>
+                        </td>
+                        <td>
+                          <h6 class="mb-0">Aug 04 2017</h6>
+                        </td>
+                        <td>
+                          <h6 class="mb-0">$ 28,039</h6>
+                        </td>
+                        <td><a class="badge bg-primary text-[12px] text-white" href="#!">Paused</a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-span-12 xl:col-span-8">
+            <div class="card user-list">
+              <div class="card-header">
+                <h5>User Project List</h5>
+              </div>
+              <div class="card-body pb-0">
+                <div class="table-responsive">
+                  <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th>User</th>
+                        <th>project</th>
+                        <th>Completed</th>
+                        <th>Status</th>
+                        <th>Date</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <img class="rounded-full" style="width: 40px" src="../assets/images/user/avatar-1.jpg" alt="activity-user" />
+                        </td>
+                        <td>
+                          <h6 class="mb-1">Social Media App</h6>
+                          <p class="m-0">
+                            Assigned to
+                            <span class="text-success">Tristan Madsen</span>
+                          </p>
+                        </td>
+                        <td><span class="pie_1">326,134</span></td>
+                        <td>
+                          <h6 class="m-0">68%</h6>
+                        </td>
+                        <td>
+                          <h6 class="m-0">October 26, 2017</h6>
+                        </td>
+                      </tr>
+    
+                      <tr>
+                        <td>
+                          <img class="rounded-full" style="width: 40px" src="../assets/images/user/avatar-2.jpg" alt="activity-user" />
+                        </td>
+                        <td>
+                          <h6 class="mb-1">Newspaper Wordpress Web</h6>
+                          <p class="m-0">
+                            Assigned to
+                            <span class="text-success">Marcus Poulsen</span>
+                          </p>
+                        </td>
+                        <td><span class="pie_2">110,134</span></td>
+                        <td>
+                          <h6 class="m-0">46%</h6>
+                        </td>
+                        <td>
+                          <h6 class="m-0">September 4, 2017</h6>
+                        </td>
+                      </tr>
+    
+                      <tr>
+                        <td>
+                          <img class="rounded-full" style="width: 40px" src="../assets/images/user/avatar-3.jpg" alt="activity-user" />
+                        </td>
+                        <td>
+                          <h6 class="mb-1">Dashboard UI Kit Design</h6>
+                          <p class="m-0">
+                            Assigned to
+                            <span class="text-success">Felix Johansen</span>
+                          </p>
+                        </td>
+                        <td><span class="pie_3">226,134</span></td>
+                        <td>
+                          <h6 class="m-0">31%</h6>
+                        </td>
+                        <td>
+                          <h6 class="m-0">November 14, 2017</h6>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <img class="rounded-full" style="width: 40px" src="../assets/images/user/avatar-1.jpg" alt="activity-user" />
+                        </td>
+                        <td>
+                          <h6 class="mb-1">Social Media App</h6>
+                          <p class="m-0">
+                            Assigned to
+                            <span class="text-success">Tristan Madsen</span>
+                          </p>
+                        </td>
+                        <td><span class="pie_4">500,134</span></td>
+                        <td>
+                          <h6 class="m-0">85%</h6>
+                        </td>
+                        <td>
+                          <h6 class="m-0">December 14, 2017</h6>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-span-12 xl:col-span-4">
+            <div class="card">
+              <div class="card-header">
+                <ul class="flex flex-wrap w-full text-center nav-tabs">
+                  <li class="group active">
+                    <a href="javascript:void(0);" data-pc-toggle="tab" data-pc-target="basicpills-4"
+                      class="inline-block px-4 py-2 transition-all duration-300 ease-linear rounded-lg text-primary-500 group-[.active]:bg-primary-500 group-[.active]:text-white">
+                      Developer
+                    </a>
+                  </li>
+                  <li class="group">
+                    <a href="javascript:void(0);" data-pc-toggle="tab" data-pc-target="basicpills-5"
+                      class="inline-block px-4 py-2 transition-all duration-300 ease-linear rounded-lg text-primary-500 group-[.active]:bg-primary-500 group-[.active]:text-white">
+                      Designer
+                    </a>
+                  </li>
+                  <li class="group">
+                    <a href="javascript:void(0);" data-pc-toggle="tab" data-pc-target="basicpills-6"
+                      class="inline-block px-4 py-2 transition-all duration-300 ease-linear rounded-lg text-primary-500 group-[.active]:bg-primary-500 group-[.active]:text-white">
+                      All
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <div class="tab-content">
+                  <div class="block tab-pane" id="basicpills-4">
+                    <div class="widget-timeline mb-7">
+                      <div class="flex gap-6">
+                        <div class="shrink-0">
+                          <div class="flex items-center gap-3">
+                            <i class="fas fa-circle text-success-500 text-[10px]"></i>
+                            <a href="#!">
+                              <img class="rounded-full" style="width: 40px" src="../assets/images/user/avatar-1.jpg" alt="chat-user">
+                            </a>
+                          </div>
+                        </div>
+                        <div class="grow">
+                          <h6 class="inline-block">The Quick Brown Fox Jumps</h6>
+                          <p class="mb-0 text-muted">Lorem Ipsum is simply dummy text of…</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="widget-timeline mb-7">
+                      <div class="flex gap-6">
+                        <div class="shrink-0">
+                          <div class="flex items-center gap-3">
+                            <i class="fas fa-circle text-warning-500 text-[10px]"></i>
+                            <a href="#!">
+                              <img class="rounded-full" style="width: 40px" src="../assets/images/user/avatar-2.jpg" alt="chat-user">
+                            </a>
+                          </div>
+                        </div>
+                        <div class="grow">
+                          <h6 class="inline-block">Over The Lazy Dog</h6>
+                          <p class="mb-0 text-muted">LLorem Ipsum is simply dummy text of…</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="widget-timeline mb-7">
+                      <div class="flex gap-6">
+                        <div class="shrink-0">
+                          <div class="flex items-center gap-3">
+                            <i class="fas fa-circle text-primary-500 text-[10px]"></i>
+                            <a href="#!">
+                              <img class="rounded-full" style="width: 40px" src="../assets/images/user/avatar-3.jpg" alt="chat-user">
+                            </a>
+                          </div>
+                        </div>
+                        <div class="grow">
+                          <h6 class="inline-block">The Quick Brown Fox</h6>
+                          <p class="mb-0 text-muted">Lorem Ipsum is simply dummy text of…</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="widget-timeline mb-0">
+                      <div class="flex gap-6">
+                        <div class="shrink-0">
+                          <div class="flex items-center gap-3">
+                            <i class="fas fa-circle text-success-500 text-[10px]"></i>
+                            <a href="#!">
+                              <img class="rounded-full" style="width: 40px" src="../assets/images/user/avatar-1.jpg" alt="chat-user">
+                            </a>
+                          </div>
+                        </div>
+                        <div class="grow">
+                          <h6 class="inline-block">The Quick Brown Fox Jumps</h6>
+                          <p class="mb-0 text-muted">Lorem Ipsum is simply dummy text of…</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hidden tab-pane" id="basicpills-5">
+                    <div class="widget-timeline mb-7">
+                      <div class="flex gap-6">
+                        <div class="shrink-0">
+                          <div class="flex items-center gap-3">
+                            <i class="fas fa-circle text-warning-500 text-[10px]"></i>
+                            <a href="#!">
+                              <img class="rounded-full" style="width: 40px" src="../assets/images/user/avatar-2.jpg" alt="chat-user">
+                            </a>
+                          </div>
+                        </div>
+                        <div class="grow">
+                          <h6 class="inline-block">Over The Lazy Dog</h6>
+                          <p class="mb-0 text-muted">LLorem Ipsum is simply dummy text of…</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="widget-timeline mb-7">
+                      <div class="flex gap-6">
+                        <div class="shrink-0">
+                          <div class="flex items-center gap-3">
+                            <i class="fas fa-circle text-success-500 text-[10px]"></i>
+                            <a href="#!">
+                              <img class="rounded-full" style="width: 40px" src="../assets/images/user/avatar-1.jpg" alt="chat-user">
+                            </a>
+                          </div>
+                        </div>
+                        <div class="grow">
+                          <h6 class="inline-block">The Quick Brown Fox Jumps</h6>
+                          <p class="mb-0 text-muted">Lorem Ipsum is simply dummy text of…</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="widget-timeline mb-7">
+                      <div class="flex gap-6">
+                        <div class="shrink-0">
+                          <div class="flex items-center gap-3">
+                            <i class="fas fa-circle text-primary-500 text-[10px]"></i>
+                            <a href="#!">
+                              <img class="rounded-full" style="width: 40px" src="../assets/images/user/avatar-3.jpg" alt="chat-user">
+                            </a>
+                          </div>
+                        </div>
+                        <div class="grow">
+                          <h6 class="inline-block">The Quick Brown Fox</h6>
+                          <p class="mb-0 text-muted">Lorem Ipsum is simply dummy text of…</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="widget-timeline mb-0">
+                      <div class="flex gap-6">
+                        <div class="shrink-0">
+                          <div class="flex items-center gap-3">
+                            <i class="fas fa-circle text-success-500 text-[10px]"></i>
+                            <a href="#!">
+                              <img class="rounded-full" style="width: 40px" src="../assets/images/user/avatar-1.jpg" alt="chat-user">
+                            </a>
+                          </div>
+                        </div>
+                        <div class="grow">
+                          <h6 class="inline-block">The Quick Brown Fox Jumps</h6>
+                          <p class="mb-0 text-muted">Lorem Ipsum is simply dummy text of…</p>
+                        </div>
+                      </div>
+                    </div> 
+                  </div>
+                  <div class="hidden tab-pane" id="basicpills-6">
+                    <div class="widget-timeline mb-7">
+                      <div class="flex gap-6">
+                        <div class="shrink-0">
+                          <div class="flex items-center gap-3">
+                            <i class="fas fa-circle text-primary-500 text-[10px]"></i>
+                            <a href="#!">
+                              <img class="rounded-full" style="width: 40px" src="../assets/images/user/avatar-3.jpg" alt="chat-user">
+                            </a>
+                          </div>
+                        </div>
+                        <div class="grow">
+                          <h6 class="inline-block">The Quick Brown Fox</h6>
+                          <p class="mb-0 text-muted">Lorem Ipsum is simply dummy text of…</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="widget-timeline mb-7">
+                      <div class="flex gap-6">
+                        <div class="shrink-0">
+                          <div class="flex items-center gap-3">
+                            <i class="fas fa-circle text-success-500 text-[10px]"></i>
+                            <a href="#!">
+                              <img class="rounded-full" style="width: 40px" src="../assets/images/user/avatar-1.jpg" alt="chat-user">
+                            </a>
+                          </div>
+                        </div>
+                        <div class="grow">
+                          <h6 class="inline-block">The Quick Brown Fox Jumps</h6>
+                          <p class="mb-0 text-muted">Lorem Ipsum is simply dummy text of…</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="widget-timeline mb-7">
+                      <div class="flex gap-6">
+                        <div class="shrink-0">
+                          <div class="flex items-center gap-3">
+                            <i class="fas fa-circle text-warning-500 text-[10px]"></i>
+                            <a href="#!">
+                              <img class="rounded-full" style="width: 40px" src="../assets/images/user/avatar-2.jpg" alt="chat-user">
+                            </a>
+                          </div>
+                        </div>
+                        <div class="grow">
+                          <h6 class="inline-block">Over The Lazy Dog</h6>
+                          <p class="mb-0 text-muted">LLorem Ipsum is simply dummy text of…</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="widget-timeline mb-0">
+                      <div class="flex gap-6">
+                        <div class="shrink-0">
+                          <div class="flex items-center gap-3">
+                            <i class="fas fa-circle text-success-500 text-[10px]"></i>
+                            <a href="#!">
+                              <img class="rounded-full" style="width: 40px" src="../assets/images/user/avatar-1.jpg" alt="chat-user">
+                            </a>
+                          </div>
+                        </div>
+                        <div class="grow">
+                          <h6 class="inline-block">The Quick Brown Fox Jumps</h6>
+                          <p class="mb-0 text-muted">Lorem Ipsum is simply dummy text of…</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-span-12">
+            <div class="card code-table">
+              <div class="card-header">
+                <h5>Full Width Table</h5>
+              </div>
+              <div class="card-body pb-0">
+                <div class="table-responsive">
+                  <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th>Id Number</th>
+                        <th>Code</th>
+                        <th>Date</th>
+                        <th>Budget</th>
+                        <th>Status</th>
+                        <th class="ltr:!text-right rtl:!text-left">Ratings</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <h6 class="mb-1">#467</h6>
+                        </td>
+                        <td>
+                          <h6 class="mb-1">8765482</h6>
+                        </td>
+                        <td>
+                          <h6 class="mb-0">November 14, 2017</h6>
+                        </td>
+                        <td>
+                          <h6 class="mb-0">$ 874.23</h6>
+                        </td>
+                        <td><a href="#!" class="badge bg-theme-bg-1 text-[12px] text-white">Active</a></td>
+                        <td class="ltr:!text-right rtl:!text-left">
+                          <a href="#!"><i class="fa fa-star text-[18px] text-warning"></i></a>
+                          <a href="#!"><i class="fa fa-star text-[18px] text-warning"></i></a>
+                          <a href="#!"><i class="fa fa-star text-[18px] text-warning"></i></a>
+                          <a href="#!"><i class="fa fa-star text-[18px] text-warning"></i></a>
+                          <a href="#!"><i class="fa fa-star text-[18px] text-black-50"></i></a>
+                        </td>
+                      </tr>
+    
+                      <tr>
+                        <td>
+                          <h6 class="mb-1">#466</h6>
+                        </td>
+                        <td>
+                          <h6 class="mb-1">2366482</h6>
+                        </td>
+                        <td>
+                          <h6 class="mb-0">November 13, 2017</h6>
+                        </td>
+                        <td>
+                          <h6 class="mb-0">$ 235.34</h6>
+                        </td>
+                        <td><a href="#!" class="badge bg-theme-bg-2 text-[12px] text-white">Not Active</a></td>
+                        <td class="ltr:!text-right rtl:!text-left">
+                          <a href="#!"><i class="fa fa-star text-[18px] text-warning"></i></a>
+                          <a href="#!"><i class="fa fa-star text-[18px] text-warning"></i></a>
+                          <a href="#!"><i class="fa fa-star text-[18px] text-warning"></i></a>
+                          <a href="#!"><i class="fa fa-star text-[18px] text-black-50"></i></a>
+                          <a href="#!"><i class="fa fa-star text-[18px] text-black-50"></i></a>
+                        </td>
+                      </tr>
+    
+                      <tr>
+                        <td>
+                          <h6 class="mb-1">#465</h6>
+                        </td>
+                        <td>
+                          <h6 class="mb-1">8832638</h6>
+                        </td>
+                        <td>
+                          <h6 class="mb-0">October 14, 2017</h6>
+                        </td>
+                        <td>
+                          <h6 class="mb-0">$ 233.46</h6>
+                        </td>
+                        <td><a href="#!" class="badge bg-theme-bg-1 text-[12px] text-white">Active</a></td>
+                        <td class="ltr:!text-right rtl:!text-left">
+                          <a href="#!"><i class="fa fa-star text-[18px] text-warning"></i></a>
+                          <a href="#!"><i class="fa fa-star text-[18px] text-warning"></i></a>
+                          <a href="#!"><i class="fa fa-star text-[18px] text-black-50"></i></a>
+                          <a href="#!"><i class="fa fa-star text-[18px] text-black-50"></i></a>
+                          <a href="#!"><i class="fa fa-star text-[18px] text-black-50"></i></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <h6 class="mb-1">#464</h6>
+                        </td>
+                        <td>
+                          <h6 class="mb-1">9632638</h6>
+                        </td>
+                        <td>
+                          <h6 class="mb-0">December 17, 2017</h6>
+                        </td>
+                        <td>
+                          <h6 class="mb-0">$ 133.46</h6>
+                        </td>
+                        <td><a href="#!" class="badge bg-theme-bg-2 text-[12px] text-white">Not Active</a></td>
+                        <td class="ltr:!text-right rtl:!text-left">
+                          <a href="#!"><i class="fa fa-star text-[18px] text-warning"></i></a>
+                          <a href="#!"><i class="fa fa-star text-[18px] text-black-50"></i></a>
+                          <a href="#!"><i class="fa fa-star text-[18px] text-black-50"></i></a>
+                          <a href="#!"><i class="fa fa-star text-[18px] text-black-50"></i></a>
+                          <a href="#!"><i class="fa fa-star text-[18px] text-black-50"></i></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <h6 class="mb-1">#463</h6>
+                        </td>
+                        <td>
+                          <h6 class="mb-1">3332538</h6>
+                        </td>
+                        <td>
+                          <h6 class="mb-0">July 14, 2017</h6>
+                        </td>
+                        <td>
+                          <h6 class="mb-0">$ 244.46</h6>
+                        </td>
+                        <td><a href="#!" class="badge bg-theme-bg-1 text-[12px] text-white">Active</a></td>
+                        <td class="ltr:!text-right rtl:!text-left">
+                          <a href="#!"><i class="fa fa-star text-[18px] text-warning"></i></a>
+                          <a href="#!"><i class="fa fa-star text-[18px] text-warning"></i></a>
+                          <a href="#!"><i class="fa fa-star text-[18px] text-warning"></i></a>
+                          <a href="#!"><i class="fa fa-star text-[18px] text-black-50"></i></a>
+                          <a href="#!"><i class="fa fa-star text-[18px] text-black-50"></i></a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-span-12">
+            <div class="card Recent-Users">
+              <div class="card-header">
+                <h5>Recent Users</h5>
+              </div>
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table class="table table-hover">
+                    <tbody>
+                      <tr class="unread">
+                        <td>
+                          <img class="rounded-full max-w-10" style="width: 40px" src="../assets/images/user/avatar-1.jpg" alt="activity-user" />
+                        </td>
+                        <td>
+                          <h6 class="mb-1">Isabella Christensen</h6>
+                          <p class="m-0">Lorem Ipsum is simply dummy text of…</p>
+                        </td>
+                        <td>
+                          <h6 class="text-muted">
+                            <i class="fas fa-circle text-success text-[10px] ltr:mr-4 rtl:ml-4"></i>
+                            11 MAY 12:56
+                          </h6>
+                        </td>
+                        <td>
+                          <a href="#!" class="badge bg-theme-bg-2 text-white text-[12px] mx-2">Reject</a>
+                          <a href="#!" class="badge bg-theme-bg-1 text-white text-[12px]">Approve</a>
+                        </td>
+                      </tr>
+                      <tr class="unread">
+                        <td>
+                          <img class="rounded-full max-w-10" style="width: 40px" src="../assets/images/user/avatar-2.jpg" alt="activity-user" />
+                        </td>
+                        <td>
+                          <h6 class="mb-1">Mathilde Andersen</h6>
+                          <p class="m-0">Lorem Ipsum is simply dummy text of…</p>
+                        </td>
+                        <td>
+                          <h6 class="text-muted">
+                            <i class="fas fa-circle text-danger text-[10px] ltr:mr-4 rtl:ml-4"></i>
+                            11 MAY 10:35
+                          </h6>
+                        </td>
+                        <td>
+                          <a href="#!" class="badge bg-theme-bg-2 text-white text-[12px] mx-2">Reject</a>
+                          <a href="#!" class="badge bg-theme-bg-1 text-white text-[12px]">Approve</a>
+                        </td>
+                      </tr>
+                      <tr class="unread">
+                        <td>
+                          <img class="rounded-full max-w-10" style="width: 40px" src="../assets/images/user/avatar-3.jpg" alt="activity-user" />
+                        </td>
+                        <td>
+                          <h6 class="mb-1">Karla Sorensen</h6>
+                          <p class="m-0">Lorem Ipsum is simply dummy text of…</p>
+                        </td>
+                        <td>
+                          <h6 class="text-muted">
+                            <i class="fas fa-circle text-success text-[10px] ltr:mr-4 rtl:ml-4"></i>
+                            9 MAY 17:38
+                          </h6>
+                        </td>
+                        <td>
+                          <a href="#!" class="badge bg-theme-bg-2 text-white text-[12px] mx-2">Reject</a>
+                          <a href="#!" class="badge bg-theme-bg-1 text-white text-[12px]">Approve</a>
+                        </td>
+                      </tr>
+                      <tr class="unread">
+                        <td>
+                          <img class="rounded-full max-w-10" style="width: 40px" src="../assets/images/user/avatar-1.jpg" alt="activity-user" />
+                        </td>
+                        <td>
+                          <h6 class="mb-1">Ida Jorgensen</h6>
+                          <p class="m-0">Lorem Ipsum is simply dummy text of…</p>
+                        </td>
+                        <td>
+                          <h6 class="text-muted f-w-300">
+                            <i class="fas fa-circle text-danger text-[10px] ltr:mr-4 rtl:ml-4"></i>
+                            19 MAY 12:56
+                          </h6>
+                        </td>
+                        <td>
+                          <a href="#!" class="badge bg-theme-bg-2 text-white text-[12px] mx-2">Reject</a>
+                          <a href="#!" class="badge bg-theme-bg-1 text-white text-[12px]">Approve</a>
+                        </td>
+                      </tr>
+                      <tr class="unread">
+                        <td>
+                          <img class="rounded-full max-w-10" style="width: 40px" src="../assets/images/user/avatar-2.jpg" alt="activity-user" />
+                        </td>
+                        <td>
+                          <h6 class="mb-1">Albert Andersen</h6>
+                          <p class="m-0">Lorem Ipsum is simply dummy text of…</p>
+                        </td>
+                        <td>
+                          <h6 class="text-muted">
+                            <i class="fas fa-circle text-success text-[10px] ltr:mr-4 rtl:ml-4"></i>
+                            21 July 12:56
+                          </h6>
+                        </td>
+                        <td>
+                          <a href="#!" class="badge bg-theme-bg-2 text-white text-[12px] mx-2">Reject</a>
+                          <a href="#!" class="badge bg-theme-bg-1 text-white text-[12px]">Approve</a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- [ Main Content ] end -->
+    </div>
+    <!-- [ Main Content ] end -->
+    @@include('../layouts/footer-block.html') @@include('../layouts/footer-js.html') @@include('../layouts/customizer.html')
+  </body>
+  <!-- [Body] end -->
+</html>

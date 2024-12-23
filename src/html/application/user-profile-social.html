@@ -1,0 +1,949 @@
+<!doctype html>
+<html lang="en" @@bodySetup>
+
+<head>
+  @@include('../layouts/head-page-meta.html', {'title': 'User Profile Social'}) @@include('../layouts/head-css.html')
+</head>
+
+<body>
+  @@include('../layouts/layout-vertical.html')
+  <!-- [ Main Content ] start -->
+  <div class="pc-container">
+    <div class="pc-content">
+      <!-- [ Main Content ] start -->
+      <!-- profile header start -->
+      <div class="user-profile card user-card mb-4 -mt-2.5 -mx-10 max-sm:-mx-[15px]">
+        <div class="card-header border-0 !p-0">
+          <div class="cover-img-block relative group">
+            <img src="../assets/images/profile/cover.jpg" alt="" class="w-100 group-hover:grayscale" />
+            <div class="overlay absolute inset-0 group-hover:bg-[rgba(0,0,0,0.4)]"></div>
+          </div>
+        </div>
+        <div class="card-body !pb-0">
+          <div class="user-about-block m-0">
+            <div class="grid grid-cols-12 gap-6">
+              <div class="col-span-12 md:col-span-4 text-center mt-[-70px]">
+                <div class="change-profile text-center">
+                  <div class="dropdown w-auto inline-block">
+                    <a class="dropdown-toggle arrow-none" data-pc-toggle="dropdown" aria-haspopup="true"
+                      aria-expanded="false">
+                      <div class="relative inline-block">
+                        <img class="rounded-full img-fluid w-[100px]" src="../assets/images/user/avatar-5.jpg"
+                          alt="User image" />
+                        <div
+                          class="certificated-badge absolute bottom-[-5px] right-[-5px] rounded-full w-[30px] h-[30px] bg-theme-cardbg dark:bg-themedark-cardbg p-[5px_3px]">
+                          <i class="fas fa-certificate text-primary-500 bg-icon text-[22px]"></i>
+                          <i class="fas fa-check front-icon text-white text-[11px] absolute top-[11px] left-[9px]"></i>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#"><i class="feather icon-upload-cloud me-2"></i>upload new</a>
+                      <a class="dropdown-item" href="#"><i class="feather icon-image me-2"></i>from photos</a>
+                      <a class="dropdown-item" href="#"><i class="feather icon-shield me-2"></i>Protact</a>
+                      <a class="dropdown-item" href="#"><i class="feather icon-trash-2 me-2"></i>remove</a>
+                    </div>
+                  </div>
+                </div>
+                <h5 class="mb-1">Lary Doe</h5>
+                <p class="mb-2 text-muted">UI/UX Designer</p>
+              </div>
+              <div class="col-span-12 md:col-span-8">
+                <div class="grid grid-cols-12 gap-6">
+                  <div class="col-span-12 md:col-span-6">
+                    <a href="#!" class="mb-1 text-muted d-flex align-items-end text-h-primary"><i
+                        class="feather icon-globe me-2 f-18"></i>www.phoenixcoded.net</a>
+                    <div class="clearfix"></div>
+                    <a href="mailto:demo@domain.com" class="mb-1 text-muted d-flex align-items-end text-h-primary"><i
+                        class="feather icon-mail me-2 f-18"></i>demo@domain.com</a>
+                    <div class="clearfix"></div>
+                    <a href="#!" class="mb-1 text-muted d-flex align-items-end text-h-primary"><i
+                        class="feather icon-phone me-2 f-18"></i>+1 9999-999-999</a>
+                  </div>
+                  <div class="col-span-12 md:col-span-6">
+                    <div class="flex">
+                      <div class="shrink-0">
+                        <i class="feather icon-map-pin"></i>
+                      </div>
+                      <div class="grow ltr:ml-3 rtl:mr-3">
+                        <p class="mb-0 text-muted">4289 Calvin Street</p>
+                        <p class="mb-0 text-muted">Baltimore, near MD Tower Maryland,</p>
+                        <p class="mb-0 text-muted">Maryland (21201)</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <ul class="flex flex-wrap w-full text-center nav-tabs mt-3 *:flex-auto *:*:w-full">
+                  <li class="group active">
+                    <a href="javascript:void(0);" data-pc-toggle="tab" data-pc-target="profile-tab-1"
+                      class="inline-block mr-6 py-4 transition-all duration-300 ease-linear border-b-2 border-transparent group-[.active]:text-primary-500 group-[.active]:border-primary-500 hover:text-primary-500 active:text-primary-500">
+                      <i class="feather icon-home mr-2 text-[18px]"></i>Home
+                    </a>
+                  </li>
+                  <li class="group">
+                    <a href="javascript:void(0);" data-pc-toggle="tab" data-pc-target="profile-tab-2"
+                      class="inline-block mr-6 py-4 transition-all duration-300 ease-linear border-b-2 border-transparent group-[.active]:text-primary-500 group-[.active]:border-primary-500 hover:text-primary-500 active:text-primary-500">
+                      <i class="feather icon-user mr-2 text-[18px]"></i>Profile
+                    </a>
+                  </li>
+                  <li class="group">
+                    <a href="javascript:void(0);" data-pc-toggle="tab" data-pc-target="profile-tab-3"
+                      class="inline-block mr-6 py-4 transition-all duration-300 ease-linear border-b-2 border-transparent group-[.active]:text-primary-500 group-[.active]:border-primary-500 hover:text-primary-500 active:text-primary-500">
+                      <i class="feather icon-phone mr-2 text-[18px]"></i>My Contacts
+                    </a>
+                  </li>
+                  <li class="group">
+                    <a href="javascript:void(0);" data-pc-toggle="tab" data-pc-target="profile-tab-4"
+                      class="inline-block mr-6 py-4 transition-all duration-300 ease-linear border-b-2 border-transparent group-[.active]:text-primary-500 group-[.active]:border-primary-500 hover:text-primary-500 active:text-primary-500">
+                      <i class="feather icon-image mr-2 text-[18px]"></i>Gallery
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- profile header end -->
+      <!-- profile body start -->
+      <div class="grid grid-cols-12 gap-6">
+        <div class="col-span-12 md:col-span-8 order-first md:order-last">
+          <div class="tab-content">
+            <div class="block tab-pane" id="profile-tab-1">
+              <div class="card">
+                <div class="card-header flex items-center">
+                  <a href="#!" class="shrink-0"><img src="../assets/images/user/avatar-1.jpg" alt="user image"
+                      class="rounded-full mb-2 w-10" /></a>
+                  <div class="grow ms-2">
+                    <h5 class="font-weight-normal mb-1"><a href="#!" class="text-h-primary text-reset"><b
+                          class="">Josephin Doe</b></a> posted on your
+                      timeline
+                    </h5>
+                    <p class="mb-0 mt-0 text-muted">50 minutes ago</p>
+                  </div>
+                </div>
+                <a href="#!"><img src="../assets/images/profile/bg-1.jpg" alt="" class="img-fluid" /></a>
+                <div class="card-body">
+                  <a href="#!" class="text-h-primary">
+                    <h6 class="mb-3">The new Lorem Ipsum is simply</h6>
+                  </a>
+                  <p class="text-muted mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                    scrambled it to make a
+                    type specimen book.</p>
+                </div>
+                <hr class="my-0 border-0 border-t border-theme-border dark:border-themedark-border" />
+                <div class="card-body">
+                  <ul class="flex flex-wrap gap-3 m-0">
+                    <li class="list-inline-item"><a href="#!" class="text-danger-500 s-danger"><i
+                          class="feather icon-heart-on ltr:mr-2 rtl:ml-2"></i>Like</a></li>
+                    <li class="list-inline-item"><a href="#!" class="text-muted text-h-primary"><i
+                          class="feather icon-message-square ltr:mr-2 rtl:ml-2"></i>Comment</a></li>
+                    <li class="list-inline-item"><a href="#!" class="text-muted text-h-primary"><i
+                          class="feather icon-share-2 ltr:mr-2 rtl:ml-2"></i>Share</a></li>
+                  </ul>
+                </div>
+                <hr class="my-0 border-0 border-t border-theme-border dark:border-themedark-border" />
+                <div class="card-body">
+                  <div class="flex flex-wrap gap-3 justify-between mb-4">
+                    <div class="col-auto"><a href="#!" class="text-muted text-h-primary">Comment (50)</a></div>
+                    <div class="col-auto"><a href="#!" class="text-muted text-h-primary">See All</a> </div>
+                  </div>
+                  <div class="flex mb-0">
+                    <div class="shrink-0">
+                      <img src="../assets/images/user/avatar-2.jpg" alt="user image"
+                        class="rounded-full w-[30px] h-[30px] align-top m-r-15" />
+                    </div>
+                    <div class="grow ltr:ml-3 rtl:mr-3">
+                      <a href="#!">
+                        <h6 class="mb-0 text-h-primary">Alex</h6>
+                      </a>
+                      <p class="m-b-0">Looking Very nice type and scrambled
+                        <a href="#!" class="text-muted text-h-danger ms-1"><small>Like</small></a>
+                        <a href="#!" class="text-muted text-h-primary ms-1"><small>Comment</small></a>
+                      </p>
+                    </div>
+                  </div>
+                  <hr class="my-3 border-0 border-t border-theme-border dark:border-themedark-border" />
+                  <div class="flex mb-0">
+                    <div class="shrink-0">
+                      <img src="../assets/images/user/avatar-3.jpg" alt="user image"
+                        class="rounded-full w-[30px] h-[30px] align-top m-r-15" />
+                    </div>
+                    <div class="grow ltr:ml-3 rtl:mr-3">
+                      <a href="#!">
+                        <h6 class="mb-0 text-h-primary">Alex</h6>
+                      </a>
+                      <p class="m-b-0">Nice Pic printing and typesetting industry
+                        <a href="#!" class="text-muted text-h-danger ms-1"><small>Like</small></a>
+                        <a href="#!" class="text-muted text-h-primary ms-1"><small>Comment</small></a>
+                      </p>
+                    </div>
+                  </div>
+                  <hr class="my-3 border-0 border-t border-theme-border dark:border-themedark-border" />
+                  <div class="flex mb-0">
+                    <div class="shrink-0">
+                      <img src="../assets/images/user/avatar-1.jpg" alt="user image"
+                        class="rounded-full w-10 hei-40 align-top m-r-15" />
+                    </div>
+                    <div class="grow ltr:ml-3 rtl:mr-3">
+                      <div class="input-group mb-3">
+                        <input type="text" class="form-control form-control border-0 shadow-none px-0"
+                          placeholder="Write comment hear !. . ." />
+                        <div class="input-group-append">
+                          <button class="btn btn-primary" type="button"><i
+                              class="feather icon-message-circle"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header flex items-center">
+                  <a href="#!" class="shrink-0"><img src="../assets/images/user/avatar-1.jpg" alt="user image"
+                      class="rounded-full mb-2 w-10" /></a>
+                  <div class="grow ms-2">
+                    <h5 class="font-weight-normal mb-1"><a href="#!" class="text-h-primary text-reset"><b
+                          class="">Josephin Doe</b></a> posted on your
+                      timeline
+                    </h5>
+                    <p class="mb-0 mt-0 text-muted">50 minutes ago</p>
+                  </div>
+                </div>
+                <a href="#!"><img src="../assets/images/profile/bg-2.jpg" alt="" class="img-fluid" /></a>
+                <div class="card-body">
+                  <a href="#!" class="text-h-primary">
+                    <h6 class="mb-3">The new Lorem Ipsum is simply</h6>
+                  </a>
+                  <p class="text-muted mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                    scrambled it to make a
+                    type specimen book.</p>
+                </div>
+                <hr class="my-0 border-0 border-t border-theme-border dark:border-themedark-border" />
+                <div class="card-body">
+                  <ul class="flex flex-wrap gap-3 m-0">
+                    <li class="list-inline-item"><a href="#!" class="text-danger-500 s-danger"><i
+                          class="feather icon-heart-on ltr:mr-2 rtl:ml-2"></i>Like</a></li>
+                    <li class="list-inline-item"><a href="#!" class="text-muted text-h-primary"><i
+                          class="feather icon-message-square ltr:mr-2 rtl:ml-2"></i>Comment</a></li>
+                    <li class="list-inline-item"><a href="#!" class="text-muted text-h-primary"><i
+                          class="feather icon-share-2 ltr:mr-2 rtl:ml-2"></i>Share</a></li>
+                  </ul>
+                </div>
+                <hr class="my-0 border-0 border-t border-theme-border dark:border-themedark-border" />
+                <div class="card-body">
+                  <div class="flex flex-wrap gap-3 justify-between mb-4">
+                    <div class="col-auto"><a href="#!" class="text-muted text-h-primary">Comment (50)</a></div>
+                    <div class="col-auto"><a href="#!" class="text-muted text-h-primary">See All</a> </div>
+                  </div>
+                  <div class="flex mb-0">
+                    <div class="shrink-0">
+                      <img src="../assets/images/user/avatar-2.jpg" alt="user image"
+                        class="rounded-full w-[30px] h-[30px] align-top m-r-15" />
+                    </div>
+                    <div class="grow ltr:ml-3 rtl:mr-3">
+                      <a href="#!">
+                        <h6 class="mb-0 text-h-primary">Alex</h6>
+                      </a>
+                      <p class="m-b-0">Looking Very nice type and scrambled
+                        <a href="#!" class="text-muted text-h-danger ms-1"><small>Like</small></a>
+                        <a href="#!" class="text-muted text-h-primary ms-1"><small>Comment</small></a>
+                      </p>
+                    </div>
+                  </div>
+                  <hr class="my-3 border-0 border-t border-theme-border dark:border-themedark-border" />
+                  <div class="flex mb-0">
+                    <div class="shrink-0">
+                      <img src="../assets/images/user/avatar-1.jpg" alt="user image"
+                        class="rounded-full w-10 hei-40 align-top m-r-15" />
+                    </div>
+                    <div class="grow ltr:ml-3 rtl:mr-3">
+                      <div class="input-group mb-3">
+                        <input type="text" class="form-control form-control border-0 shadow-none px-0"
+                          placeholder="Write comment hear !. . ." />
+                        <div class="input-group-append">
+                          <button class="btn btn-primary" type="button"><i
+                              class="feather icon-message-circle"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header flex items-center">
+                  <a href="#!" class="shrink-0"><img src="../assets/images/user/avatar-1.jpg" alt="user image"
+                      class="rounded-full mb-2 w-10" /></a>
+                  <div class="grow ms-2">
+                    <h5 class="font-weight-normal mb-1"><a href="#!" class="text-h-primary text-reset"><b
+                          class="">Josephin Doe</b></a> posted on your
+                      timeline
+                    </h5>
+                    <p class="mb-0 mt-0 text-muted">50 minutes ago</p>
+                  </div>
+                </div>
+                <a href="#!"><img src="../assets/images/profile/bg-3.jpg" alt="" class="img-fluid" /></a>
+                <div class="card-body">
+                  <a href="#!" class="text-h-primary">
+                    <h6 class="mb-3">The new Lorem Ipsum is simply</h6>
+                  </a>
+                  <p class="text-muted mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                    scrambled it to make a
+                    type specimen book.</p>
+                </div>
+                <hr class="my-0 border-0 border-t border-theme-border dark:border-themedark-border" />
+                <div class="card-body">
+                  <ul class="flex flex-wrap gap-3 m-0">
+                    <li class="list-inline-item"><a href="#!" class="text-danger-500 s-danger"><i
+                          class="feather icon-heart-on ltr:mr-2 rtl:ml-2"></i>Like</a></li>
+                    <li class="list-inline-item"><a href="#!" class="text-muted text-h-primary"><i
+                          class="feather icon-message-square ltr:mr-2 rtl:ml-2"></i>Comment</a></li>
+                    <li class="list-inline-item"><a href="#!" class="text-muted text-h-primary"><i
+                          class="feather icon-share-2 ltr:mr-2 rtl:ml-2"></i>Share</a></li>
+                  </ul>
+                </div>
+                <hr class="my-0 border-0 border-t border-theme-border dark:border-themedark-border" />
+                <div class="card-body">
+                  <div class="flex flex-wrap gap-3 justify-between mb-4">
+                    <div class="col-auto"><a href="#!" class="text-muted text-h-primary">Comment (50)</a></div>
+                    <div class="col-auto"><a href="#!" class="text-muted text-h-primary">See All</a> </div>
+                  </div>
+                  <div class="flex mb-0">
+                    <div class="shrink-0">
+                      <img src="../assets/images/user/avatar-1.jpg" alt="user image"
+                        class="rounded-full w-10 hei-40 align-top m-r-15" />
+                    </div>
+                    <div class="grow ltr:ml-3 rtl:mr-3">
+                      <div class="input-group mb-3">
+                        <input type="text" class="form-control form-control border-0 shadow-none px-0"
+                          placeholder="Write comment hear !. . ." />
+                        <div class="input-group-append">
+                          <button class="btn btn-primary" type="button"><i
+                              class="feather icon-message-circle"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hidden tab-pane" id="profile-tab-2">
+              <div class="card">
+                <div class="card-body flex items-center justify-between">
+                  <h5 class="mb-0">Personal details</h5>
+                  <button type="button" class="btn btn-primary btn-sm rounded m-0" data-pc-toggle="collapse"
+                    data-pc-target=".pro-det-edit" aria-expanded="false" aria-controls="pro-det-edit-1 pro-det-edit-2">
+                    <i class="feather icon-edit"></i>
+                  </button>
+                </div>
+                <div class="card-body border-top pro-det-edit show" id="pro-det-edit-1">
+                  <form>
+                    <div class="mb-3 grid grid-cols-12 gap-6">
+                      <label class="col-span-12 sm:col-span-3 col-form-labelself-center">Full Name</label>
+                      <div class="col-span-12 sm:col-span-9"> Lary Doe </div>
+                    </div>
+                    <div class="mb-3 grid grid-cols-12 gap-6">
+                      <label class="col-span-12 sm:col-span-3 col-form-labelself-center">Gender</label>
+                      <div class="col-span-12 sm:col-span-9"> Male </div>
+                    </div>
+                    <div class="mb-3 grid grid-cols-12 gap-6">
+                      <label class="col-span-12 sm:col-span-3 col-form-labelself-center">Birth Date</label>
+                      <div class="col-span-12 sm:col-span-9"> 16-12-1994 </div>
+                    </div>
+                    <div class="mb-3 grid grid-cols-12 gap-6">
+                      <label class="col-span-12 sm:col-span-3 col-form-labelself-center">Martail Status</label>
+                      <div class="col-span-12 sm:col-span-9"> Unmarried </div>
+                    </div>
+                    <div class="mb-3 grid grid-cols-12 gap-6">
+                      <label class="col-span-12 sm:col-span-3 col-form-labelself-center">Location</label>
+                      <div class="col-span-12 sm:col-span-9">
+                        <p class="mb-0 text-muted">4289 Calvin Street</p>
+                        <p class="mb-0 text-muted">Baltimore, near MD Tower Maryland,</p>
+                        <p class="mb-0 text-muted">Maryland (21201)</p>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="card-body border-top pro-det-edit hidden" id="pro-det-edit-2">
+                  <form>
+                    <div class="mb-3 grid grid-cols-12 gap-6">
+                      <label class="col-span-12 sm:col-span-3 col-form-label ">Full Name</label>
+                      <div class="col-span-12 sm:col-span-9">
+                        <input type="text" class="form-control" placeholder="Full Name" value="Lary Doe" />
+                      </div>
+                    </div>
+                    <div class="mb-3 grid grid-cols-12 gap-6">
+                      <label class="col-span-12 sm:col-span-3 col-form-label ">Gender</label>
+                      <div class="col-span-12 sm:col-span-9">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="customRadioInline1" id="customRadioInline1"
+                            value="option1" checked />
+                          <label class="form-check-label" for="customRadioInline1"> Male </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="customRadioInline1" id="customRadioInline2"
+                            value="option1" />
+                          <label class="form-check-label" for="customRadioInline2"> Female </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mb-3 grid grid-cols-12 gap-6">
+                      <label class="col-span-12 sm:col-span-3 col-form-label ">Birth Date</label>
+                      <div class="col-span-12 sm:col-span-9">
+                        <input type="date" class="form-control" value="1994-12-16" />
+                      </div>
+                    </div>
+                    <div class="mb-3 grid grid-cols-12 gap-6">
+                      <label class="col-span-12 sm:col-span-3 col-form-label ">Martail Status</label>
+                      <div class="col-span-12 sm:col-span-9">
+                        <select class="form-control" id="exampleFormControlSelect1">
+                          <option>Select Marital Status</option>
+                          <option>Married</option>
+                          <option selected>Unmarried</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="mb-3 grid grid-cols-12 gap-6">
+                      <label class="col-span-12 sm:col-span-3 col-form-label ">Location</label>
+                      <div class="col-span-12 sm:col-span-9">
+                        <textarea
+                          class="form-control">4289 Calvin Street,  Baltimore, near MD Tower Maryland, Maryland (21201)</textarea>
+                      </div>
+                    </div>
+                    <div class="mb-3 grid grid-cols-12 gap-6">
+                      <label class="col-span-12 sm:col-span-3 col-form-label"></label>
+                      <div class="col-span-12 sm:col-span-9">
+                        <button type="submit" class="btn btn-primary">Save</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-body flex items-center justify-between">
+                  <h5 class="mb-0">Contact Information</h5>
+                  <button type="button" class="btn btn-primary btn-sm rounded m-0" data-pc-toggle="collapse"
+                    data-pc-target=".pro-dont-edit" aria-expanded="false"
+                    aria-controls="pro-dont-edit-1 pro-dont-edit-2">
+                    <i class="feather icon-edit"></i>
+                  </button>
+                </div>
+                <div class="card-body border-top pro-dont-edit show" id="pro-dont-edit-1">
+                  <form>
+                    <div class="mb-3 grid grid-cols-12 gap-6">
+                      <label class="col-span-12 sm:col-span-3">Mobile Number</label>
+                      <div class="col-span-12 sm:col-span-9"> +1 9999-999-999 </div>
+                    </div>
+                    <div class="mb-3 grid grid-cols-12 gap-6">
+                      <label class="col-span-12 sm:col-span-3">Email Address</label>
+                      <div class="col-span-12 sm:col-span-9"> Demo@domain.com </div>
+                    </div>
+                    <div class="mb-3 grid grid-cols-12 gap-6">
+                      <label class="col-span-12 sm:col-span-3">Twitter</label>
+                      <div class="col-span-12 sm:col-span-9"> @phonixcoded </div>
+                    </div>
+                    <div class="mb-3 grid grid-cols-12 gap-6">
+                      <label class="col-span-12 sm:col-span-3">Skype</label>
+                      <div class="col-span-12 sm:col-span-9"> @phonixcoded demo </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="card-body border-top pro-dont-edit hidden" id="pro-dont-edit-2">
+                  <form>
+                    <div class="mb-3 grid grid-cols-12 gap-6">
+                      <label class="col-span-12 sm:col-span-3 col-form-label ">Mobile Number</label>
+                      <div class="col-span-12 sm:col-span-9">
+                        <input type="text" class="form-control" placeholder="Full Name" value="+1 9999-999-999" />
+                      </div>
+                    </div>
+                    <div class="mb-3 grid grid-cols-12 gap-6">
+                      <label class="col-span-12 sm:col-span-3 col-form-label ">Email Address</label>
+                      <div class="col-span-12 sm:col-span-9">
+                        <input type="text" class="form-control" placeholder="Ema" value="Demo@domain.com" />
+                      </div>
+                    </div>
+                    <div class="mb-3 grid grid-cols-12 gap-6">
+                      <label class="col-span-12 sm:col-span-3 col-form-label ">Twitter</label>
+                      <div class="col-span-12 sm:col-span-9">
+                        <input type="text" class="form-control" placeholder="Full Name" value="@phonixcoded" />
+                      </div>
+                    </div>
+                    <div class="mb-3 grid grid-cols-12 gap-6">
+                      <label class="col-span-12 sm:col-span-3 col-form-label ">Skype</label>
+                      <div class="col-span-12 sm:col-span-9">
+                        <input type="text" class="form-control" placeholder="Full Name" value="@phonixcoded demo" />
+                      </div>
+                    </div>
+                    <div class="mb-3 row align-items-center">
+                      <label class="col-span-12 sm:col-span-3 col-form-label"></label>
+                      <div class="col-span-12 sm:col-span-9">
+                        <button type="submit" class="btn btn-primary">Save</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-body flex items-center justify-between">
+                  <h5 class="mb-0">other Information</h5>
+                  <button type="button" class="btn btn-primary btn-sm rounded m-0" data-pc-toggle="collapse"
+                    data-pc-target=".pro-wrk-edit" aria-expanded="false" aria-controls="pro-wrk-edit-1 pro-wrk-edit-2">
+                    <i class="feather icon-edit"></i>
+                  </button>
+                </div>
+                <div class="card-body border-top pro-wrk-edit show" id="pro-wrk-edit-1">
+                  <form>
+                    <div class="mb-3 grid grid-cols-12 gap-6">
+                      <label class="col-span-12 sm:col-span-3">Occupation</label>
+                      <div class="col-span-12 sm:col-span-9"> Designer </div>
+                    </div>
+                    <div class="mb-3 grid grid-cols-12 gap-6">
+                      <label class="col-span-12 sm:col-span-3">Skills</label>
+                      <div class="col-span-12 sm:col-span-9"> C#, Javascript, Scss </div>
+                    </div>
+                    <div class="mb-3 grid grid-cols-12 gap-6">
+                      <label class="col-span-12 sm:col-span-3">Jobs</label>
+                      <div class="col-span-12 sm:col-span-9"> Phoenixcoded </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="card-body border-top pro-wrk-edit hidden" id="pro-wrk-edit-2">
+                  <form>
+                    <div class="mb-3 grid grid-cols-12 gap-6">
+                      <label class="col-span-12 sm:col-span-3 col-form-label ">Occupation</label>
+                      <div class="col-span-12 sm:col-span-9">
+                        <input type="text" class="form-control" placeholder="Full Name" value="Designer" />
+                      </div>
+                    </div>
+                    <div class="mb-3 grid grid-cols-12 gap-6">
+                      <label class="col-span-12 sm:col-span-3 col-form-label ">Email Address</label>
+                      <div class="col-span-12 sm:col-span-9">
+                        <input type="text" class="form-control" placeholder="Ema" value="Demo@domain.com" />
+                      </div>
+                    </div>
+                    <div class="mb-3 grid grid-cols-12 gap-6">
+                      <label class="col-span-12 sm:col-span-3 col-form-label ">Jobs</label>
+                      <div class="col-span-12 sm:col-span-9">
+                        <div class="form-check form-inline">
+                          <input class="form-check-input" type="checkbox" id="pro-wrk-chk-1" />
+                          <label class="form-check-label" for="pro-wrk-chk-1"> C# </label>
+                        </div>
+                        <div class="form-check form-inline">
+                          <input class="form-check-input" type="checkbox" id="pro-wrk-chk-2" />
+                          <label class="form-check-label" for="pro-wrk-chk-2"> Javascript </label>
+                        </div>
+                        <div class="form-check form-inline">
+                          <input class="form-check-input" type="checkbox" id="pro-wrk-chk-3" />
+                          <label class="form-check-label" for="pro-wrk-chk-3"> Scss </label>
+                        </div>
+                        <div class="form-check form-inline">
+                          <input class="form-check-input" type="checkbox" id="pro-wrk-chk-3" />
+                          <label class="form-check-label" for="pro-wrk-chk-3"> Html </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mb-3 grid grid-cols-12 gap-6">
+                      <label class="col-span-12 sm:col-span-3 col-form-label"></label>
+                      <div class="col-span-12 sm:col-span-9">
+                        <button type="submit" class="btn btn-primary">Save</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="hidden tab-pane" id="profile-tab-3">
+              <div class="grid grid-cols-12 gap-6">
+                <div class="col-span-12 lg:col-span-6">
+                  <h6 class="text-center mb-3">Simple</h6>
+                  <div class="card user-card user-card-1">
+                    <div class="card-header !border-b-0 !p-2 !pb-0">
+                      <div class="cover-img-block">
+                        <img src="../assets/images/widget/slider5.jpg" alt="" class="img-fluid" />
+                      </div>
+                    </div>
+                    <div class="card-body !pt-0">
+                      <div class="user-about-block text-center -mt-5">
+                        <img class="rounded-full w-20 mx-auto shadow-[0_0_0_5px_#fff] shadow-theme-cardbg dark:shadow-themedark-cardbg" src="../assets/images/user/avatar-2.jpg" alt="User image" />
+                      </div>
+                      <div class="text-center">
+                        <h6 class="mb-1 mt-3">Josephin Doe</h6>
+                        <p class="mb-3 text-muted">UI/UX Designer</p>
+                        <p class="mb-1">Lorem Ipsum is simply dummy text</p>
+                        <p class="mb-0">been the industry's standard</p>
+                      </div>
+                      <hr class="w-20 pt-1 mx-auto my-4 border-0 border-t border-theme-border dark:border-themedark-border" />
+                      <div class="grid grid-cols-12 gap-6 text-center">
+                        <div class="col-span-4">
+                          <h6 class="mb-1">37</h6>
+                          <p class="mb-0">Mails</p>
+                        </div>
+                        <div class="col-span-4">
+                          <h6 class="mb-1">2749</h6>
+                          <p class="mb-0">Followers</p>
+                        </div>
+                        <div class="col-span-4">
+                          <h6 class="mb-1">678</h6>
+                          <p class="mb-0">Following</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-span-12 lg:col-span-6">
+                  <h6 class="text-center mb-3">With option</h6>
+                  <div class="card user-card user-card-1">
+                    <div class="card-header !border-b-0 !p-2 !pb-0">
+                      <div class="cover-img-block">
+                        <img src="../assets/images/widget/slider7.jpg" alt="" class="img-fluid" />
+                      </div>
+                    </div>
+                    <div class="card-body !pt-0">
+                      <div class="user-about-block text-center -mt-5">
+                        <div class="grid grid-cols-12 gap-6 text-center">
+                          <div class="col-span-4 self-end pb-3">
+                            <a href="#!"><i class="icon feather icon-star text-muted text-[20px]"></i></a>
+                          </div>
+                          <div class="col-span-4 self-end ">
+                            <img class="rounded-full w-20 mx-auto shadow-[0_0_0_5px_#fff] shadow-theme-cardbg dark:shadow-themedark-cardbg" src="../assets/images/user/avatar-1.jpg" alt="User image" />
+                          </div>
+                          <div class="col-span-4 self-end pb-3 ltr:text-end rtl:text-left">
+                            <div class="dropdown"> 
+                              <a class="arrow-none dropdown-toggle" data-pc-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                ><i class="feather icon-more-horizontal"></i
+                              ></a>
+                              <div class="dropdown-menu dropdown-menu-end">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="text-center">
+                        <h6 class="mb-1 mt-3">Josephin Doe</h6>
+                        <p class="mb-3 text-muted">UI/UX Designer</p>
+                        <p class="mb-1">Lorem Ipsum is simply dummy text</p>
+                        <p class="mb-0">been the industry's standard</p>
+                      </div>
+                      <hr class="w-20 pt-1 mx-auto my-4 border-0 border-t border-theme-border dark:border-themedark-border" />
+                      <div class="grid grid-cols-12 gap-6 text-center">
+                        <div class="col-span-4">
+                          <h6 class="mb-1">37</h6>
+                          <p class="mb-0">Mails</p>
+                        </div>
+                        <div class="col-span-4">
+                          <h6 class="mb-1">2749</h6>
+                          <p class="mb-0">Followers</p>
+                        </div>
+                        <div class="col-span-4">
+                          <h6 class="mb-1">678</h6>
+                          <p class="mb-0">Following</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-span-12 lg:col-span-6">
+                  <h6 class="text-center mb-3">Option selected</h6>
+                  <div class="card user-card user-card-1">
+                    <div class="card-header !border-b-0 !p-2 !pb-0">
+                      <div class="cover-img-block">
+                        <img src="../assets/images/widget/slider6.jpg" alt="" class="img-fluid" />
+                      </div>
+                    </div>
+                    <div class="card-body !pt-0">
+                      <div class="user-about-block text-center -mt-5">
+                        <div class="grid grid-cols-12 gap-6 text-center">
+                          <div class="col-span-4 self-end pb-3">
+                            <a href="#!"><i class="icon feather icon-star-on text-warning text-[20px]"></i></a>
+                          </div>
+                          <div class="col-span-4 self-end ">
+                            <img class="rounded-full w-20 mx-auto shadow-[0_0_0_5px_#fff] shadow-theme-cardbg dark:shadow-themedark-cardbg" src="../assets/images/user/avatar-3.jpg" alt="User image" />
+                          </div>
+                          <div class="col-span-4 self-end pb-3 ltr:text-end rtl:text-left">
+                            <div class="dropdown"> 
+                              <a class="arrow-none dropdown-toggle" data-pc-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                ><i class="feather icon-more-horizontal"></i
+                              ></a>
+                              <div class="dropdown-menu dropdown-menu-end">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="text-center">
+                        <h6 class="mb-1 mt-3">Josephin Doe</h6>
+                        <p class="mb-3 text-muted">UI/UX Designer</p>
+                        <p class="mb-1">Lorem Ipsum is simply dummy text</p>
+                        <p class="mb-0">been the industry's standard</p>
+                      </div>
+                      <hr class="w-20 pt-1 mx-auto my-4 border-0 border-t border-theme-border dark:border-themedark-border" />
+                      <div class="grid grid-cols-12 gap-6 text-center">
+                        <div class="col-span-4">
+                          <h6 class="mb-1">37</h6>
+                          <p class="mb-0">Mails</p>
+                        </div>
+                        <div class="col-span-4">
+                          <h6 class="mb-1">2749</h6>
+                          <p class="mb-0">Followers</p>
+                        </div>
+                        <div class="col-span-4">
+                          <h6 class="mb-1">678</h6>
+                          <p class="mb-0">Following</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-span-12 lg:col-span-6">
+                  <h6 class="text-center mb-3">Certificated badge</h6>
+                  <div class="card user-card user-card-1">
+                    <div class="card-header !border-b-0 !p-2 !pb-0">
+                      <div class="cover-img-block">
+                        <img src="../assets/images/widget/slider6.jpg" alt="" class="img-fluid" />
+                      </div>
+                    </div>
+                    <div class="card-body !pt-0">
+                      <div class="user-about-block text-center -mt-5">
+                        <div class="grid grid-cols-12 gap-6 text-center">
+                          <div class="col-span-4 self-end pb-3">
+                            <a href="#!"><i class="icon feather icon-star-on text-warning text-[20px]"></i></a>
+                          </div>
+                          <div class="col-span-4 self-end ">
+                            <div class="relative inline-block">
+                              <img class="rounded-full w-20 mx-auto shadow-[0_0_0_5px_#fff] shadow-theme-cardbg dark:shadow-themedark-cardbg" src="../assets/images/user/avatar-5.jpg" alt="User image" />
+                              <div
+                                class="certificated-badge absolute bottom-[-5px] right-[-5px] rounded-full w-[30px] h-[30px] bg-theme-cardbg dark:bg-themedark-cardbg p-[5px_3px]">
+                                <i class="fas fa-certificate text-primary-500 bg-icon text-[22px]"></i>
+                                <i class="fas fa-check front-icon text-white text-[11px] absolute top-[11px] left-[9px]"></i>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-span-4 self-end pb-3 ltr:text-end rtl:text-left">
+                            <div class="dropdown"> 
+                              <a class="arrow-none dropdown-toggle" data-pc-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                ><i class="feather icon-more-horizontal"></i
+                              ></a>
+                              <div class="dropdown-menu dropdown-menu-end">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="text-center">
+                        <h6 class="mb-1 mt-3">Josephin Doe</h6>
+                        <p class="mb-3 text-muted">UI/UX Designer</p>
+                        <p class="mb-1">Lorem Ipsum is simply dummy text</p>
+                        <p class="mb-0">been the industry's standard</p>
+                      </div>
+                      <hr class="w-20 pt-1 mx-auto my-4 border-0 border-t border-theme-border dark:border-themedark-border" />
+                      <div class="grid grid-cols-12 gap-6 text-center">
+                        <div class="col-span-4">
+                          <h6 class="mb-1">37</h6>
+                          <p class="mb-0">Mails</p>
+                        </div>
+                        <div class="col-span-4">
+                          <h6 class="mb-1">2749</h6>
+                          <p class="mb-0">Followers</p>
+                        </div>
+                        <div class="col-span-4">
+                          <h6 class="mb-1">678</h6>
+                          <p class="mb-0">Following</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hidden tab-pane" id="profile-tab-4">
+              <div class="grid grid-cols-12 gap-6 text-center">
+                <div class="col-span-12 xl:col-span-3 lg:col-span-4 sm:col-span-6">
+                  <img src="../assets/images/light-box/sl1.jpg"
+                    class="w-full p-1 rounded bg-theme-cardbg dark:bg-themedark-cardbg border border-theme-border dark:border-themedark-border"
+                    alt="" />
+                </div>
+                <div class="col-span-12 xl:col-span-3 lg:col-span-4 sm:col-span-6">
+                  <img src="../assets/images/light-box/sl2.jpg"
+                    class="w-full p-1 rounded bg-theme-cardbg dark:bg-themedark-cardbg border border-theme-border dark:border-themedark-border"
+                    alt="" />
+                </div>
+                <div class="col-span-12 xl:col-span-3 lg:col-span-4 sm:col-span-6">
+                  <img src="../assets/images/light-box/sl3.jpg"
+                    class="w-full p-1 rounded bg-theme-cardbg dark:bg-themedark-cardbg border border-theme-border dark:border-themedark-border"
+                    alt="" />
+                </div>
+                <div class="col-span-12 xl:col-span-3 lg:col-span-4 sm:col-span-6">
+                  <img src="../assets/images/light-box/sl4.jpg"
+                    class="w-full p-1 rounded bg-theme-cardbg dark:bg-themedark-cardbg border border-theme-border dark:border-themedark-border"
+                    alt="" />
+                </div>
+                <div class="col-span-12 xl:col-span-3 lg:col-span-4 sm:col-span-6">
+                  <img src="../assets/images/light-box/sl5.jpg"
+                    class="w-full p-1 rounded bg-theme-cardbg dark:bg-themedark-cardbg border border-theme-border dark:border-themedark-border"
+                    alt="" />
+                </div>
+                <div class="col-span-12 xl:col-span-3 lg:col-span-4 sm:col-span-6">
+                  <img src="../assets/images/light-box/sl6.jpg"
+                    class="w-full p-1 rounded bg-theme-cardbg dark:bg-themedark-cardbg border border-theme-border dark:border-themedark-border"
+                    alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-12 md:col-span-4 order-last md:order-first">
+          <div class="card">
+            <div class="card-header flex items-center justify-between">
+              <h5 class="mb-0">Friends</h5>
+              <span class="badge bg-primary-500/10 text-primary-500">100+</span>
+            </div>
+            <div class="card-body">
+              <ul class="flex flex-wrap gap-3">
+                <li class="list-inline-item"><a href="#!"><img src="../assets/images/user/avatar-1.jpg" alt="user image"
+                      class="rounded-full mb-2 w-[50px]" data-pc-toggle="tooltip" title="Joseph William" /></a></li>
+                <li class="list-inline-item"><a href="#!"><img src="../assets/images/user/avatar-2.jpg" alt="user image"
+                      class="rounded-full mb-2 w-[50px]" data-pc-toggle="tooltip" title="Sara Soudein" /></a></li>
+                <li class="list-inline-item"><a href="#!"><img src="../assets/images/user/avatar-3.jpg" alt="user image"
+                      class="rounded-full mb-2 w-[50px]" data-pc-toggle="tooltip" title="John Doe" /></a></li>
+                <li class="list-inline-item"><a href="#!"><img src="../assets/images/user/avatar-4.jpg" alt="user image"
+                      class="rounded-full mb-2 w-[50px]" data-pc-toggle="tooltip" title="Joseph William" /></a></li>
+                <li class="list-inline-item"><a href="#!"><img src="../assets/images/user/avatar-5.jpg" alt="user image"
+                      class="rounded-full w-[50px]" data-pc-toggle="tooltip" title="Sara Soudein" /></a></li>
+                <li class="list-inline-item"><a href="#!"><img src="../assets/images/user/avatar-1.jpg" alt="user image"
+                      class="rounded-full w-[50px]" data-pc-toggle="tooltip" title="Joseph William" /></a></li>
+                <li class="list-inline-item"><a href="#!"><img src="../assets/images/user/avatar-2.jpg" alt="user image"
+                      class="rounded-full w-[50px]" data-pc-toggle="tooltip" title="Sara Soudein" /></a></li>
+                <li class="list-inline-item"><a href="#!"><img src="../assets/images/user/avatar-3.jpg" alt="user image"
+                      class="rounded-full w-[50px]" data-pc-toggle="tooltip" title="John Doe" /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="card new-cust-card">
+            <div class="card-header">
+              <h5>Message</h5>
+            </div>
+            <div class="cust-scroll" style="height: 415px; position: relative">
+              <div class="card-body p-b-0">
+                <div class="align-middle mb-6">
+                  <img src="../assets/images/user/avatar-1.jpg" alt="user image"
+                    class="rounded-full align-top mr-4 w-[50px] inline-block" />
+                  <div class="inline-block">
+                    <a href="#!">
+                      <h6>Alex</h6>
+                    </a>
+                    <p class="m-b-0">Cheers!</p>
+                    <span class="status active"></span>
+                  </div>
+                </div>
+                <div class="align-middle mb-6">
+                  <img src="../assets/images/user/avatar-2.jpg" alt="user image"
+                    class="rounded-full align-top mr-4 w-[50px] inline-block" />
+                  <div class="inline-block">
+                    <a href="#!">
+                      <h6>John Doue</h6>
+                    </a>
+                    <p class="m-b-0">stay hungry!</p>
+                    <span class="status active"></span>
+                  </div>
+                </div>
+                <div class="align-middle mb-6">
+                  <img src="../assets/images/user/avatar-3.jpg" alt="user image"
+                    class="rounded-full align-top mr-4 w-[50px] inline-block" />
+                  <div class="inline-block">
+                    <a href="#!">
+                      <h6>Alex</h6>
+                    </a>
+                    <p class="m-b-0">Cheers!</p>
+                    <span class="status deactive">30 min</span>
+                  </div>
+                </div>
+                <div class="align-middle mb-6">
+                  <img src="../assets/images/user/avatar-4.jpg" alt="user image"
+                    class="rounded-full align-top mr-4 w-[50px] inline-block" />
+                  <div class="inline-block">
+                    <a href="#!">
+                      <h6>John Doue</h6>
+                    </a>
+                    <p class="m-b-0">Cheers!</p>
+                    <span class="status deactive">10 min</span>
+                  </div>
+                </div>
+                <div class="align-middle mb-6">
+                  <img src="../assets/images/user/avatar-5.jpg" alt="user image"
+                    class="rounded-full align-top mr-4 w-[50px] inline-block" />
+                  <div class="inline-block">
+                    <a href="#!">
+                      <h6>Shirley Hoe</h6>
+                    </a>
+                    <p class="m-b-0">stay hungry!</p>
+                    <span class="status active"></span>
+                  </div>
+                </div>
+                <div class="align-middle mb-6">
+                  <img src="../assets/images/user/avatar-1.jpg" alt="user image"
+                    class="rounded-full align-top mr-4 w-[50px] inline-block" />
+                  <div class="inline-block">
+                    <a href="#!">
+                      <h6>John Doue</h6>
+                    </a>
+                    <p class="m-b-0">Cheers!</p>
+                    <span class="status active"></span>
+                  </div>
+                </div>
+                <div class="align-middle mb-6">
+                  <img src="../assets/images/user/avatar-2.jpg" alt="user image"
+                    class="rounded-full align-top mr-4 w-[50px] inline-block" />
+                  <div class="inline-block">
+                    <a href="#!">
+                      <h6>Jon Alex</h6>
+                    </a>
+                    <p class="m-b-0">stay hungry!</p>
+                    <span class="status active"></span>
+                  </div>
+                </div>
+                <div class="align-middle m-b-0">
+                  <img src="../assets/images/user/avatar-3.jpg" alt="user image"
+                    class="rounded-full align-top mr-4 w-[50px] inline-block" />
+                  <div class="inline-block">
+                    <a href="#!">
+                      <h6>John Doue</h6>
+                    </a>
+                    <p class="m-b-0">Cheers!</p>
+                    <span class="status deactive">10 min ago</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- profile body end -->
+    </div>
+  </div>
+  <!-- [ Main Content ] end -->
+  @@include('../layouts/footer-block.html') @@include('../layouts/footer-js.html')
+  <script>
+    // [ customer-scroll ] start
+    new SimpleBar(document.querySelector('.cust-scroll'));
+    // [ customer-scroll ] end
+  </script>
+  @@include('../layouts/customizer.html')
+</body>
+
+</html>

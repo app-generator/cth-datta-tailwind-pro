@@ -1,0 +1,630 @@
+<!doctype html>
+<html lang="en" @@bodySetup>
+
+<head>
+  @@include('../layouts/head-page-meta.html', {'title': 'Task Details'}) @@include('../layouts/head-css.html')
+</head>
+
+<body>
+  @@include('../layouts/layout-vertical.html')
+  <!-- [ Main Content ] start -->
+  <section class="pc-container">
+    <div class="pc-content">
+      @@include('../layouts/breadcrumb.html', {'breadcrumb-item': 'Task', 'breadcrumb-item-active': 'Task Detail'})
+      <!-- [ Main Content ] start -->
+      <div class="grid grid-cols-12 gap-6">
+        <!-- [ task-detail-left ] start -->
+        <div class="col-span-12 2xl:col-span-3 xl:col-span-4">
+          <div class="card">
+            <div class="card-body bg-danger-500/10">
+              <div class="counter text-center">
+                <h4 id="timer" class="text-danger m-0"></h4>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <h5>Task Details</h5>
+            </div>
+            <ul
+              class="rounded-lg *:py-4 *:px-[25px] divide-y divide-inherit border-theme-border dark:border-themedark-border">
+              <li class="list-group-item flex justify-between">
+                <div class="h6 inline-flex items-center gap-1 m-0"><i
+                    class="material-icons-two-tone text-lg leading-none bg-primary-500">library_books</i> Project :
+                </div>
+                <div><a class="link-secondary" href="#!"> Singular app</a></div>
+              </li>
+              <li class="list-group-item flex justify-between">
+                <div class="h6 inline-flex items-center gap-1 m-0"><i
+                    class="material-icons-two-tone text-lg leading-none bg-primary-500">home_work</i> Updated :</div>
+                <div>12 May, 2020</div>
+              </li>
+              <li class="list-group-item flex justify-between">
+                <div class="h6 inline-flex items-center gap-1 m-0"><i
+                    class="material-icons-two-tone text-lg leading-none bg-primary-500">history_edu</i> Created :</div>
+                <div>25 Feb, 2019</div>
+              </li>
+              <li class="list-group-item flex justify-between">
+                <div class="h6 inline-flex items-center gap-1 m-0"><i
+                    class="material-icons-two-tone text-lg leading-none bg-primary-500">emoji_flags</i> Priority :</div>
+                <div class="inline-flex items-center gap-1"><i
+                    class="material-icons-two-tone text-lg leading-none">arrow_circle_up</i> Highest</div>
+              </li>
+              <li class="list-group-item flex justify-between">
+                <div class="h6 inline-flex items-center gap-1 m-0"><i
+                    class="material-icons-two-tone text-lg leading-none bg-primary-500">rotate_90_degrees_ccw</i>
+                  Revisions :</div>
+                <div>29</div>
+              </li>
+              <li class="list-group-item flex justify-between">
+                <div class="h6 inline-flex items-center gap-1 m-0"><i
+                    class="material-icons-two-tone text-lg leading-none bg-primary-500">account_circle</i> Added by :
+                </div>
+                <div>Winnie</div>
+              </li>
+              <li class="list-group-item flex justify-between">
+                <div class="h6 inline-flex items-center gap-1 m-0"><i
+                    class="material-icons-two-tone text-lg leading-none bg-primary-500">settings_input_hdmi</i> Status :
+                </div>
+                <div>Published</div>
+              </li>
+            </ul>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <h5>Attached Files</h5>
+            </div>
+            <ul
+              class="rounded-lg *:py-4 *:px-[25px] divide-y divide-inherit border-theme-border dark:border-themedark-border">
+              <li class="list-group-item flex justify-between items-center gap-2">
+                <div class="shrink-0">
+                  <i class="far fa-file-word text-[28px] text-primary-500"></i>
+                </div>
+                <div class="grow">
+                  <a href="#!"><span class="h6">Overdrew_scowled.doc</span></a>
+                  <small class="text-muted block">Size: 1.2Mb | Added by: Winnie</small>
+                </div>
+                <div class="shrink-0">
+                  <a href="#!" class="text-secondary-500 hover:opacity-80"><i
+                      class="material-icons-two-tone text-[26px]">cloud_download</i></a>
+                </div>
+              </li>
+              <li class="list-group-item flex justify-between items-center gap-2">
+                <div class="shrink-0">
+                  <i class="far fa-file-powerpoint text-[28px] text-danger-500"></i>
+                </div>
+                <div class="grow">
+                  <a href="#!"><span class="h6">And_less_matern.ppt</span></a>
+                  <small class="text-muted block">Size: 0.11Mb | Added by: Eugene</small>
+                </div>
+                <div class="shrink-0">
+                  <a href="#!" class="text-secondary-500 hover:opacity-80"><i
+                      class="material-icons-two-tone text-[26px]">cloud_download</i></a>
+                </div>
+              </li>
+              <li class="list-group-item flex justify-between items-center gap-2">
+                <div class="shrink-0">
+                  <i class="far fa-file-pdf text-[28px] text-warning-500"></i>
+                </div>
+                <div class="grow">
+                  <a href="#!"><span class="h6">The_less_overslept.pdf</span></a>
+                  <small class="text-muted block">Size: 5.9Mb | Added by: Natalie</small>
+                </div>
+                <div class="shrink-0">
+                  <a href="#!" class="text-secondary-500 hover:opacity-80"><i
+                      class="material-icons-two-tone text-[26px]">cloud_download</i></a>
+                </div>
+              </li>
+              <li class="list-group-item flex justify-between items-center gap-2">
+                <div class="shrink-0">
+                  <i class="far fa-file-excel text-[28px] text-success-500"></i>
+                </div>
+                <div class="grow">
+                  <a href="#!"><span class="h6">Well_equitably.exls</span></a>
+                  <small class="text-muted block">Size: 20.9Mb | Added by: Jenny</small>
+                </div>
+                <div class="shrink-0">
+                  <a href="#!" class="text-secondary-500 hover:opacity-80"><i
+                      class="material-icons-two-tone text-[26px]">cloud_download</i></a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <h5>Assigned Users</h5>
+            </div>
+            <ul
+              class="rounded-lg *:py-4 *:px-[25px] divide-y divide-inherit border-theme-border dark:border-themedark-border">
+              <li class="list-group-item flex justify-between items-center gap-2">
+                <div class="shrink-0">
+                  <img class="img-fluid rounded-full w-[45px]" src="../assets/images/user/avatar-1.jpg"
+                    alt="Generic placeholder image" />
+                </div>
+                <div class="grow">
+                  <a href="#!"><span class="h6">Sortino media</span></a>
+                  <small class="text-muted block">Software Engineer</small>
+                </div>
+                <div class="shrink-0">
+                  <a href="#!" class="hover:opacity-80"><i
+                      class="material-icons-two-tone text-[26px] bg-primary-500">chevron_right</i></a>
+                </div>
+              </li>
+              <li class="list-group-item flex justify-between items-center gap-2">
+                <div class="shrink-0">
+                  <img class="img-fluid rounded-full w-[45px]" src="../assets/images/user/avatar-2.jpg"
+                    alt="Generic placeholder image" />
+                </div>
+                <div class="grow">
+                  <a href="#!"><span class="h6">Larry heading</span></a>
+                  <small class="text-muted block">Web Designer</small>
+                </div>
+                <div class="shrink-0">
+                  <a href="#!" class="hover:opacity-80"><i
+                      class="material-icons-two-tone text-[26px] bg-primary-500">chevron_right</i></a>
+                </div>
+              </li>
+              <li class="list-group-item flex justify-between items-center gap-2">
+                <div class="shrink-0">
+                  <img class="img-fluid rounded-full w-[45px]" src="../assets/images/user/avatar-3.jpg"
+                    alt="Generic placeholder image" />
+                </div>
+                <div class="grow">
+                  <a href="#!"><span class="h6">Mark</span></a>
+                  <small class="text-muted block">Chief Financial Officer (CFO)</small>
+                </div>
+                <div class="shrink-0">
+                  <a href="#!" class="hover:opacity-80"><i
+                      class="material-icons-two-tone text-[26px] bg-primary-500">chevron_right</i></a>
+                </div>
+              </li>
+              <li class="list-group-item flex justify-between items-center gap-2">
+                <div class="shrink-0">
+                  <img class="img-fluid rounded-full w-[45px]" src="../assets/images/user/avatar-4.jpg"
+                    alt="Generic placeholder image" />
+                </div>
+                <div class="grow">
+                  <a href="#!"><span class="h6">John Doe</span></a>
+                  <small class="text-muted block">Senior Marketing Designer</small>
+                </div>
+                <div class="shrink-0">
+                  <a href="#!" class="hover:opacity-80"><i
+                      class="material-icons-two-tone text-[26px] bg-primary-500">chevron_right</i></a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <h5>Task settings</h5>
+            </div>
+            <ul
+              class="rounded-lg *:py-4 *:px-[25px] divide-y divide-inherit border-theme-border dark:border-themedark-border">
+              <li class="list-group-item">
+                <div class="form-check form-switch">
+                  <input class="form-check-input" type="checkbox" id="switch-1" checked />
+                  <label class="form-check-label" for="switch-1">Publish after save</label>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="form-check form-switch">
+                  <input class="form-check-input" type="checkbox" id="switch-2" checked />
+                  <label class="form-check-label" for="switch-2">Allow comments</label>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="form-check form-switch">
+                  <input class="form-check-input" type="checkbox" id="switch-3" checked />
+                  <label class="form-check-label" for="switch-3">Allow users to edit the task</label>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="form-check form-switch">
+                  <input class="form-check-input" type="checkbox" id="switch-4" />
+                  <label class="form-check-label" for="switch-4">Use task timer</label>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="form-check form-switch">
+                  <input class="form-check-input" type="checkbox" id="switch-5" />
+                  <label class="form-check-label" for="switch-5">Auto saving</label>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="form-check form-switch">
+                  <input class="form-check-input" type="checkbox" id="switch-6" />
+                  <label class="form-check-label" for="switch-6">Allow attachments</label>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <button type="button" class="btn btn-sm btn-light-secondary">Reset</button>
+                <button type="button" class="btn btn-sm btn-light-primary">Save</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- [ task-detail-left ] end -->
+        <!-- [ task-detail-right ] start -->
+        <div class="col-span-12 2xl:col-span-9 xl:col-span-8">
+          <div class="card">
+            <div class="card-header flex items-center justify-between gap-2 flex-wrap ">
+              <h5 class="flex items-center gap-2"><i
+                  class="material-icons-two-tone text-lg leading-none bg-primary-500">phonelink</i> #24. Create UI
+                design model</h5>
+              <button class="btn btn-light-primary btn-sm"><i class="far fa-bell mr-1.5"></i>Check in</button>
+            </div>
+            <div class="card-body border-b border-theme-border dark:border-themedark-border">
+              <p class="m-0">A collection of textile samples lay <b>spread out</b> on the table One morning, when
+                <b>Gregor Samsa</b> woke from
+                troubled Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                printer...
+              </p>
+            </div>
+            <div class="card-body !py-3 border-b border-theme-border dark:border-themedark-border">
+              <div class="grid grid-cols-12 gap-3">
+                <div class="col-span-12 sm:col-span-6">
+                  <div class="flex items-center gap-1">
+                    <div class="h6 inline-flex items-center gap-1"><i
+                        class="material-icons-two-tone text-lg leading-none bg-primary-500">calendar_today</i> Date:
+                    </div> 28 January, 2020
+                  </div>
+                </div>
+                <div class="col-span-12 sm:col-span-6">
+                  <div class="flex items-center gap-1">
+                    <div class="h6 inline-flex items-center gap-1"><i
+                        class="material-icons-two-tone text-lg leading-none bg-primary-500">leaderboard</i> Priority:
+                    </div>
+                    <span class="badge bg-danger-500/10 text-danger-500">Highest</span>
+                  </div>
+                </div>
+                <div class="col-span-12 sm:col-span-6">
+                  <div class="flex items-center gap-1">
+                    <div class="h6 inline-flex items-center gap-1"><i
+                        class="material-icons-two-tone text-lg leading-none bg-primary-500">account_circle</i> Assign
+                      to: </div>
+                    <img class="img-fluid img-radius w-5" src="../assets/images/user/avatar-2.jpg" alt="1" /> Joseph William
+                  </div>
+                </div>
+                <div class="col-span-12 sm:col-span-6">
+                  <div class="flex items-center gap-1">
+                    <div class="h6 inline-flex items-center gap-1"><i
+                        class="material-icons-two-tone text-lg leading-none bg-primary-500">timer</i> Due: </div>
+                    <span class="badge bg-warning-500/10 text-warning-500">23 hours</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body border-b border-theme-border dark:border-themedark-border">
+              <div class="h6 mb-3">Overview :</div>
+              <p class="m-0 text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                Ipsum has been the industry's standard
+                dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+                a type specimen
+                book.</p>
+            </div>
+            <div class="card-body border-b border-theme-border dark:border-themedark-border">
+              <div class="h6 mb-3">What we need :</div>
+              <p class="text-muted mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard
+                dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+                a type specimen
+                book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+                essentially
+                unchanged.</p>
+              <div class="grid grid-cols-12 gap-6">
+                <div class="col-span-12 md:col-span-6">
+                  <div class="h6 mb-2.5">
+                    <span
+                      class="w-6 h-6 mr-2 rounded bg-primary-500 text-white inline-flex items-center justify-center">1</span>
+                    Design simple layouts
+                  </div>
+                  <p class="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                </div>
+                <div class="col-span-12 md:col-span-6">
+                  <div class="h6 mb-2.5">
+                    <span
+                      class="w-6 h-6 mr-2 rounded bg-primary-500 text-white inline-flex items-center justify-center">2</span>
+                    Make responsive of it
+                  </div>
+                  <p class="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-body border-b border-theme-border dark:border-themedark-border">
+              <div class="h6 mb-3">Requirements :</div>
+              <p class="m-0 text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                Ipsum has been the industry's standard
+                dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+                a type specimen
+                book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+                essentially
+                unchanged.</p>
+            </div>
+            <div class="card-body !pb-3">
+              <div class="h6 mb-0">Sub task directory:</div>
+            </div>
+            <div class="card-body table-body !pb-0">
+              <div class="table-responsive">
+                <table class="table table-hover !mb-0">
+                  <thead>
+                    <tr>
+                      <th>
+                        <div class="form-check">
+                          <input class="form-check-input f-14" type="checkbox" id="subtaskhead" />
+                          <label class="form-check-label" for="subtaskhead">Task</label>
+                        </div>
+                      </th>
+                      <th>Due Date</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="form-check f-14">
+                          <input class="form-check-input" type="checkbox" id="subtasklist1" />
+                          <label class="form-check-label" for="subtasklist1"><span class="m-0 h6">Design
+                              mockup</span></label>
+                        </div>
+                      </td>
+                      <td><i class="material-icons-two-tone text-base leading-none bg-primary-500">calendar_today</i> 22
+                        December, 20</td>
+                      <td class="text-muted">The standard Lorem Ipsum</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="form-check f-14">
+                          <input class="form-check-input" type="checkbox" id="subtasklist2" />
+                          <label class="form-check-label" for="subtasklist2"><span class="m-0 h6">Software
+                              Engineer</span></label>
+                        </div>
+                      </td>
+                      <td><i class="material-icons-two-tone text-base leading-none bg-primary-500">calendar_today</i> 01
+                        December, 20</td>
+                      <td class="text-muted">The standard Lorem Ipsum</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="form-check f-14">
+                          <input class="form-check-input" type="checkbox" id="subtasklist3" />
+                          <label class="form-check-label" for="subtasklist3"><span class="m-0 h6">Photoshop &amp;
+                              Illustrator</span></label>
+                        </div>
+                      </td>
+                      <td><i class="material-icons-two-tone text-base leading-none bg-primary-500">calendar_today</i> 15
+                        December, 20</td>
+                      <td class="text-muted">The standard Lorem Ipsum</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="form-check f-14">
+                          <input class="form-check-input" type="checkbox" id="subtasklist4" />
+                          <label class="form-check-label" for="subtasklist4"><span class="m-0 h6">Allocated
+                              Resource</span></label>
+                        </div>
+                      </td>
+                      <td><i class="material-icons-two-tone text-base leading-none bg-primary-500">calendar_today</i> 28
+                        December, 20</td>
+                      <td class="text-muted">The standard Lorem Ipsum</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="form-check f-14">
+                          <input class="form-check-input" type="checkbox" id="subtasklist5" />
+                          <label class="form-check-label" for="subtasklist5"><span class="m-0 h6">Financial
+                              Controlle</span></label>
+                        </div>
+                      </td>
+                      <td><i class="material-icons-two-tone text-base leading-none bg-primary-500">calendar_today</i> 20
+                        December, 20</td>
+                      <td class="text-muted">The standard Lorem Ipsum</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <h5 class="flex item-center"><i
+                  class="material-icons-two-tone text-lg leading-none bg-primary-500">design_services</i> Edit task
+                details</h5>
+            </div>
+            <div class="card-body">
+              <div class="grid grid-cols-12 gap-6">
+                <div class="col-span-12 md:col-span-4">
+                  <div class="flex align-center">
+                    <div class="h6 mb-0 mr-2 inline-flex items-center gap-1"><i
+                        class="material-icons-two-tone text-lg leading-none bg-primary-500">settings_input_composite</i>
+                      priority :</div>
+                    <div class="dropdown">
+                      <button class="btn btn-sm btn-light-success dropdown-toggle"
+                        data-bs-toggle="dropdown">Normal</button>
+                      <div class="dropdown-menu dropdown-menu-end">
+                        <a class="dropdown-item" href="#!"><span class="fas fa-circle text-danger f-10 me-2"></span>
+                          Highest priority</a>
+                        <a class="dropdown-item" href="#!"><span class="fas fa-circle text-warning f-10 me-2"></span>
+                          High priority</a>
+                        <a class="dropdown-item active" href="#!"><span
+                            class="fas fa-circle text-success f-10 me-2"></span> Normal priority</a>
+                        <a class="dropdown-item" href="#!"><span class="fas fa-circle text-info f-10 me-2"></span> Low
+                          priority</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-span-12 md:col-span-4">
+                  <div class="flex align-center">
+                    <div class="h6 mb-0 mr-2 inline-flex items-center gap-1"><i
+                        class="material-icons-two-tone text-lg leading-none bg-primary-500">hourglass_top</i> Status :
+                    </div>
+                    <div class="dropdown">
+                      <button class="btn btn-sm btn-light-primary dropdown-toggle"
+                        data-bs-toggle="dropdown">Open</button>
+                      <div class="dropdown-menu dropdown-menu-end">
+                        <a class="dropdown-item" href="#!">Open</a>
+                        <a class="dropdown-item active" href="#!">On hold</a>
+                        <a class="dropdown-item" href="#!">Resolved</a>
+                        <a class="dropdown-item" href="#!">Closed</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#!">Dublicate</a>
+                        <a class="dropdown-item" href="#!">Invalid</a>
+                        <a class="dropdown-item" href="#!">Wontfix</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-span-12 md:col-span-4">
+                  <div class="flex align-center">
+                    <div class="h6 mb-0 mr-2 inline-flex items-center gap-1"><i
+                        class="material-icons-two-tone text-lg leading-none bg-primary-500">emoji_flags</i> action :
+                    </div>
+                    <div class="dropdown">
+                      <button class="btn btn-sm btn-light-primary dropdown-toggle" data-bs-toggle="dropdown"><i
+                          class="fas fa-bars"></i></button>
+                      <div class="dropdown-menu dropdown-menu-end">
+                        <a class="dropdown-item" href="#!">Check in</a>
+                        <a class="dropdown-item" href="#!">Attach screenshot</a>
+                        <a class="dropdown-item" href="#!">Reassign</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#!">Edit task</a>
+                        <a class="dropdown-item" href="#!">Remove</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header flex items-center justify-between">
+              <h5 class="flex items-center gap-1"><i
+                  class="material-icons-two-tone text-lg leading-none bg-primary-500">chrome_reader_mode</i> Comments
+              </h5>
+              <button type="button" class="btn btn-light-primary btn-sm"><i class="fas fa-plus"></i> Add</button>
+            </div>
+            <div class="card-body border-b border-theme-border dark:border-themedark-border">
+              <div class="flex gap-4">
+                <div class="shrink-0">
+                  <img class="img-fluid rounded-full w-[45px]" src="../assets/images/user/avatar-1.jpg"
+                    alt="Generic placeholder image" />
+                </div>
+                <div class="grow">
+                  <div class="h6 mb-3 flex items-center flex-wrap">Larry heading <span
+                      class="text-sm text-muted ltr:ml-2 rtl:mr-2 inline-flex items-center gap-1"><i data-feather="clock"
+                        class="w-[15px] h-[15px]"></i> 15 min ago</span></div>
+                  <p class="text-muted mb-3">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's
+                    standard dummy text ever since the 1500s.</p>
+                  <div class="flex gap-1 items-center flex-wrap">
+                    <a href="#!" class="mr-2 inline-flex gap-1 items-center text-primary-500 hover:opacity-80"><i
+                        class="material-icons-two-tone text-base bg-primary-500">textsms</i> Reply</a>
+                    <a href="#!" class="mr-2 inline-flex gap-1 items-center text-success-500 hover:opacity-80"><i
+                        class="material-icons-two-tone text-base bg-success-500">edit</i> Edit</a>
+                    <a href="#!" class="mr-2 inline-flex gap-1 items-center text-danger-500 hover:opacity-80"><i
+                        class="material-icons-two-tone text-base bg-danger-500">delete</i> Delete</a>
+                  </div>
+                  <hr class="my-3 border-t border-theme-border dark:border-themedark-border" />
+                  <div class="flex gap-4">
+                    <div class="shrink-0">
+                      <img class="img-fluid rounded-full w-[45px]" src="../assets/images/user/avatar-2.jpg"
+                        alt="Generic placeholder image" />
+                    </div>
+                    <div class="grow">
+                      <div class="h6 mb-3 flex items-center flex-wrap">Larry heading <span
+                          class="text-sm text-muted ltr:ml-2 rtl:mr-2 inline-flex items-center gap-1"><i data-feather="clock"
+                            class="w-[15px] h-[15px]"></i> 12 min ago</span>
+                      </div>
+                      <p class="text-muted mb-3">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                        been the industry's
+                        standard dummy text ever since the 1500s.</p>
+                      <div class="flex gap-1 items-center flex-wrap">
+                        <a href="#!" class="mr-2 inline-flex gap-1 items-center text-primary-500 hover:opacity-80"><i
+                            class="material-icons-two-tone text-base bg-primary-500">textsms</i> Reply</a>
+                        <a href="#!" class="mr-2 inline-flex gap-1 items-center text-success-500 hover:opacity-80"><i
+                            class="material-icons-two-tone text-base bg-success-500">edit</i> Edit</a>
+                        <a href="#!" class="mr-2 inline-flex gap-1 items-center text-danger-500 hover:opacity-80"><i
+                            class="material-icons-two-tone text-base bg-danger-500">delete</i> Delete</a>
+                      </div>
+                      <hr class="my-3 border-t border-theme-border dark:border-themedark-border" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex gap-4">
+                <div class="shrink-0">
+                  <img class="img-fluid rounded-full w-[45px]" src="../assets/images/user/avatar-1.jpg"
+                    alt="Generic placeholder image" />
+                </div>
+                <div class="grow">
+                  <div class="h6 mb-3 flex items-center flex-wrap">Larry heading <span
+                      class="text-sm text-muted ltr:ml-2 rtl:mr-2 inline-flex items-center gap-1"><i data-feather="clock"
+                        class="w-[15px] h-[15px]"></i> 15 min ago</span></div>
+                  <p class="text-muted mb-3">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's
+                    standard dummy text ever since the 1500s.</p>
+                  <div class="flex gap-1 items-center flex-wrap">
+                    <a href="#!" class="mr-2 inline-flex gap-1 items-center text-primary-500 hover:opacity-80"><i
+                        class="material-icons-two-tone text-base bg-primary-500">textsms</i> Reply</a>
+                    <a href="#!" class="mr-2 inline-flex gap-1 items-center text-success-500 hover:opacity-80"><i
+                        class="material-icons-two-tone text-base bg-success-500">edit</i> Edit</a>
+                    <a href="#!" class="mr-2 inline-flex gap-1 items-center text-danger-500 hover:opacity-80"><i
+                        class="material-icons-two-tone text-base bg-danger-500">delete</i> Delete</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body py-3">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Add New Comments..." />
+                <button class="btn btn-light-secondary" type="button"><i class="fas fa-search"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- [ task-detail-right ] end -->
+      </div>
+      <!-- [ Main Content ] end -->
+    </div>
+  </section>
+  <!-- [ Main Content ] end -->
+  @@include('../layouts/footer-block.html') @@include('../layouts/footer-js.html')
+  <script>
+    // Set the date we're counting down to
+    var d = new Date();
+    d.setDate(d.getDate() + 10);
+    var countDownDate = new Date(d).getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function () {
+      // Get todays date and time
+      var now = new Date().getTime();
+
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      // Output the result in an element with id="demo"
+      document.getElementById('timer').innerHTML =
+        '<b>' + days + '</b>days : <b>' + hours + '</b>h : <b>' + minutes + '</b>m : <b>' + seconds + '</b>s ';
+
+      // If the count down is over, write some text
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById('timer').innerHTML = 'Times over';
+      }
+    }, 1000);
+  </script>
+  @@include('../layouts/customizer.html')
+</body>
+
+</html>

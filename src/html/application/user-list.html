@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en" @@bodySetup>
+
+<head>
+  @@include('../layouts/head-page-meta.html', {'title': 'User list'}) @@include('../layouts/head-css.html')
+</head>
+
+<body>
+  @@include('../layouts/layout-vertical.html')
+  <!-- [ Main Content ] start -->
+  <div class="pc-container">
+    <div class="pc-content">
+      @@include('../layouts/breadcrumb.html', {'breadcrumb-item': 'User', 'breadcrumb-item-active': 'User list'})
+      <!-- [ Main Content ] start -->
+      <div class="grid grid-cols-12 gap-6">
+        <div class="col-span-12">
+          <div class="card user-profile-list !bg-transparent !shadow-none">
+            <div class="card-body !p-0">
+              <div class="dt-responsive table-responsive">
+                <table id="user-list-table" class="table nowrap table-borderless border-separate border-spacing-y-2.5">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Position</th>
+                      <th>Office</th>
+                      <th>Age</th>
+                      <th>Start date</th>
+                      <th>Status</th>
+                    </tr>
+                  </thead>
+                  <tbody
+                    class="*:rounded-lg *:relative *:my-2.5 *:bg-theme-cardbg dark:*:bg-themedark-cardbg *:shadow-[0_1px_20px_0_rgba(69,90,100,0.08)]">
+                    <tr class="group hover:bg-primary-500 hover:text-white">
+                      <td>
+                        <div class="inline-block align-middle ltr:mr-5 rtl:ml-5">
+                          <img src="../assets/images/user/avatar-1.jpg" alt="user image"
+                            class="rounded-full align-top inline-block ltr:mr-4 rtl:ml-4" style="width: 40px" />
+                          <div class="inline-block">
+                            <h6 class="m-b-0 group-hover:text-white">Quinn Flynn</h6>
+                            <p class="m-b-0">Qf@domain.com</p>
+                          </div>
+                        </div>
+                      </td>
+                      <td>Support Lead</td>
+                      <td>Edinburgh</td>
+                      <td>61</td>
+                      <td>2011/04/25</td>
+                      <td>
+                        <span class="badge bg-light-success">Active</span>
+                        <div class="mail-buttons absolute transition-all duration-200 ltr:right-1.5 rtl:left-1.5 top-2/4 ltr:origin-right rtl:origin-left -translate-y-1/2 scale-75 p-1.5 :p-1 opacity-0 group-hover:opacity-100 group-hover:scale-100 group-hover:translate-x-0 rounded-lg shadow-[0px_8px_24px_rgba(27,46,94,0.12)] bg-theme-cardbg dark:bg-themedark-cardbg">
+                          <button type="button" class="btn btn-icon btn-success"><i
+                              class="feather icon-check-circle"></i></button>
+                          <button type="button" class="btn btn-icon btn-danger"><i
+                              class="feather icon-trash-2"></i></button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="group hover:bg-primary-500 hover:text-white">
+                      <td>
+                        <div class="inline-block align-middle ltr:mr-5 rtl:ml-5">
+                          <img src="../assets/images/user/avatar-2.jpg" alt="user image"
+                            class="rounded-full align-top inline-block ltr:mr-4 rtl:ml-4" style="width: 40px" />
+                          <div class="inline-block">
+                            <h6 class="m-b-0 group-hover:text-white">Garrett Winters</h6>
+                            <p class="m-b-0">gw@domain.com</p>
+                          </div>
+                        </div>
+                      </td>
+                      <td>Accountant</td>
+                      <td>Tokyo</td>
+                      <td>63</td>
+                      <td>2011/07/25</td>
+                      <td>
+                        <span class="badge bg-light-danger">Disabled</span>
+                        <div class="mail-buttons absolute transition-all duration-200 ltr:right-1.5 rtl:left-1.5 top-2/4 ltr:origin-right rtl:origin-left -translate-y-1/2 scale-75 p-1.5 :p-1 opacity-0 group-hover:opacity-100 group-hover:scale-100 group-hover:translate-x-0 rounded-lg shadow-[0px_8px_24px_rgba(27,46,94,0.12)] bg-theme-cardbg dark:bg-themedark-cardbg">
+                          <button type="button" class="btn btn-icon btn-success"><i
+                              class="feather icon-check-circle"></i></button>
+                          <button type="button" class="btn btn-icon btn-danger"><i
+                              class="feather icon-trash-2"></i></button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="group hover:bg-primary-500 hover:text-white">
+                      <td>
+                        <div class="inline-block align-middle ltr:mr-5 rtl:ml-5">
+                          <img src="../assets/images/user/avatar-3.jpg" alt="user image"
+                            class="rounded-full align-top inline-block ltr:mr-4 rtl:ml-4" style="width: 40px" />
+                          <div class="inline-block">
+                            <h6 class="m-b-0 group-hover:text-white">Ashton Cox</h6>
+                            <p class="m-b-0">ac@domain.com</p>
+                          </div>
+                        </div>
+                      </td>
+                      <td>Junior Technical Author</td>
+                      <td>San Francisco</td>
+                      <td>66</td>
+                      <td>2009/01/12</td>
+                      <td>
+                        <span class="badge bg-light-danger">Disabled</span>
+                        <div class="mail-buttons absolute transition-all duration-200 ltr:right-1.5 rtl:left-1.5 top-2/4 ltr:origin-right rtl:origin-left -translate-y-1/2 scale-75 p-1.5 :p-1 opacity-0 group-hover:opacity-100 group-hover:scale-100 group-hover:translate-x-0 rounded-lg shadow-[0px_8px_24px_rgba(27,46,94,0.12)] bg-theme-cardbg dark:bg-themedark-cardbg">
+                          <button type="button" class="btn btn-icon btn-success"><i
+                              class="feather icon-check-circle"></i></button>
+                          <button type="button" class="btn btn-icon btn-danger"><i
+                              class="feather icon-trash-2"></i></button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="group hover:bg-primary-500 hover:text-white">
+                      <td>
+                        <div class="inline-block align-middle ltr:mr-5 rtl:ml-5">
+                          <img src="../assets/images/user/avatar-4.jpg" alt="user image"
+                            class="rounded-full align-top inline-block ltr:mr-4 rtl:ml-4" style="width: 40px" />
+                          <div class="inline-block">
+                            <h6 class="m-b-0 group-hover:text-white">Cedric Kelly</h6>
+                            <p class="m-b-0">ck@domain.com</p>
+                          </div>
+                        </div>
+                      </td>
+                      <td>Senior Javascript Developer</td>
+                      <td>Edinburgh</td>
+                      <td>22</td>
+                      <td>2012/03/29</td>
+                      <td>
+                        <span class="badge bg-light-success">Active</span>
+                        <div class="mail-buttons absolute transition-all duration-200 ltr:right-1.5 rtl:left-1.5 top-2/4 ltr:origin-right rtl:origin-left -translate-y-1/2 scale-75 p-1.5 :p-1 opacity-0 group-hover:opacity-100 group-hover:scale-100 group-hover:translate-x-0 rounded-lg shadow-[0px_8px_24px_rgba(27,46,94,0.12)] bg-theme-cardbg dark:bg-themedark-cardbg">
+                          <button type="button" class="btn btn-icon btn-success"><i
+                              class="feather icon-check-circle"></i></button>
+                          <button type="button" class="btn btn-icon btn-danger"><i
+                              class="feather icon-trash-2"></i></button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="group hover:bg-primary-500 hover:text-white">
+                      <td>
+                        <div class="inline-block align-middle ltr:mr-5 rtl:ml-5">
+                          <img src="../assets/images/user/avatar-4.jpg" alt="user image"
+                            class="rounded-full align-top inline-block ltr:mr-4 rtl:ml-4" style="width: 40px" />
+                          <div class="inline-block">
+                            <h6 class="m-b-0 group-hover:text-white">Airi Satou</h6>
+                            <p class="m-b-0">as@domain.com</p>
+                          </div>
+                        </div>
+                      </td>
+                      <td>Accountant</td>
+                      <td>Tokyo</td>
+                      <td>33</td>
+                      <td>2008/11/28</td>
+                      <td>
+                        <span class="badge bg-light-success">Active</span>
+                        <div class="mail-buttons absolute transition-all duration-200 ltr:right-1.5 rtl:left-1.5 top-2/4 ltr:origin-right rtl:origin-left -translate-y-1/2 scale-75 p-1.5 :p-1 opacity-0 group-hover:opacity-100 group-hover:scale-100 group-hover:translate-x-0 rounded-lg shadow-[0px_8px_24px_rgba(27,46,94,0.12)] bg-theme-cardbg dark:bg-themedark-cardbg">
+                          <button type="button" class="btn btn-icon btn-success"><i
+                              class="feather icon-check-circle"></i></button>
+                          <button type="button" class="btn btn-icon btn-danger"><i
+                              class="feather icon-trash-2"></i></button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="group hover:bg-primary-500 hover:text-white">
+                      <td>
+                        <div class="inline-block align-middle ltr:mr-5 rtl:ml-5">
+                          <img src="../assets/images/user/avatar-5.jpg" alt="user image"
+                            class="rounded-full align-top inline-block ltr:mr-4 rtl:ml-4" style="width: 40px" />
+                          <div class="inline-block">
+                            <h6 class="m-b-0 group-hover:text-white">Brielle Williamson</h6>
+                            <p class="m-b-0">bw@domain.com</p>
+                          </div>
+                        </div>
+                      </td>
+                      <td>Integration Specialist</td>
+                      <td>New York</td>
+                      <td>61</td>
+                      <td>2012/12/02</td>
+                      <td>
+                        <span class="badge bg-light-danger">Disabled</span>
+                        <div class="mail-buttons absolute transition-all duration-200 ltr:right-1.5 rtl:left-1.5 top-2/4 ltr:origin-right rtl:origin-left -translate-y-1/2 scale-75 p-1.5 :p-1 opacity-0 group-hover:opacity-100 group-hover:scale-100 group-hover:translate-x-0 rounded-lg shadow-[0px_8px_24px_rgba(27,46,94,0.12)] bg-theme-cardbg dark:bg-themedark-cardbg">
+                          <button type="button" class="btn btn-icon btn-success"><i
+                              class="feather icon-check-circle"></i></button>
+                          <button type="button" class="btn btn-icon btn-danger"><i
+                              class="feather icon-trash-2"></i></button>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      <th>Name</th>
+                      <th>Position</th>
+                      <th>Office</th>
+                      <th>Age</th>
+                      <th>Start date</th>
+                      <th>Status</th>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- [ Main Content ] end -->
+    </div>
+  </div>
+  <!-- [ Main Content ] end -->
+  @@include('../layouts/footer-block.html') @@include('../layouts/footer-js.html')
+  @@include('../layouts/customizer.html')
+</body>
+
+</html>

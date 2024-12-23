@@ -1,0 +1,482 @@
+<!doctype html>
+<html lang="en" @@bodySetup>
+<!-- [Head] start -->
+
+<head>
+  @@include('../layouts/head-page-meta.html', {'title': 'Custom Icon Pack'}) @@include('../layouts/head-css.html')
+</head>
+<!-- [Head] end -->
+<!-- [Body] Start -->
+
+<body>
+  @@include('../layouts/layout-vertical.html')
+
+  <!-- [ Main Content ] start -->
+  <div class="pc-container">
+    <div class="pc-content">
+      @@include('../layouts/breadcrumb.html', {'breadcrumb-item': 'Icons', 'breadcrumb-item-active': 'Custom Icon'})
+
+      <!-- [ Main Content ] start -->
+      <div class="grid grid-cols-12 gap-6">
+        <!-- [ sample-page ] start -->
+        <div class="col-span-12">
+          <div class="card">
+            <div class="card-header">
+              <h5 class="mb-2">Custom Icon</h5>
+              <p>
+                Use svg icon with
+                <code class="text-danger-400 text-sm">&lt;use&gt;</code>
+                in you html code as given below
+              </p>
+              <code class="text-danger-400 text-sm">
+                  &lt;svg class="pc-icon"&gt; &lt;use xlink:href="#custom-&lt;&lt; Copied code &gt;&gt;"&gt;&lt;/use&gt; &lt;/svg&gt;
+                </code>
+            </div>
+            <div class="card-body text-center icon-body">
+              <div class="grid grid-cols-12 gap-6">
+                <div class="col-span-12 sm:col-span-6 sm:col-start-4">
+                  <input type="text" id="icon-search" class="form-control mb-4" placeholder="search . . " />
+                </div>
+              </div>
+              <div id="icon-wrapper"
+                class="i-main text-center *:*:w-[22px] *:*:h-[22px] *:relative *:cursor-pointer *:inline-flex *:items-center *:justify-center *:w-[70px] *:h-[70px] *:m-[5px] *:rounded-lg *:border *:border-theme-border dark:*:border-themedark-border">
+                <div class="i-block" data-clipboard-text="custom-home" data-filter="custom-home">
+                  <svg class="pc-icon">
+                    <use xlink:href="#custom-home"></use>
+                  </svg>
+                </div>
+                <div class="i-block" data-clipboard-text="custom-document" data-filter="custom-document">
+                  <svg class="pc-icon">
+                    <use xlink:href="#custom-document"></use>
+                  </svg>
+                </div>
+                <div class="i-block" data-clipboard-text="custom-user" data-filter="custom-user">
+                  <svg class="pc-icon">
+                    <use xlink:href="#custom-user"></use>
+                  </svg>
+                </div>
+                <div class="i-block" data-clipboard-text="custom-box-1" data-filter="custom-box-1">
+                  <svg class="pc-icon">
+                    <use xlink:href="#custom-box-1"></use>
+                  </svg>
+                </div>
+                <div class="i-block" data-clipboard-text="custom-sort-outline" data-filter="custom-sort-outline">
+                  <svg class="pc-icon">
+                    <use xlink:href="#custom-sort-outline"></use>
+                  </svg>
+                </div>
+                <div class="i-block" data-clipboard-text="custom-level" data-filter="custom-level">
+                  <svg class="pc-icon">
+                    <use xlink:href="#custom-level"></use>
+                  </svg>
+                </div>
+                <div class="i-block" data-clipboard-text="custom-notification" data-filter="custom-notification">
+                  <svg class="pc-icon">
+                    <use xlink:href="#custom-notification"></use>
+                  </svg>
+                </div>
+                <div class="i-block" data-clipboard-text="custom-setting-2" data-filter="custom-setting-2">
+                  <svg class="pc-icon">
+                    <use xlink:href="#custom-setting-2"></use>
+                  </svg>
+                </div>
+                <div class="i-block" data-clipboard-text="custom-search-normal-1" data-filter="custom-search-normal-1">
+                  <svg class="pc-icon">
+                    <use xlink:href="#custom-search-normal-1"></use>
+                  </svg>
+                </div>
+                <div class="i-block" data-clipboard-text="custom-layer" data-filter="custom-layer">
+                  <svg class="pc-icon">
+                    <use xlink:href="#custom-layer"></use>
+                  </svg>
+                </div>
+                <div class="i-block" data-clipboard-text="custom-sms" data-filter="custom-sms">
+                  <svg class="pc-icon">
+                    <use xlink:href="#custom-sms"></use>
+                  </svg>
+                </div>
+                <div class="i-block" data-clipboard-text="custom-document-text" data-filter="custom-document-text">
+                  <svg class="pc-icon">
+                    <use xlink:href="#custom-document-text"></use>
+                  </svg>
+                </div>
+                <div class="i-block" data-clipboard-text="custom-user-bold" data-filter="custom-user-bold">
+                  <svg class="pc-icon">
+                    <use xlink:href="#custom-user-bold"></use>
+                  </svg>
+                </div>
+                <div class="i-block" data-clipboard-text="custom-security-safe" data-filter="custom-security-safe">
+                  <svg class="pc-icon">
+                    <use xlink:href="#custom-security-safe"></use>
+                  </svg>
+                </div>
+                <div class="i-block" data-clipboard-text="custom-notification-outline"
+                  data-filter="custom-notification-outline">
+                  <svg class="pc-icon">
+                    <use xlink:href="#custom-notification-outline"></use>
+                  </svg>
+                </div>
+                <div class="i-block" data-clipboard-text="custom-setting-outline" data-filter="custom-setting-outline">
+                  <svg class="pc-icon">
+                    <use xlink:href="#custom-setting-outline"></use>
+                  </svg>
+                </div>
+                <div class="i-block" data-clipboard-text="custom-share-bold" data-filter="custom-share-bold">
+                  <svg class="pc-icon">
+                    <use xlink:href="#custom-share-bold"></use>
+                  </svg>
+                </div>
+                <div class="i-block" data-clipboard-text="custom-lock-outline" data-filter="custom-lock-outline">
+                  <svg class="pc-icon">
+                    <use xlink:href="#custom-lock-outline"></use>
+                  </svg>
+                </div>
+                <div class="i-block" data-clipboard-text="custom-profile-2user-outline"
+                  data-filter="custom-profile-2user-outline">
+                  <svg class="pc-icon">
+                    <use xlink:href="#custom-profile-2user-outline"></use>
+                  </svg>
+                </div>
+                <div class="i-block" data-clipboard-text="custom-add-outline" data-filter="custom-add-outline">
+                  <svg class="pc-icon">
+                    <use xlink:href="#custom-add-outline"></use>
+                  </svg>
+                </div>
+                <div class="i-block" data-clipboard-text="custom-logout-1-outline"
+                  data-filter="custom-logout-1-outline">
+                  <svg class="pc-icon">
+                    <use xlink:href="#custom-logout-1-outline"></use>
+                  </svg>
+                </div>
+                <div class="i-block" data-clipboard-text="custom-star-bold" data-filter="custom-star-bold">
+                  <svg class="pc-icon">
+                    <use xlink:href="#custom-star-bold"></use>
+                  </svg>
+                </div>
+                <div class="i-block" data-clipboard-text="custom-airplane" data-filter="custom-airplane">
+                  <svg class="pc-icon">
+                    <use xlink:href="#custom-airplane"></use>
+                  </svg>
+                </div>
+                <div class="i-block" data-clipboard-text="custom-mouse-circle" data-filter="custom-mouse-circle">
+                  <svg class="pc-icon">
+                    <use xlink:href="#custom-mouse-circle"></use>
+                  </svg>
+                </div>
+                <div class="i-block" data-clipboard-text="custom-refresh-2" data-filter="custom-refresh-2">
+                  <svg class="pc-icon">
+                    <use xlink:href="#custom-refresh-2"></use>
+                  </svg>
+                </div>
+                <div class="i-block" data-clipboard-text="custom-simcard-2" data-filter="custom-simcard-2">
+                  <svg class="pc-icon">
+                    <use xlink:href="#custom-simcard-2"></use>
+                  </svg>
+                </div>
+                <div class="i-block" data-clipboard-text="custom-facebook" data-filter="custom-facebook">
+                  <svg class="pc-icon">
+                    <use xlink:href="#custom-facebook"></use>
+                  </svg>
+                </div>
+                <div class="i-block" data-clipboard-text="custom-google" data-filter="custom-google">
+                  <svg class="pc-icon">
+                    <use xlink:href="#custom-google"></use>
+                  </svg>
+                </div>
+                <div class="i-block" data-clipboard-text="custom-github" data-filter="custom-github">
+                  <svg class="pc-icon">
+                    <use xlink:href="#custom-github"></use>
+                  </svg>
+                </div>
+                <div class="i-block" data-clipboard-text="custom-sun-1" data-filter="custom-sun-1">
+                  <svg class="pc-icon">
+                    <use xlink:href="#custom-sun-1"></use>
+                  </svg>
+                </div>
+                <div class="i-block" data-clipboard-text="custom-moon" data-filter="custom-moon">
+                  <svg class="pc-icon">
+                    <use xlink:href="#custom-moon"></use>
+                  </svg>
+                </div>
+                <div class="i-block" data-clipboard-text="custom-mask" data-filter="custom-mask">
+                  <svg class="pc-icon">
+                    <use xlink:href="#custom-mask"></use>
+                  </svg>
+                </div>
+                <div class="i-block" data-clipboard-text="custom-mask-1-outline" data-filter="custom-mask-1-outline">
+                  <svg class="pc-icon">
+                    <use xlink:href="#custom-mask-1-outline"></use>
+                  </svg>
+                </div>
+                <div class="i-block" data-clipboard-text="custom-bag" data-filter="custom-bag">
+                  <svg class="pc-icon">
+                    <use xlink:href="#custom-bag"></use>
+                  </svg>
+                </div>
+                <div class="i-block" data-clipboard-text="custom-note-1" data-filter="custom-note-1">
+                  <svg class="pc-icon">
+                    <use xlink:href="#custom-note-1"></use>
+                  </svg>
+                </div>
+                <div class="i-block" data-clipboard-text="custom-video-play" data-filter="custom-video-play">
+                  <svg class="pc-icon">
+                    <use xlink:href="#custom-video-play"></use>
+                  </svg>
+                </div>
+                <div class="i-block" data-clipboard-text="custom-image" data-filter="custom-image">
+                  <svg class="pc-icon">
+                    <use xlink:href="#custom-image"></use>
+                  </svg>
+                </div>
+                <div class="i-block" data-clipboard-text="custom-folder-open" data-filter="custom-folder-open">
+                  <svg class="pc-icon">
+                    <use xlink:href="#custom-folder-open"></use>
+                  </svg>
+                </div>
+                <div class="i-block" data-clipboard-text="custom-user-add" data-filter="custom-user-add">
+                  <svg class="pc-icon">
+                    <use xlink:href="#custom-user-add"></use>
+                  </svg>
+                </div>
+                <div class="i-block" data-clipboard-text="custom-status-up" data-filter="custom-status-up">
+                  <svg class="pc-icon">
+                    <use xlink:href="#custom-status-up"></use>
+                  </svg>
+                </div>
+                <div class="i-block" data-clipboard-text="custom-notification-status"
+                  data-filter="custom-notification-status">
+                  <svg class="pc-icon">
+                    <use xlink:href="#custom-notification-status"></use>
+                  </svg>
+                </div>
+                <div class="i-block" data-clipboard-text="custom-crop" data-filter="custom-crop">
+                  <svg class="pc-icon">
+                    <use xlink:href="#custom-crop"></use>
+                  </svg>
+                </div>
+                <div class="i-block" data-clipboard-text="custom-keyboard" data-filter="custom-keyboard">
+                  <svg class="pc-icon">
+                    <use xlink:href="#custom-keyboard"></use>
+                  </svg>
+                </div>
+                <div class="i-block" data-clipboard-text="custom-graph" data-filter="custom-graph">
+                  <svg class="pc-icon">
+                    <use xlink:href="#custom-graph"></use>
+                  </svg>
+                </div>
+                <div class="i-block" data-clipboard-text="custom-kanban" data-filter="custom-kanban">
+                  <svg class="pc-icon">
+                    <use xlink:href="#custom-kanban"></use>
+                  </svg>
+                </div>
+                <div class="i-block" data-clipboard-text="custom-link" data-filter="custom-link">
+                  <svg class="pc-icon">
+                    <use xlink:href="#custom-link"></use>
+                  </svg>
+                </div>
+                <div class="i-block" data-clipboard-text="custom-login" data-filter="custom-login">
+                  <svg class="pc-icon">
+                    <use xlink:href="#custom-login"></use>
+                  </svg>
+                </div>
+                <div class="i-block" data-clipboard-text="custom-logout" data-filter="custom-logout">
+                  <svg class="pc-icon">
+                    <use xlink:href="#custom-logout"></use>
+                  </svg>
+                </div>
+                <div class="i-block" data-clipboard-text="custom-search-normal" data-filter="custom-search-normal">
+                  <svg class="pc-icon">
+                    <use xlink:href="#custom-search-normal"></use>
+                  </svg>
+                </div>
+                <div class="i-block" data-clipboard-text="custom-shapes" data-filter="custom-shapes">
+                  <svg class="pc-icon">
+                    <use xlink:href="#custom-shapes"></use>
+                  </svg>
+                </div>
+                <div class="i-block" data-clipboard-text="custom-calendar-1" data-filter="custom-calendar-1">
+                  <svg class="pc-icon">
+                    <use xlink:href="#custom-calendar-1"></use>
+                  </svg>
+                </div>
+                <div class="i-block" data-clipboard-text="custom-message-2" data-filter="custom-message-2">
+                  <svg class="pc-icon">
+                    <use xlink:href="#custom-message-2"></use>
+                  </svg>
+                </div>
+                <div class="i-block" data-clipboard-text="custom-shopping-bag" data-filter="custom-shopping-bag">
+                  <svg class="pc-icon">
+                    <use xlink:href="#custom-shopping-bag"></use>
+                  </svg>
+                </div>
+                <div class="i-block" data-clipboard-text="custom-document-filter" data-filter="custom-document-filter">
+                  <svg class="pc-icon">
+                    <use xlink:href="#custom-document-filter"></use>
+                  </svg>
+                </div>
+                <div class="i-block" data-clipboard-text="custom-direct-inbox" data-filter="custom-direct-inbox">
+                  <svg class="pc-icon">
+                    <use xlink:href="#custom-direct-inbox"></use>
+                  </svg>
+                </div>
+                <div class="i-block" data-clipboard-text="custom-user-square" data-filter="custom-user-square">
+                  <svg class="pc-icon">
+                    <use xlink:href="#custom-user-square"></use>
+                  </svg>
+                </div>
+                <div class="i-block" data-clipboard-text="custom-shield" data-filter="custom-shield">
+                  <svg class="pc-icon">
+                    <use xlink:href="#custom-shield"></use>
+                  </svg>
+                </div>
+                <div class="i-block" data-clipboard-text="custom-call-calling" data-filter="custom-call-calling">
+                  <svg class="pc-icon">
+                    <use xlink:href="#custom-call-calling"></use>
+                  </svg>
+                </div>
+                <div class="i-block" data-clipboard-text="custom-dollar-square" data-filter="custom-dollar-square">
+                  <svg class="pc-icon">
+                    <use xlink:href="#custom-dollar-square"></use>
+                  </svg>
+                </div>
+                <div class="i-block" data-clipboard-text="custom-flag" data-filter="custom-flag">
+                  <svg class="pc-icon">
+                    <use xlink:href="#custom-flag"></use>
+                  </svg>
+                </div>
+                <div class="i-block" data-clipboard-text="custom-data" data-filter="custom-data">
+                  <svg class="pc-icon">
+                    <use xlink:href="#custom-data"></use>
+                  </svg>
+                </div>
+                <div class="i-block" data-clipboard-text="custom-presentation-chart"
+                  data-filter="custom-presentation-chart">
+                  <svg class="pc-icon">
+                    <use xlink:href="#custom-presentation-chart"></use>
+                  </svg>
+                </div>
+                <div class="i-block" data-clipboard-text="custom-cpu-charge" data-filter="custom-cpu-charge">
+                  <svg class="pc-icon">
+                    <use xlink:href="#custom-cpu-charge"></use>
+                  </svg>
+                </div>
+                <div class="i-block" data-clipboard-text="custom-text-block" data-filter="custom-text-block">
+                  <svg class="pc-icon">
+                    <use xlink:href="#custom-text-block"></use>
+                  </svg>
+                </div>
+                <div class="i-block" data-clipboard-text="custom-row-vertical" data-filter="custom-row-vertical">
+                  <svg class="pc-icon">
+                    <use xlink:href="#custom-row-vertical"></use>
+                  </svg>
+                </div>
+                <div class="i-block" data-clipboard-text="custom-document-upload" data-filter="custom-document-upload">
+                  <svg class="pc-icon">
+                    <use xlink:href="#custom-document-upload"></use>
+                  </svg>
+                </div>
+                <div class="i-block" data-clipboard-text="custom-password-check" data-filter="custom-password-check">
+                  <svg class="pc-icon">
+                    <use xlink:href="#custom-password-check"></use>
+                  </svg>
+                </div>
+                <div class="i-block" data-clipboard-text="custom-24-support" data-filter="custom-24-support">
+                  <svg class="pc-icon">
+                    <use xlink:href="#custom-24-support"></use>
+                  </svg>
+                </div>
+                <div class="i-block" data-clipboard-text="custom-fatrows" data-filter="custom-fatrows">
+                  <svg class="pc-icon">
+                    <use xlink:href="#custom-fatrows"></use>
+                  </svg>
+                </div>
+                <div class="i-block" data-clipboard-text="custom-element-plus" data-filter="custom-element-plus">
+                  <svg class="pc-icon">
+                    <use xlink:href="#custom-element-plus"></use>
+                  </svg>
+                </div>
+                <div class="i-block" data-clipboard-text="custom-add-item" data-filter="custom-add-item">
+                  <svg class="pc-icon">
+                    <use xlink:href="#custom-add-item"></use>
+                  </svg>
+                </div>
+                <div class="i-block" data-clipboard-text="custom-clipboard" data-filter="custom-clipboard">
+                  <svg class="pc-icon">
+                    <use xlink:href="#custom-clipboard"></use>
+                  </svg>
+                </div>
+                <div class="i-block" data-clipboard-text="custom-story" data-filter="custom-story">
+                  <svg class="pc-icon">
+                    <use xlink:href="#custom-story"></use>
+                  </svg>
+                </div>
+                <div class="i-block" data-clipboard-text="custom-text-align-justify-center"
+                  data-filter="custom-text-align-justify-center">
+                  <svg class="pc-icon">
+                    <use xlink:href="#custom-text-align-justify-center"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- [ sample-page ] end -->
+      </div>
+      <!-- [ Main Content ] end -->
+    </div>
+  </div>
+  <!-- [ Main Content ] end -->
+  @@include('../layouts/footer-block.html') @@include('../layouts/footer-js.html')
+  <!-- [Page Specific JS] start -->
+  <script src="../assets/js/plugins/clipboard.min.js"></script>
+  <script>
+    window.addEventListener('load', (event) => {
+      var i_copy = new ClipboardJS('.i-block');
+      i_copy.on('success', function (e) {
+        var targetElement = e.trigger;
+        let icon_badge = document.createElement('span');
+        icon_badge.setAttribute('class', 'ic-badge badge bg-success-500 text-white text-sm absolute bottom-1 left-2/4 -translate-x-2/4');
+        icon_badge.innerHTML = 'copied';
+        targetElement.append(icon_badge);
+        setTimeout(function () {
+          targetElement.children[1].remove();
+        }, 3000);
+      });
+
+      i_copy.on('error', function (e) {
+        var targetElement = e.trigger;
+        let icon_badge = document.createElement('span');
+        icon_badge.setAttribute('class', 'ic-badge badge bg-danger-500 text-white text-sm absolute bottom-1 left-2/4 -translate-x-2/4');
+        icon_badge.innerHTML = 'Error';
+        targetElement.append(icon_badge);
+        setTimeout(function () {
+          targetElement.children[1].remove();
+        }, 3000);
+      });
+      document.querySelector('#icon-search').addEventListener('keyup', function () {
+        var g = document.querySelector('#icon-search').value.toLowerCase();
+        var tc = document.querySelectorAll('.i-main .i-block');
+        for (var i = 0; i < tc.length; i++) {
+          var c = tc[i];
+          var t = c.getAttribute('data-filter');
+          if (t) {
+            var s = t.toLowerCase();
+          }
+          if (s) {
+            var n = s.indexOf(g);
+            if (n !== -1) {
+              c.style.display = 'inline-flex';
+            } else {
+              c.style.display = 'none';
+            }
+          }
+        }
+      });
+    });
+  </script>
+  <!-- [Page Specific JS] end -->
+  @@include('../layouts/customizer.html')
+</body>
+<!-- [Body] end -->
+
+</html>

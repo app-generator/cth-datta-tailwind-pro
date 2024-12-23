@@ -1,0 +1,737 @@
+<!doctype html>
+<html lang="en" @@bodySetup>
+<!-- [Head] start -->
+
+<head>
+  @@include('../layouts/head-page-meta.html', {'title': 'Chart Widget'})
+  <!-- map-vector css -->
+  <link rel="stylesheet" href="../assets/css/plugins/jsvectormap.min.css" />
+  @@include('../layouts/head-css.html')
+</head>
+<!-- [Head] end -->
+<!-- [Body] Start -->
+
+<body>
+  @@include('../layouts/layout-vertical.html')
+
+  <!-- [ Main Content ] start -->
+  <div class="pc-container">
+    <div class="pc-content">
+      @@include('../layouts/breadcrumb.html', {'breadcrumb-item': 'Widget', 'breadcrumb-item-active': 'Chart'})
+      <div class="grid grid-cols-12 gap-x-6">
+        <div class="col-span-12 xl:col-span-4">
+          <div class="card card-command">
+            <div class="card-header !border-b-0">
+              <h5><i class="card-icon far fa-comment text-[16px] ltr:mr-1.5 rtl:ml-1.5"></i>command</h5>
+            </div>
+            <div id="command-card-chart1"></div>
+            <div class="card-body">
+              <div class="comment-bar">
+                <h6 class="uppercase text-muted">COMMENTERS<span class="uppercase ltr:float-right rtl:float-left">view
+                    all</span> </h6>
+                <div class="flex items-center justify-between mt-4">
+                  <h6 class="mb-0">
+                    <img class="rounded-full mx-2 inline-block max-w-10" style="width: 40px" src="../assets/images/user/avatar-2.jpg" alt="activity-user uppercase" /><span
+                      class="inline-block mt-2.5">Ida Jorgensen</span></h6>
+                  <span>3 comments</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-12 xl:col-span-4 md:col-span-6">
+          <div class="card">
+            <div class="card-header">
+              <h5>Sales</h5>
+            </div>
+            <div class="card-body">
+              <div id="chart-sale" class="chart-sale"> </div>
+              <div class="text-center mt-5">
+                <h3 class="font-light">84</h3>
+                <span class="uppercase">12 Today</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-12 xl:col-span-4 md:col-span-6">
+          <div class="card">
+            <div class="card-header">
+              <h5>Statistics</h5>
+            </div>
+            <div class="card-body">
+              <div id="Stack-bar" class="Stackchart"> </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-12 xl:col-span-8">
+          <div class="card">
+            <div class="card-header">
+              <h5>Statistics</h5>
+            </div>
+            <div class="card-body">
+              <div id="line-area2" class="lineAreaDashboard"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-12 xl:col-span-4">
+          <div class="card bg-theme-bg-1 overflow-hidden">
+            <div class="card-header !border-b-0">
+              <h5 class="text-white">Statistics</h5>
+            </div>
+            <div class="card-body pb-0">
+              <div class="p-2 text-center">
+                <a class="text-white uppercase f-w-400">Month</a>
+                <a class="btn rounded-full bg-white uppercase mx-3 px-4 font-normal">Week</a>
+                <a class="text-white uppercase f-w-400">Day</a>
+              </div>
+              <div class="my-3 text-center text-white">
+                <a href="#" class="text-white block mb-1">$ 78.89 <span class="feather icon-arrow-up"></span></a>
+                <span>Week2 +15.44</span>
+              </div>
+              <div id="Chartline" class="lineChart ChartShadow"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-12 xl:col-span-4">
+          <div class="card">
+            <div class="card-header">
+              <h5>News Statistics</h5>
+            </div>
+            <div class="card-body pl-0 pr-0 pb-2">
+              <div id="bar-chart" class="ChartShadow BarChart"></div>
+            </div>
+            <hr class="my-0 border-0 border-t border-theme-border dark:border-themedark-border" />
+            <div class="card-body">
+              <div class="grid grid-cols-12 gap-x-0">
+                <div class="col-span-3 text-center">
+                  <span class="bg-theme-bg-1 block rounded-full mx-auto mb-2" style="width: 10px; height: 10px"></span>
+                  <h6 class="mb-2">53</h6>
+                  <h6 class="mt-2 mb-0">Sport</h6>
+                </div>
+                <div class="col-span-3 text-center">
+                  <span class="bg-theme-bg-2 block rounded-full mx-auto mb-2" style="width: 10px; height: 10px"></span>
+                  <h6 class="mb-2">13</h6>
+                  <h6 class="mt-2 mb-0">Music</h6>
+                </div>
+                <div class="col-span-3 text-center">
+                  <span class="bg-primary block rounded-full mx-auto mb-2" style="width: 10px; height: 10px"></span>
+                  <h6 class="mb-2">30</h6>
+                  <h6 class="mt-2 mb-0">Travel</h6>
+                </div>
+                <div class="col-span-3 text-center">
+                  <span class="bg-danger block rounded-full mx-auto mb-2" style="width: 10px; height: 10px"></span>
+                  <h6 class="mb-2">4</h6>
+                  <h6 class="mt-2 mb-0">News</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-12 xl:col-span-8">
+          <div class="card">
+            <div class="card-header">
+              <h5>Statistics</h5>
+            </div>
+            <div class="card-body">
+              <div id="line-chart1" class="ChartShadow"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-12 xl:col-span-8">
+          <div class="card">
+            <div class="card-header">
+              <h5>Statistics</h5>
+            </div>
+            <div class="card-body">
+              <div id="line-chart2" class="lineChart2 ChartShadow"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-12 xl:col-span-4 md:col-span-6">
+          <div class="card bg-primary-500">
+            <div class="card-header !border-b-0">
+              <h5 class="text-white">Earnings</h5>
+            </div>
+            <div class="card-body" style="padding: 0 25px">
+              <div class="earning-text mb-4">
+                <h3 class="mb-3 text-white font-light">$ 4295.36 <i class="feather icon-arrow-up teal accent-3"></i>
+                </h3>
+                <span class="uppercase text-white block">Total Earnings</span>
+              </div>
+              <div id="Widget-line-chart" class="WidgetlineChart2 ChartShadow"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-12 xl:col-span-4 md:col-span-6">
+          <div class="card">
+            <div class="card-header">
+              <h5>Earnings</h5>
+              <span class="block pt-2">Mon 15 - Sun 21</span>
+            </div>
+            <div class="card-body">
+              <div class="earning-price mb-4">
+                <h3 class="m-0 font-light">$ 894.39</h3>
+              </div>
+              <div id="Widget-line-chart1" class="WidgetlineChart"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-12 xl:col-span-4 md:col-span-6">
+          <div class="card">
+            <div class="card-header">
+              <h5>Reply</h5>
+              <span class="block pt-2">Time for first reply</span>
+            </div>
+            <div class="card-body">
+              <div class="reply-price">
+                <h3 class="font-light">2.43 h</h3>
+                <span class="uppercase">average time for first reply</span>
+              </div>
+              <div id="bar-chart1" class="ChartShadow BarChart barChart1"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-12 xl:col-span-4 md:col-span-6">
+          <div class="card">
+            <div class="card-header">
+              <h5>Statistics</h5>
+            </div>
+            <div class="card-body">
+              <div id="chart-percent" class="chart-percent mb-4"></div>
+              <div class="grid grid-cols-12 gap-2 mb-3">
+                <div class="col-span-6">
+                  <span class="mb-1 text-muted block">23%</span>
+                  <div class="w-full bg-theme-bodybg rounded-lg h-1.5 mb-6 dark:bg-themedark-bodybg">
+                    <div class="bg-success-500 h-full rounded-lg shadow-[0_10px_20px_0_rgba(0,0,0,0.3)]"
+                      style="width: 23%"></div>
+                  </div>
+                </div>
+                <div class="col-span-6">
+                  <span class="mb-1 text-muted block">14%</span>
+                  <div class="w-full bg-theme-bodybg rounded-lg h-1.5 mb-6 dark:bg-themedark-bodybg">
+                    <div class="bg-warning-500 h-full rounded-lg shadow-[0_10px_20px_0_rgba(0,0,0,0.3)]"
+                      style="width: 23%"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid grid-cols-12 gap-2 mb-2">
+                <div class="col-span-6">
+                  <span class="mb-1 text-muted block">35%</span>
+                  <div class="w-full bg-theme-bodybg rounded-lg h-1.5 mb-6 dark:bg-themedark-bodybg">
+                    <div class="bg-primary-500 h-full rounded-lg shadow-[0_10px_20px_0_rgba(0,0,0,0.3)]"
+                      style="width: 35%"></div>
+                  </div>
+                </div>
+                <div class="col-span-6">
+                  <span class="mb-1 text-muted block">28%</span>
+                  <div class="w-full bg-theme-bodybg rounded-lg h-1.5 mb-6 dark:bg-themedark-bodybg">
+                    <div class="bg-danger-500 h-full rounded-lg shadow-[0_10px_20px_0_rgba(0,0,0,0.3)]"
+                      style="width: 28%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-12 xl:col-span-8">
+          <div class="card">
+            <div class="card-header">
+              <h5>Statistics</h5>
+            </div>
+            <div class="card-body pb-0">
+              <div id="bar-chart2" class="bar-chart2"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-12 xl:col-span-4 md:col-span-6">
+          <div class="card">
+            <div class="card-header">
+              <h5>Devices</h5>
+            </div>
+            <div class="card-body">
+              <div id="device-chart" class="device-chart"></div>
+              <div>
+                <hr class="my-4 border-0 border-t border-theme-border dark:border-themedark-border" />
+                <div>
+                  <span class="inline-flex items-center gap-1"><i
+                      class="feather icon-circle text-success-500"></i><span>Desktop</span></span>
+                  <span class="ltr:float-right rtl:float-left">41.6 %</span>
+                </div>
+                <hr class="my-4 border-0 border-t border-theme-border dark:border-themedark-border" />
+                <div>
+                  <span class="inline-flex items-center gap-1"><i
+                      class="feather icon-circle text-primary-500"></i><span>Mobile</span></span>
+                  <span class="ltr:float-right rtl:float-left">32.5 %</span>
+                </div>
+                <hr class="my-4 border-0 border-t border-theme-border dark:border-themedark-border" />
+                <div>
+                  <span class="inline-flex items-center gap-1"><i
+                      class="feather icon-circle text-info-500"></i><span>Tablet</span></span>
+                  <span class="ltr:float-right rtl:float-left">25.9 %</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-12 xl:col-span-4 md:col-span-6">
+          <div class="card">
+            <div class="card-header">
+              <h5><img class="rounded-full inline-block ltr:mr-2.5 rtl:ml-2.5" style="width: 40px"
+                  src="../assets/images/user/avatar-3.jpg" alt="activity-user" />
+                Jonas Nielsen
+              </h5>
+            </div>
+            <div class="card-body">
+              <h3 class="font-light">$ 359,234</h3>
+              <span class="block pt-1 pb-3">TOTAL SAVINGS</span>
+              <div id="chart-percent1" class="chart-percent1"></div>
+              <div class="client-name">
+                <div>
+                  <div class="pt-2 pb-2">
+                    <span class="inline-flex items-center gap-1"><i
+                        class="feather icon-circle text-success"></i><span>Main wallet</span></span>
+                    <span class="ltr:float-right rtl:float-left text-muted">$194.42</span>
+                  </div>
+                  <div class="pt-2 pb-2">
+                    <span class="inline-flex items-center gap-1"><i
+                        class="feather icon-circle text-primary"></i><span>Travel</span></span>
+                    <span class="ltr:float-right rtl:float-left text-muted">$86.48</span>
+                  </div>
+                  <div class="pt-2">
+                    <span class="inline-flex items-center gap-1"><i class="feather icon-circle text-info"></i><span>Food
+                        & Drink</span></span>
+                    <span class="ltr:float-right rtl:float-left text-muted">$23.27</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-12 xl:col-span-8">
+          <div class="card">
+            <div class="card-header">
+              <h5>Yearly Summary</h5>
+            </div>
+            <div class="card-body">
+              <div class="grid grid-cols-12 gap-4 mb-3">
+                <div class="col-span-6 md:col-span-4 text-center">
+                  <h3 class="font-light mb-2">$ 2356.4</h3>
+                  <span>Invoiced</span>
+                </div>
+                <div class="col-span-6 md:col-span-4 text-center">
+                  <h3 class="font-light mb-2">$ 1935.6</h3>
+                  <span>Profit</span>
+                </div>
+                <div class="col-span-12 md:col-span-4 text-center">
+                  <h3 class="font-light mb-2">$ 468.9</h3>
+                  <span>Expenses</span>
+                </div>
+              </div>
+              <div id="bar-chart3" class="bar-chart3"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-12 xl:col-span-8">
+          <div class="card">
+            <div class="card-header">
+              <h5>Last 3 Days</h5>
+            </div>
+            <div class="card-body">
+              <div class="grid grid-cols-12 gap-4 mb-3">
+                <div class="col-span-6 md:col-span-4 text-center">
+                  <h3 class="font-light">$ 32,42</h3>
+                  <span class="text-end">Mon <strong>+5,93</strong></span>
+                </div>
+                <div class="col-span-6 md:col-span-4 text-center">
+                  <h3 class="font-light">$ 28,36</h3>
+                  <span class="text-end">Tue <strong>-4,24</strong></span>
+                </div>
+                <div class="col-span-12 md:col-span-4 text-center">
+                  <h3 class="font-light">$ 59,48</h3>
+                  <span class="text-end">Wed <strong>+12,25</strong></span>
+                </div>
+              </div>
+            </div>
+            <div id="processed-bar"></div>
+          </div>
+        </div>
+        <div class="col-span-12 xl:col-span-4 md:col-span-6">
+          <div class="card">
+            <div class="card-header">
+              <h5>Statistics</h5>
+            </div>
+            <div class="card-body">
+              <div id="chart-statistics" class="chart-statistics"> </div>
+              <div>
+                <div class="pt-2 pb-2">
+                  <span class="inline-flex items-center gap-1"><i
+                      class="feather icon-circle text-success"></i><span>page Views</span></span>
+                  <span class="ltr:float-right rtl:float-left">15.5 %</span>
+                </div>
+                <div class="pt-2 pb-2">
+                  <span class="inline-flex items-center gap-1"><i
+                      class="feather icon-circle text-primary"></i><span>page Clicks</span></span>
+                  <span class="ltr:float-right rtl:float-left">23.5 %</span>
+                </div>
+                <div class="pt-2">
+                  <span class="inline-flex items-center gap-1"><i class="feather icon-circle text-info"></i><span>page
+                      Likes</span></span>
+                  <span class="ltr:float-right rtl:float-left">36.3 %</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-12 xl:col-span-4 md:col-span-6">
+          <div class="card">
+            <div class="card-header">
+              <h5>Activity</h5>
+            </div>
+            <div class="card-body">
+              <div id="chart-activity" class="chart-activity"></div>
+              <div class="grid grid-cols-12 gap-x-6 text-center">
+                <div class="col-span-6">
+                  <h6 class="uppercase block mb-2">max</h6>
+                  <h3 class="font-light mb-2">9.376</h3>
+                  <h6>Steps</h6>
+                </div>
+                <div class="col-span-6">
+                  <h6 class="uppercase block mb-2">min</h6>
+                  <h3 class="font-light mb-2">237</h3>
+                  <h6>Steps</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-12 xl:col-span-4">
+          <div class="card">
+            <div class="card-header">
+              <h5>Statistics</h5>
+            </div>
+            <div class="card-body">
+              <h3 class="font-light">$ 894.39</h3>
+            </div>
+            <div id="Earnings-chart"></div>
+          </div>
+        </div>
+        <div class="col-span-12 xl:col-span-4 md:col-span-6">
+          <div class="card">
+            <div class="card-header">
+              <h5>Statistics</h5>
+              <span class="block pt-2">Last 6 Months</span>
+            </div>
+            <div class="card-body">
+              <div id="sales-render"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-12 xl:col-span-4 md:col-span-6">
+          <div class="card">
+            <div class="card-header">
+              <h5>Web Statistics</h5>
+            </div>
+            <div class="card-body">
+              <div id="webchart"></div>
+              <div>
+                <hr class="my-4 border-0 border-t border-theme-border dark:border-themedark-border" />
+                <div>
+                  <span class="me-3">Sales</span>
+                  <span class="ltr:float-right rtl:float-left">563 / 735</span>
+                </div>
+                <hr class="my-4 border-0 border-t border-theme-border dark:border-themedark-border" />
+                <div>
+                  <span class="me-3">Clicks</span>
+                  <span class="ltr:float-right rtl:float-left">76898 / 95442</span>
+                </div>
+                <hr class="my-4 border-0 border-t border-theme-border dark:border-themedark-border" />
+                <div>
+                  <span class="me-3">Views</span>
+                  <span class="ltr:float-right rtl:float-left">3682 / 4235</span>
+                </div>
+                <hr class="my-4 border-0 border-t border-theme-border dark:border-themedark-border" />
+                <div>
+                  <span class="me-3">Visits</span>
+                  <span class="ltr:float-right rtl:float-left">2348 / 3749</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-12 xl:col-span-8">
+          <div class="card">
+            <div class="card-header">
+              <h5>Statistics</h5>
+            </div>
+            <div class="card-body">
+              <div id="Statistics-line" class="ChartShadow"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-12 xl:col-span-4 md:col-span-6">
+          <div class="card">
+            <div class="card-header">
+              <h5>Transactions</h5>
+              <span class="block pt-2">Jun 23 - Jul 23</span>
+            </div>
+            <div class="card-body">
+              <div class="grid grid-cols-12 gap-6">
+                <div class="col-span-6 self-center">
+                  <h3 class="font-light mb-0">$ 59,48</h3>
+                </div>
+                <div class="col-span-6">
+                  <div id="transactions"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-12 xl:col-span-4 md:col-span-6">
+          <div class="card">
+            <div class="card-header">
+              <h5>Transactions</h5>
+              <span class="block pt-2">June - July</span>
+            </div>
+            <div class="card-body">
+              <div class="grid grid-cols-12 gap-6">
+                <div class="col-span-6">
+                  <div id="transactions1"></div>
+                  <h3 class="font-light pt-3 mb-0 text-center">$ 80,48</h3>
+                </div>
+                <div class="col-span-6">
+                  <div id="transactions2"></div>
+                  <h3 class="font-light pt-3 mb-0 text-center">$ 40,27</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-12 xl:col-span-4">
+          <div class="card">
+            <div class="card-header">
+              <h5>Transactions</h5>
+              <span class="block pt-2">Jun 23 - Jul 23</span>
+            </div>
+            <div class="card-body">
+              <div class="grid grid-cols-12 gap-6">
+                <div class="col-span-6">
+                  <div id="transactions3"></div>
+                </div>
+                <div class="col-span-6 self-center">
+                  <h3 class="font-light mb-0 ltr:text-right rtl:text-left">$ 59,48</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-12 xl:col-span-4 md:col-span-6">
+          <div class="card bg-theme-bg-2">
+            <div class="card-header !border-b-0">
+              <h5 class="text-white">Stats</h5>
+            </div>
+            <div class="card-body">
+              <div class="grid grid-cols-12 gap-6">
+                <div class="col-span-6 md:col-span-4 text-center">
+                  <h3 class="text-white font-light">932</h3>
+                  <span class="block text-white">This Month</span>
+                </div>
+                <div class="col-span-6 md:col-span-4 text-center">
+                  <h3 class="text-white font-light">85</h3>
+                  <span class="block text-white">This Week</span>
+                </div>
+                <div class="col-span-12 md:col-span-4 text-center">
+                  <h3 class="text-white font-light">26</h3>
+                  <span class="block text-white">Today</span>
+                </div>
+              </div>
+            </div>
+            <div id="sitevisite-chart" class="last-week-sales"></div>
+          </div>
+        </div>
+        <div class="col-span-12 xl:col-span-4 md:col-span-6">
+          <div class="card bg-primary-500">
+            <div class="card-header !border-b-0">
+              <h5 class="text-white">Statistics</h5>
+            </div>
+            <div class="card-body">
+              <div id="Statistics-sale" class="last-week-sales"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-12 xl:col-span-4">
+          <div class="card">
+            <div class="card-body user-chart">
+              <div class="flex items-center justify-center gap-6">
+                <i class="fas fa-chart-line text-[30px]"></i>
+                <img class="img-fluid rounded-full" src="../assets/images/user/avatar-1.jpg" alt="dashboard-user" />
+                <i class="far fa-envelope text-[30px]"></i>
+              </div>
+              <h5 class="mt-7 text-center">Alma Christensen</h5>
+              <span class="text-center block mb-10">UX Designer</span>
+              <div class="grid grid-cols-12 gap-x-6">
+                <div class="col-span-6">
+                  <div id="power-card-chart" class="ChartShadow"></div>
+                </div>
+                <div class="col-span-6">
+                  <h3 class="font-light"><i class="fas fa-caret-up text-success-500/30 text-[22px] ltr:mr-2.5 rtl:ml-2.5"></i>13 % </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-12 xl:col-span-8">
+          <div class="card">
+            <div class="card-header">
+              <h5>Users from United States</h5>
+            </div>
+            <div class="card-body">
+              <div id="world-low" class="set-map" style="height: 350px"> </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-12 xl:col-span-4">
+          <div class="card">
+            <div class="card-header">
+              <h5>Reviews</h5>
+            </div>
+            <div class="card-body">
+              <div class="grid grid-cols-12 gap-6">
+                <div class="col-span-12 sm:col-span-6 text-center">
+                  <h6 class="pb-4 block">NEGATIVE</h6>
+                  <div id="sadball"></div>
+                  <h3 class="font-weight-light mt-2">26%</h3>
+                  <span class="block pt-2">57 Reviews</span>
+                </div>
+                <div class="col-span-12 sm:col-span-6 text-center">
+                  <h6 class="pb-4 block">POSITIVE</h6>
+                  <div id="happyball"></div>
+                  <h3 class="font-weight-light mt-2">74%</h3>
+                  <span class="block pt-2">567 Reviews</span>
+                </div>
+                <div class="col-span-12">
+                  <div class="grid">
+                    <button class="btn btn-primary shadow-2 uppercase mt-3 me-0" type="button">view all reviews</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-12 xl:col-span-4">
+          <div class="card">
+            <div class="card-header">
+              <h5>Phone Calls</h5>
+            </div>
+            <div id="call-chart"></div>
+          </div>
+        </div>
+        <div class="col-span-12 xl:col-span-4">
+          <div class="card progress-gender">
+            <div class="card-header">
+              <h5 class="mb-2">Gender</h5>
+              <span class="text-muted block">325 Employees</span>
+            </div>
+            <div class="card-body">
+              <h6 class="mb-2.5">
+                Female
+                <span class="ltr:float-right rtl:float-left">Male</span>
+              </h6>
+              <div class="w-full rounded-lg h-3 mb-6 flex items-center justify-center bg-theme-bodybg dark:bg-themedark-bodybg">
+                <div class="bg-theme-bg-1 h-full rounded-lg shadow-[0_10px_20px_0_rgba(0,0,0,0.3)]" style="width: 30%"></div>
+                <div class="bg-theme-bg-2 h-full rounded-lg shadow-[0_10px_20px_0_rgba(0,0,0,0.3)]" style="width: 30%"></div>
+              </div>
+              <h5 class="font-light mt-5 text-muted">
+                62%
+                <span class="ltr:float-right rtl:float-left">28%</span>
+              </h5>
+              <h6 class="mb-2.5 mt-5">
+                Female
+                <span class="ltr:float-right rtl:float-left">Male</span>
+              </h6>
+              <div class="w-full rounded-lg h-3 mb-6 flex items-center justify-center bg-theme-bodybg dark:bg-themedark-bodybg">
+                <div class="bg-theme-bg-1 h-full rounded-lg shadow-[0_10px_20px_0_rgba(0,0,0,0.3)]" style="width: 40%"></div>
+                <div class="bg-theme-bg-2 h-full rounded-lg shadow-[0_10px_20px_0_rgba(0,0,0,0.3)]" style="width: 30%"></div>
+              </div>
+              <h5 class="font-light mt-5 text-muted">
+                60%
+                <span class="ltr:float-right rtl:float-left">50%</span>
+              </h5>
+              <h6 class="mb-2.5 mt-5">
+                Female
+                <span class="ltr:float-right rtl:float-left">Male</span>
+              </h6>
+              <div class="w-full rounded-lg h-3 mb-6 flex items-center justify-center bg-theme-bodybg dark:bg-themedark-bodybg">
+                <div class="bg-theme-bg-1 h-full rounded-lg shadow-[0_10px_20px_0_rgba(0,0,0,0.3)]" style="width: 50%"></div>
+                <div class="bg-theme-bg-2 h-full rounded-lg shadow-[0_10px_20px_0_rgba(0,0,0,0.3)]" style="width: 52%"></div>
+              </div>
+              <h5 class="font-light mt-5 text-muted">
+                50%
+                <span class="ltr:float-right rtl:float-left">50%</span>
+              </h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-12 xl:col-span-4">
+          <div class="card">
+            <div class="card-header">
+              <h5 class="mb-2">Age</h5>
+              <span class="text-muted block">Average 40+</span>
+            </div>
+            <div class="card-body">
+              <div id="Stack-age" class="Stackchart" style="height: 250px"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- [ Main Content ] end -->
+  </div>
+  <!-- [ Main Content ] end -->
+  @@include('../layouts/footer-block.html') @@include('../layouts/footer-js.html')
+  <!-- [Page Specific JS] start -->
+  <!-- apexcharts js -->
+  <script src="../assets/js/plugins/apexcharts.min.js"></script>
+
+  <script src="../assets/js/plugins/jsvectormap.min.js"></script>
+  <script src="../assets/js/plugins/world.js"></script>
+
+  <!-- chart js -->
+  <script src="../assets/js/widgets/command-card-chart1.js"></script>
+  <script src="../assets/js/widgets/chart-sale.js"></script>
+  <script src="../assets/js/widgets/Stack-bar.js"></script>
+  <script src="../assets/js/widgets/line-area2.js"></script>
+  <script src="../assets/js/widgets/Chartline.js"></script>
+  <script src="../assets/js/widgets/bar-chart.js"></script>
+  <script src="../assets/js/widgets/line-chart1.js"></script>
+  <script src="../assets/js/widgets/line-chart2.js"></script>
+  <script src="../assets/js/widgets/Widget-line-chart.js"></script>
+  <script src="../assets/js/widgets/Widget-line-chart1.js"></script>
+  <script src="../assets/js/widgets/bar-chart1.js"></script>
+  <script src="../assets/js/widgets/chart-percent.js"></script>
+  <script src="../assets/js/widgets/bar-chart2.js"></script>
+  <script src="../assets/js/widgets/device-chart.js"></script>
+  <script src="../assets/js/widgets/chart-percent1.js"></script>
+  <script src="../assets/js/widgets/bar-chart3.js"></script>
+  <script src="../assets/js/widgets/processed-bar.js"></script>
+  <script src="../assets/js/widgets/chart-statistics.js"></script>
+  <script src="../assets/js/widgets/chart-activity.js"></script>
+  <script src="../assets/js/widgets/Earnings-chart.js"></script>
+  <script src="../assets/js/widgets/sales-render.js"></script>
+  <script src="../assets/js/widgets/webchart.js"></script>
+  <script src="../assets/js/widgets/Statistics-line.js"></script>
+  <script src="../assets/js/widgets/transactions.js"></script>
+  <script src="../assets/js/widgets/transactions1-2.js"></script>
+  <script src="../assets/js/widgets/transactions3.js"></script>
+  <script src="../assets/js/widgets/sitevisite-chart.js"></script>
+  <script src="../assets/js/widgets/Statistics-sale.js"></script>
+  <script src="../assets/js/widgets/power-card-chart.js"></script>
+  <script src="../assets/js/widgets/world-low.js"></script>
+  <script src="../assets/js/widgets/happy-sad-ball.js"></script>
+  <script src="../assets/js/widgets/call-chart.js"></script>
+  <script src="../assets/js/widgets/Stack-age.js"></script>
+  <!-- [Page Specific JS] end -->
+  @@include('../layouts/customizer.html')
+</body>
+<!-- [Body] end -->
+
+</html>

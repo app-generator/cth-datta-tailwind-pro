@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="en" @@bodySetup>
+
+<head>
+  @@include('../layouts/head-page-meta.html', {'title': 'Offcanvas'})
+  @@include('../layouts/head-css.html')
+</head>
+
+<body>
+
+  @@include('../layouts/layout-vertical.html')
+
+  <!-- [ Main Content ] start -->
+  <div class="pc-container">
+    <div class="pc-content">
+      @@include('../layouts/breadcrumb.html', {'breadcrumb-item': 'Basic UI', 'breadcrumb-item-active': 'Offcanvas'})
+      <!-- [ Main Content ] start -->
+      <div class="grid grid-cols-12 gap-6">
+        <!-- [ demo-Offcanvas ] start -->
+        <div class="col-span-12">
+          <div class="card">
+            <div class="card-header">
+              <h5>Live demo</h5>
+            </div>
+            <div class="card-body">
+              <div
+                class="bg-secondary-300/10 border rounded overflow-hidden border-theme-border dark:border-themedark-border">
+                <div class="offcanvas offcanvas-start z-0 visible relative block !left-0 show" tabindex="-1"
+                  aria-labelledby="offcanvasLabel">
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasLabel">Offcanvas</h5>
+                    <button
+                      class="text-lg flex items-center justify-center rounded w-7 h-7 text-secondary-500 hover:bg-danger-500/10 hover:text-danger-500">
+                      <i class="ti ti-x"></i>
+                    </button>
+                  </div>
+                  <div class="offcanvas-body">
+                    Content for the offcanvas goes here. You can place just about any Bootstrap component or custom
+                    elements here.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body btn-page pc-component">
+              <a class="btn btn-primary mt-1" data-pc-toggle="offcanvas" href="#offcanvasExample" role="button"
+                aria-controls="offcanvasExample">
+                Link with href
+              </a>
+              <button class="btn btn-primary mt-1 mx-1" type="button" data-pc-toggle="offcanvas"
+                data-pc-target="#offcanvasExample" aria-controls="offcanvasExample">
+                Button with data-pc-target
+              </button>
+              <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title">Offcanvas</h5>
+                  <button data-pc-dismiss="#offcanvasExample"
+                    class="text-lg flex items-center justify-center rounded w-7 h-7 text-secondary-500 hover:bg-danger-500/10 hover:text-danger-500">
+                    <i class="ti ti-x"></i>
+                  </button>
+                </div>
+                <div class="offcanvas-body customer-body">
+                  <h5 class="mb-2"></h5>
+                  $746.5k
+                  <small class="text-success f-w-400">
+                    +20.6
+                    <i class="ti ti-arrow-up"></i>
+                  </small>
+                  </h5>
+                  <p class="text-muted mb-3">Past 30 days</p>
+                  <div class="table-body">
+                    <div class="table-responsive">
+                      <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th>Customer</th>
+                            <th >Plan</th>
+                            <th >MRP</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div class="flex items-center text-muted">
+                                <div class="avtar avtar-xs bg-light-secondary flex-shrink-0 me-2">
+                                  <i class="ti ti-arrow-down f-16"></i>
+                                </div>
+                                <span class="text-truncate w-100">Logicoma</span>
+                              </div>
+                            </td>
+                            <td ><span >Team</span></td>
+                            <td class=" f-w-600"><span class="text-danger">-$72</span></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="flex items-center text-muted">
+                                <div class="avtar avtar-xs bg-light-secondary flex-shrink-0 me-2">
+                                  <i class="ti ti-star f-16"></i>
+                                </div>
+                                <span class="text-truncate w-100">UAC</span>
+                              </div>
+                            </td>
+                            <td ><span >Team</span></td>
+                            <td class=" f-w-600"><span>$199</span></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="flex items-center text-muted">
+                                <div class="avtar avtar-xs bg-light-secondary flex-shrink-0 me-2">
+                                  <i class="ti ti-wallet f-16"></i>
+                                </div>
+                                <span class="text-truncate w-100">Biffco</span>
+                              </div>
+                            </td>
+                            <td ><span >Team</span></td>
+                            <td class=" f-w-600"><span class="text-danger">-$72</span></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="flex items-center text-muted">
+                                <div class="avtar avtar-xs bg-light-secondary flex-shrink-0 me-2">
+                                  <i class="ti ti-arrow-down f-16"></i>
+                                </div>
+                                <span class="text-truncate w-100">Matsumura</span>
+                              </div>
+                            </td>
+                            <td ><span >Team</span></td>
+                            <td class=" f-w-600"><span class="text-danger">-$72</span></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="flex items-center text-muted">
+                                <div class="avtar avtar-xs bg-light-secondary flex-shrink-0 me-2">
+                                  <i class="ti ti-wallet f-16"></i>
+                                </div>
+                                <span class="text-truncate w-100">Biffco</span>
+                              </div>
+                            </td>
+                            <td ><span >Team</span></td>
+                            <td class=" f-w-600"><span class="text-danger">-$72</span></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="flex items-center text-muted">
+                                <div class="avtar avtar-xs bg-light-secondary flex-shrink-0 me-2">
+                                  <i class="ti ti-arrow-down f-16"></i>
+                                </div>
+                                <span class="text-truncate w-100">Logicoma</span>
+                              </div>
+                            </td>
+                            <td ><span >Team</span></td>
+                            <td class=" f-w-600"><span class="text-danger">-$72</span></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="flex items-center text-muted">
+                                <div class="avtar avtar-xs bg-light-secondary flex-shrink-0 me-2">
+                                  <i class="ti ti-star f-16"></i>
+                                </div>
+                                <span class="text-truncate w-100">UAC</span>
+                              </div>
+                            </td>
+                            <td ><span >Team</span></td>
+                            <td class=" f-w-600"><span>$199</span></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="flex items-center text-muted">
+                                <div class="avtar avtar-xs bg-light-secondary flex-shrink-0 me-2">
+                                  <i class="ti ti-wallet f-16"></i>
+                                </div>
+                                <span class="text-truncate w-100">Biffco</span>
+                              </div>
+                            </td>
+                            <td ><span >Team</span></td>
+                            <td class=" f-w-600"><span class="text-danger">-$72</span></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="flex items-center text-muted">
+                                <div class="avtar avtar-xs bg-light-secondary flex-shrink-0 me-2">
+                                  <i class="ti ti-arrow-down f-16"></i>
+                                </div>
+                                <span class="text-truncate w-100">Matsumura</span>
+                              </div>
+                            </td>
+                            <td ><span >Team</span></td>
+                            <td class=" f-w-600"><span class="text-danger">-$72</span></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="flex items-center text-muted">
+                                <div class="avtar avtar-xs bg-light-secondary flex-shrink-0 me-2">
+                                  <i class="ti ti-wallet f-16"></i>
+                                </div>
+                                <span class="text-truncate w-100">Biffco</span>
+                              </div>
+                            </td>
+                            <td ><span >Team</span></td>
+                            <td class=" f-w-600"><span class="text-danger">-$72</span></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div >
+                    <button class="btn btn-light-danger btn-sm" data-pc-dismiss="#offcanvasExample">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- [ demo-Offcanvas ] end -->
+        <!-- [ Placement ] start -->
+        <div class="col-span-12">
+          <div class="card">
+            <div class="card-header">
+              <h5>Placement</h5>
+            </div>
+            <div class="card-body btn-page pc-component">
+              <!-- Top Offcanvas start -->
+              <button class="btn btn-light-secondary inline-flex items-start mt-1" type="button"
+                data-pc-toggle="offcanvas" data-pc-target="#offcanvasTop" aria-controls="offcanvasTop">
+                Top offcanvas
+                <i data-feather="chevrons-up"></i>
+              </button>
+              <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+                <div class="offcanvas-header">
+                  <h5 id="offcanvasTopLabel">Offcanvas top</h5>
+                  <button data-pc-dismiss="#offcanvasTop"
+                    class="text-lg flex items-center justify-center rounded w-7 h-7 text-secondary-500 hover:bg-danger-500/10 hover:text-danger-500">
+                    <i class="ti ti-x"></i>
+                  </button>
+                </div>
+                <div class="offcanvas-body py-0">
+                  <h6>Some Title</h6>
+                  <p class="mb-4">
+                    Some text as placeholder. In real life you can have the elements you have chosen. Like, text,
+                    images, lists, etc.
+                  </p>
+                  <div class="dropdown mb-3 d-inline-block">
+                    <button class="btn btn-light-secondary btn-sm dropdown-toggle" type="button"
+                      data-pc-toggle="dropdown">
+                      Dropdown button
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+                  <button class="btn btn-light-danger btn-sm" data-pc-dismiss="#offcanvasTop">Close</button>
+                </div>
+              </div>
+              <!-- Top Offcanvas end -->
+              <!-- Right Offcanvas start -->
+              <button class="btn btn-light-secondary inline-flex items-start mt-1 mx-1" type="button"
+                data-pc-toggle="offcanvas" data-pc-target="#offcanvasRight" aria-controls="offcanvasRight">
+                Right offcanvas
+                <i data-feather="chevrons-right"></i>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                  <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+                  <button data-pc-dismiss="#offcanvasRight"
+                    class="text-lg flex items-center justify-center rounded w-7 h-7 text-secondary-500 hover:bg-danger-500/10 hover:text-danger-500">
+                    <i class="ti ti-x"></i>
+                  </button>
+                </div>
+                <div class="offcanvas-body">
+                  <h5 class="mb-2">
+                    $746.5k
+                    <small class="text-success f-w-400">
+                      +20.6
+                      <i class="ti ti-arrow-up"></i>
+                    </small>
+                  </h5>
+                  <p class="text-muted mb-3">Past 30 days</p>
+                  <div class="table-body">
+                    <div class="table-responsive">
+                      <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th>Customer</th>
+                            <th >Plan</th>
+                            <th >MRP</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div class="flex items-center text-muted">
+                                <div class="avtar avtar-xs bg-light-secondary flex-shrink-0 me-2">
+                                  <i class="ti ti-arrow-down f-16"></i>
+                                </div>
+                                <span class="text-truncate w-100">Logicoma</span>
+                              </div>
+                            </td>
+                            <td ><span >Team</span></td>
+                            <td class=" f-w-600"><span class="text-danger">-$72</span></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="flex items-center text-muted">
+                                <div class="avtar avtar-xs bg-light-secondary flex-shrink-0 me-2">
+                                  <i class="ti ti-star f-16"></i>
+                                </div>
+                                <span class="text-truncate w-100">UAC</span>
+                              </div>
+                            </td>
+                            <td ><span >Team</span></td>
+                            <td class=" f-w-600"><span>$199</span></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="flex items-center text-muted">
+                                <div class="avtar avtar-xs bg-light-secondary flex-shrink-0 me-2">
+                                  <i class="ti ti-wallet f-16"></i>
+                                </div>
+                                <span class="text-truncate w-100">Biffco</span>
+                              </div>
+                            </td>
+                            <td ><span >Team</span></td>
+                            <td class=" f-w-600"><span class="text-danger">-$72</span></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="flex items-center text-muted">
+                                <div class="avtar avtar-xs bg-light-secondary flex-shrink-0 me-2">
+                                  <i class="ti ti-arrow-down f-16"></i>
+                                </div>
+                                <span class="text-truncate w-100">Matsumura</span>
+                              </div>
+                            </td>
+                            <td ><span >Team</span></td>
+                            <td class=" f-w-600"><span class="text-danger">-$72</span></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="flex items-center text-muted">
+                                <div class="avtar avtar-xs bg-light-secondary flex-shrink-0 me-2">
+                                  <i class="ti ti-wallet f-16"></i>
+                                </div>
+                                <span class="text-truncate w-100">Biffco</span>
+                              </div>
+                            </td>
+                            <td ><span >Team</span></td>
+                            <td class=" f-w-600"><span class="text-danger">-$72</span></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="flex items-center text-muted">
+                                <div class="avtar avtar-xs bg-light-secondary flex-shrink-0 me-2">
+                                  <i class="ti ti-arrow-down f-16"></i>
+                                </div>
+                                <span class="text-truncate w-100">Logicoma</span>
+                              </div>
+                            </td>
+                            <td ><span >Team</span></td>
+                            <td class=" f-w-600"><span class="text-danger">-$72</span></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="flex items-center text-muted">
+                                <div class="avtar avtar-xs bg-light-secondary flex-shrink-0 me-2">
+                                  <i class="ti ti-star f-16"></i>
+                                </div>
+                                <span class="text-truncate w-100">UAC</span>
+                              </div>
+                            </td>
+                            <td ><span >Team</span></td>
+                            <td class=" f-w-600"><span>$199</span></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="flex items-center text-muted">
+                                <div class="avtar avtar-xs bg-light-secondary flex-shrink-0 me-2">
+                                  <i class="ti ti-wallet f-16"></i>
+                                </div>
+                                <span class="text-truncate w-100">Biffco</span>
+                              </div>
+                            </td>
+                            <td ><span >Team</span></td>
+                            <td class=" f-w-600"><span class="text-danger">-$72</span></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="flex items-center text-muted">
+                                <div class="avtar avtar-xs bg-light-secondary flex-shrink-0 me-2">
+                                  <i class="ti ti-arrow-down f-16"></i>
+                                </div>
+                                <span class="text-truncate w-100">Matsumura</span>
+                              </div>
+                            </td>
+                            <td ><span >Team</span></td>
+                            <td class=" f-w-600"><span class="text-danger">-$72</span></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="flex items-center text-muted">
+                                <div class="avtar avtar-xs bg-light-secondary flex-shrink-0 me-2">
+                                  <i class="ti ti-wallet f-16"></i>
+                                </div>
+                                <span class="text-truncate w-100">Biffco</span>
+                              </div>
+                            </td>
+                            <td ><span >Team</span></td>
+                            <td class=" f-w-600"><span class="text-danger">-$72</span></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div >
+                    <button class="btn btn-light-danger btn-sm" data-pc-dismiss="#offcanvasRight">Close</button>
+                  </div>
+                </div>
+              </div>
+              <!-- Right Offcanvas end -->
+              <!-- Bottom Offcanvas end -->
+              <button class="btn btn-light-secondary inline-flex items-start mt-1" type="button"
+                data-pc-toggle="offcanvas" data-pc-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+                Bottom offcanvas
+                <i data-feather="chevrons-down"></i>
+              </button>
+              <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom"
+                aria-labelledby="offcanvasBottomLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
+                  <button data-pc-dismiss="#offcanvasBottom"
+                    class="text-lg flex items-center justify-center rounded w-7 h-7 text-secondary-500 hover:bg-danger-500/10 hover:text-danger-500">
+                    <i class="ti ti-x"></i>
+                  </button>
+                </div>
+                <div class="offcanvas-body py-0">
+                  <h6>Some Title</h6>
+                  <p class="mb-4">
+                    Some text as placeholder. In real life you can have the elements you have chosen. Like, text,
+                    images, lists, etc.
+                  </p>
+                  <div class="dropdown mb-3 d-inline-block">
+                    <button class="btn btn-light-secondary btn-sm dropdown-toggle" type="button"
+                      data-pc-toggle="dropdown">
+                      Dropdown button
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+                  <button class="btn btn-light-danger btn-sm" data-pc-dismiss="#offcanvasBottom">Close</button>
+                </div>
+              </div>
+              <!-- Bottom Offcanvas start -->
+            </div>
+          </div>
+        </div>
+        <!-- [ Placement ] end -->
+      </div>
+      <!-- [ Main Content ] end -->
+    </div>
+  </div>
+  <!-- [ Main Content ] end -->
+  @@include('../layouts/footer-block.html') @@include('../layouts/footer-js.html')
+  @@include('../layouts/customizer.html')
+</body>
+
+</html>

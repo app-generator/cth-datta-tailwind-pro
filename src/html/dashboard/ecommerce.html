@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en" @@bodySetup>
+<!-- [Head] start -->
+
+<head>
+  @@include('../layouts/head-page-meta.html', {'title': 'Ecommerce'}) @@include('../layouts/head-css.html')
+</head>
+<!-- [Head] end -->
+<!-- [Body] Start -->
+
+<body>
+  @@include('../layouts/layout-vertical.html')
+
+  <!-- [ Main Content ] start -->
+  <div class="pc-container">
+    <div class="pc-content">
+      @@include('../layouts/breadcrumb.html', {'breadcrumb-item': 'Dashboard', 'breadcrumb-item-active': 'Ecommerce'})
+      <!-- [ Main Content ] start -->
+      <div class="grid grid-cols-12 gap-x-6">
+        <div class="col-span-12 xl:col-span-4 md:col-span-6">
+          <div class="card Online-Order">
+            <div class="card-body">
+              <h5 class="mb-2">Online Orders</h5>
+              <h6 class="text-muted flex items-center justify-between mt-8">
+                Delivery Orders<span class="ltr:float-right rtl:float-left text-[18px] text-success-500">237 /
+                  400</span>
+              </h6>
+              <div class="w-full bg-theme-bodybg rounded-lg h-1.5 dark:bg-themedark-bodybg mt-5">
+                <div class="bg-theme-bg-1 h-full rounded-lg shadow-[0_10px_20px_0_rgba(0,0,0,0.3)]" role="progressbar"
+                  style="width: 65%"></div>
+              </div>
+              <span class="text-muted mt-2 block">37% Done</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-12 xl:col-span-4 md:col-span-6">
+          <div class="card Online-Order">
+            <div class="card-body">
+              <h5 class="mb-2">Pending Orders</h5>
+              <h6 class="text-muted flex items-center justify-between mt-8">
+                pending Orders<span class="ltr:float-right rtl:float-left text-[18px] text-purple-500">100 / 500</span>
+              </h6>
+              <div class="w-full bg-theme-bodybg rounded-lg h-1.5 dark:bg-themedark-bodybg mt-5">
+                <div class="bg-theme-bg-2 h-full rounded-lg shadow-[0_10px_20px_0_rgba(0,0,0,0.3)]" role="progressbar"
+                  style="width: 56%"></div>
+              </div>
+              <span class="text-muted mt-2 block">20% Done</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-12 xl:col-span-4">
+          <div class="card Online-Order">
+            <div class="card-body">
+              <h5 class="mb-2">Return Orders</h5>
+              <h6 class="text-muted flex items-center justify-between mt-8">
+                Return Orders<span class="ltr:float-right rtl:float-left text-[18px] text-primary-500">50 / 400</span>
+              </h6>
+              <div class="w-full bg-theme-bodybg rounded-lg h-1.5 dark:bg-themedark-bodybg mt-5">
+                <div class="bg-primary-500 h-full rounded-lg shadow-[0_10px_20px_0_rgba(0,0,0,0.3)]" role="progressbar"
+                  style="width: 40%"></div>
+              </div>
+              <span class="text-muted mt-2 block">10% Done</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-12 xl:col-span-8">
+          <div class="card">
+            <div class="card-header">
+              <h5>Yearly Summary</h5>
+            </div>
+            <div class="card-body">
+              <div class="grid grid-cols-12 gap-4 mb-3">
+                <div class="col-span-6 md:col-span-4 text-center">
+                  <h3 class="font-light mb-2">$ 2356.4</h3>
+                  <span>invoice</span>
+                </div>
+                <div class="col-span-6 md:col-span-4 text-center">
+                  <h3 class="font-light mb-2">$ 1935.6</h3>
+                  <span>Profit</span>
+                </div>
+                <div class="col-span-12 md:col-span-4 text-center">
+                  <h3 class="font-light mb-2">$ 468.9</h3>
+                  <span>Expenses</span>
+                </div>
+              </div>
+              <div id="bar-chart3" class="bar-chart3"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-12 xl:col-span-4">
+          <div class="card bg-theme-bg-1 earning-date mb-4">
+            <div class="card-header !border-b-0">
+              <h5 class="text-white">Earnings</h5>
+            </div>
+            <div class="card-body">
+              <div class="bd-example bd-example-tabs">
+                <div class="tab-content" id="tabContent-pills">
+                  <div class="block tab-pane" id="earnings-mon">
+                    <h2 class="text-white mb-3 font-light">359,234<i class="feather icon-arrow-up"></i></h2>
+                    <span class="text-white mb-4 block">TOTAL EARNINGS</span>
+                  </div>
+                  <div class="hidden tab-pane" id="earnings-tue">
+                    <h2 class="text-white mb-3 font-light">222,586<i class="feather icon-arrow-down"></i></h2>
+                    <span class="text-white mb-4 block">TOTAL EARNINGS</span>
+                  </div>
+                  <div class="hidden tab-pane" id="earnings-wed">
+                    <h2 class="text-white mb-3 font-light">859,745<i class="feather icon-arrow-up"></i></h2>
+                    <span class="text-white mb-4 block">TOTAL EARNINGS</span>
+                  </div>
+                  <div class="hidden tab-pane" id="earnings-thu">
+                    <h2 class="text-white mb-3 font-light">785,684<i class="feather icon-arrow-up"></i></h2>
+                    <span class="text-white mb-4 block">TOTAL EARNINGS</span>
+                  </div>
+                  <div class="hidden tab-pane" id="earnings-fri">
+                    <h2 class="text-white mb-3 font-light">123,486<i class="feather icon-arrow-down"></i></h2>
+                    <span class="text-white mb-4 block">TOTAL EARNINGS</span>
+                  </div>
+                  <div class="hidden tab-pane" id="earnings-sat">
+                    <h2 class="text-white mb-3 font-light">762,963<i class="feather icon-arrow-up"></i></h2>
+                    <span class="text-white mb-4 block">TOTAL EARNINGS</span>
+                  </div>
+                  <div class="hidden tab-pane" id="earnings-sun">
+                    <h2 class="text-white mb-3 font-light">984,632<i class="feather icon-arrow-down"></i></h2>
+                    <span class="text-white mb-4 block">TOTAL EARNINGS</span>
+                  </div>
+                </div>
+                <ul class="flex flex-wrap w-full text-center nav-tabs">
+                  <li class="group active">
+                    <a href="javascript:void(0);" data-pc-toggle="tab" data-pc-target="earnings-mon"
+                      class="inline-block px-3 py-1.5 transition-all duration-300 ease-linear rounded-lg text-white group-[.active]:bg-white group-[.active]:text-dark">
+                      Mon
+                    </a>
+                  </li>
+                  <li class="group">
+                    <a href="javascript:void(0);" data-pc-toggle="tab" data-pc-target="earnings-tue"
+                      class="inline-block px-3 py-1.5 transition-all duration-300 ease-linear rounded-lg text-white group-[.active]:bg-white group-[.active]:text-dark">
+                      Tue
+                    </a>
+                  </li>
+                  <li class="group">
+                    <a href="javascript:void(0);" data-pc-toggle="tab" data-pc-target="earnings-wed"
+                      class="inline-block px-3 py-1.5 transition-all duration-300 ease-linear rounded-lg text-white group-[.active]:bg-white group-[.active]:text-dark">
+                      Wed
+                    </a>
+                  </li>
+                  <li class="group">
+                    <a href="javascript:void(0);" data-pc-toggle="tab" data-pc-target="earnings-thu"
+                      class="inline-block px-3 py-1.5 transition-all duration-300 ease-linear rounded-lg text-white group-[.active]:bg-white group-[.active]:text-dark">
+                      Thu
+                    </a>
+                  </li>
+                  <li class="group">
+                    <a href="javascript:void(0);" data-pc-toggle="tab" data-pc-target="earnings-fri"
+                      class="inline-block px-3 py-1.5 transition-all duration-300 ease-linear rounded-lg text-white group-[.active]:bg-white group-[.active]:text-dark">
+                      Fri
+                    </a>
+                  </li>
+                  <li class="group">
+                    <a href="javascript:void(0);" data-pc-toggle="tab" data-pc-target="earnings-sat"
+                      class="inline-block px-3 py-1.5 transition-all duration-300 ease-linear rounded-lg text-white group-[.active]:bg-white group-[.active]:text-dark">
+                      Sat
+                    </a>
+                  </li>
+                  <li class="group">
+                    <a href="javascript:void(0);" data-pc-toggle="tab" data-pc-target="earnings-sun"
+                      class="inline-block px-3 py-1.5 transition-all duration-300 ease-linear rounded-lg text-white group-[.active]:bg-white group-[.active]:text-dark">
+                      Sun
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-theme-bg-2">
+            <div class="card-body">
+              <div class="flex items-center justify-center gap-6">
+                <div class="shrink-0">
+                  <img src="../assets/images/widget/shape5.png" alt="activity-user" />
+                </div>
+                <div class="grow">
+                  <h2 class="text-white font-light">375</h2>
+                  <h5 class="text-white">Sale Product</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-12 xl:col-span-8">
+          <div class="card table-card">
+            <div class="card-header">
+              <h5>Full Width Table</h5>
+            </div>
+            <div class="card-body !pb-0">
+              <div class="table-responsive">
+                <table class="table table-hover">
+                  <thead>
+                    <tr>
+                      <th>Id Number</th>
+                      <th>Code</th>
+                      <th>Date</th>
+                      <th>Budget</th>
+                      <th>Status</th>
+                      <th class="ltr:!text-right rtl:!text-left">Ratings</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <h6 class="mb-1">#467</h6>
+                      </td>
+                      <td>
+                        <h6 class="mb-1">8765482</h6>
+                      </td>
+                      <td>
+                        <h6 class="mb-0">November 14, 2017</h6>
+                      </td>
+                      <td>
+                        <h6 class="mb-0">$ 874.23</h6>
+                      </td>
+                      <td><a href="#!" class="badge bg-theme-bg-1 text-[12px] text-white">Active</a></td>
+                      <td class="ltr:!text-right rtl:!text-left">
+                        <a href="#!"><i class="fa fa-star text-[18px] text-warning"></i></a>
+                        <a href="#!"><i class="fa fa-star text-[18px] text-warning"></i></a>
+                        <a href="#!"><i class="fa fa-star text-[18px] text-warning"></i></a>
+                        <a href="#!"><i class="fa fa-star text-[18px] text-warning"></i></a>
+                        <a href="#!"><i class="fa fa-star text-[18px] text-black-50"></i></a>
+                      </td>
+                    </tr>
+  
+                    <tr>
+                      <td>
+                        <h6 class="mb-1">#466</h6>
+                      </td>
+                      <td>
+                        <h6 class="mb-1">2366482</h6>
+                      </td>
+                      <td>
+                        <h6 class="mb-0">November 13, 2017</h6>
+                      </td>
+                      <td>
+                        <h6 class="mb-0">$ 235.34</h6>
+                      </td>
+                      <td><a href="#!" class="badge bg-theme-bg-2 text-[12px] text-white">Not Active</a></td>
+                      <td class="ltr:!text-right rtl:!text-left">
+                        <a href="#!"><i class="fa fa-star text-[18px] text-warning"></i></a>
+                        <a href="#!"><i class="fa fa-star text-[18px] text-warning"></i></a>
+                        <a href="#!"><i class="fa fa-star text-[18px] text-warning"></i></a>
+                        <a href="#!"><i class="fa fa-star text-[18px] text-black-50"></i></a>
+                        <a href="#!"><i class="fa fa-star text-[18px] text-black-50"></i></a>
+                      </td>
+                    </tr>
+  
+                    <tr>
+                      <td>
+                        <h6 class="mb-1">#465</h6>
+                      </td>
+                      <td>
+                        <h6 class="mb-1">8832638</h6>
+                      </td>
+                      <td>
+                        <h6 class="mb-0">October 14, 2017</h6>
+                      </td>
+                      <td>
+                        <h6 class="mb-0">$ 233.46</h6>
+                      </td>
+                      <td><a href="#!" class="badge bg-theme-bg-1 text-[12px] text-white">Active</a></td>
+                      <td class="ltr:!text-right rtl:!text-left">
+                        <a href="#!"><i class="fa fa-star text-[18px] text-warning"></i></a>
+                        <a href="#!"><i class="fa fa-star text-[18px] text-warning"></i></a>
+                        <a href="#!"><i class="fa fa-star text-[18px] text-black-50"></i></a>
+                        <a href="#!"><i class="fa fa-star text-[18px] text-black-50"></i></a>
+                        <a href="#!"><i class="fa fa-star text-[18px] text-black-50"></i></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <h6 class="mb-1">#464</h6>
+                      </td>
+                      <td>
+                        <h6 class="mb-1">9632638</h6>
+                      </td>
+                      <td>
+                        <h6 class="mb-0">December 17, 2017</h6>
+                      </td>
+                      <td>
+                        <h6 class="mb-0">$ 133.46</h6>
+                      </td>
+                      <td><a href="#!" class="badge bg-theme-bg-2 text-[12px] text-white">Not Active</a></td>
+                      <td class="ltr:!text-right rtl:!text-left">
+                        <a href="#!"><i class="fa fa-star text-[18px] text-warning"></i></a>
+                        <a href="#!"><i class="fa fa-star text-[18px] text-black-50"></i></a>
+                        <a href="#!"><i class="fa fa-star text-[18px] text-black-50"></i></a>
+                        <a href="#!"><i class="fa fa-star text-[18px] text-black-50"></i></a>
+                        <a href="#!"><i class="fa fa-star text-[18px] text-black-50"></i></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <h6 class="mb-1">#463</h6>
+                      </td>
+                      <td>
+                        <h6 class="mb-1">3332538</h6>
+                      </td>
+                      <td>
+                        <h6 class="mb-0">July 14, 2017</h6>
+                      </td>
+                      <td>
+                        <h6 class="mb-0">$ 244.46</h6>
+                      </td>
+                      <td><a href="#!" class="badge bg-theme-bg-1 text-[12px] text-white">Active</a></td>
+                      <td class="ltr:!text-right rtl:!text-left">
+                        <a href="#!"><i class="fa fa-star text-[18px] text-warning"></i></a>
+                        <a href="#!"><i class="fa fa-star text-[18px] text-warning"></i></a>
+                        <a href="#!"><i class="fa fa-star text-[18px] text-warning"></i></a>
+                        <a href="#!"><i class="fa fa-star text-[18px] text-black-50"></i></a>
+                        <a href="#!"><i class="fa fa-star text-[18px] text-black-50"></i></a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-12 xl:col-span-4">
+          <div class="card">
+            <div class="card-header">
+              <h5>Earnings</h5>
+              <span class="block pt-2">Mon 15 - Sun 21</span>
+            </div>
+            <div class="card-body">
+              <div class="earning-price mb-4">
+                <h3 class="m-0 font-light">$ 894.39</h3>
+              </div>
+              <div id="Widget-line-chart1" class="WidgetlineChart"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- [ Main Content ] end -->
+    </div>
+  </div>
+  <!-- [ Main Content ] end -->
+  @@include('../layouts/footer-block.html') @@include('../layouts/customizer.html')
+  <!-- [Page Specific JS] start -->
+  <script src="../assets/js/plugins/apexcharts.min.js"></script>
+
+  <!-- custom widgets js -->
+  <script src="../assets/js/widgets/bar-chart3.js"></script>
+  <script src="../assets/js/widgets/Widget-line-chart1.js"></script>
+  <!-- [Page Specific JS] end -->
+  @@include('../layouts/footer-js.html')
+</body>
+<!-- [Body] end -->
+
+</html>

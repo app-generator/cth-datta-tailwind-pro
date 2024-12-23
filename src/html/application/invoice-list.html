@@ -1,0 +1,1509 @@
+<!doctype html>
+<html lang="en" @@bodySetup>
+
+<head>
+  @@include('../layouts/head-page-meta.html', {'title': 'Invoice List'}) @@include('../layouts/head-css.html')
+</head>
+
+<body>
+  @@include('../layouts/layout-vertical.html')
+  <!-- [ Main Content ] start -->
+  <div class="pc-container">
+    <div class="pc-content">
+      @@include('../layouts/breadcrumb.html', {'breadcrumb-item': 'Invoice', 'breadcrumb-item-active': 'Invoice List'})
+      <!-- [ Invoice ] start -->
+      <div class="grid grid-cols-12 gap-6">
+        <!-- [ Invoice-left ] start -->
+        <div class="col-span-12 xl:col-span-3 lg:col-span-4">
+          <div class="card">
+            <div class="card-body">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search" />
+                <span class="input-group-text"><i data-feather="search"></i></span>
+              </div>
+            </div>
+            <hr class="my-0 border-0 border-t border-theme-border dark:border-themedark-border" />
+            <div class="card-body py-3">
+              <a class="flex items-center gap-2" data-pc-toggle="collapse" href="#taskfilstatus" role="button"
+                aria-expanded="false" aria-controls="collapseExample">
+                <i class="material-icons-two-tone f-20 bg-primary-500">emoji_flags</i> Completed Status
+              </a>
+              <hr class="my-3 border-0 border-t border-theme-border dark:border-themedark-border" />
+              <div id="taskfilstatus">
+                <div class="h6 mb-3">Highest priority</div>
+                <div class="w-full bg-theme-bodybg rounded-lg h-1 mb-4 dark:bg-themedark-bodybg">
+                  <div class="bg-success-500 h-full rounded-lg shadow-[0_10px_20px_0_rgba(0,0,0,0.3)]"
+                    style="width: 85%"></div>
+                </div>
+                <div class="h6 mb-3">High priority</div>
+                <div class="w-full bg-theme-bodybg rounded-lg h-1 mb-4 dark:bg-themedark-bodybg">
+                  <div class="bg-primary-500 h-full rounded-lg shadow-[0_10px_20px_0_rgba(0,0,0,0.3)]"
+                    style="width: 68%"></div>
+                </div>
+                <div class="h6 mb-3">Normal priority</div>
+                <div class="w-full bg-theme-bodybg rounded-lg h-1 mb-4 dark:bg-themedark-bodybg">
+                  <div class="bg-warning-500 h-full rounded-lg shadow-[0_10px_20px_0_rgba(0,0,0,0.3)]"
+                    style="width: 48%"></div>
+                </div>
+                <div class="h6 mb-3">Low priority</div>
+                <div class="w-full bg-theme-bodybg rounded-lg h-1 mb-4 dark:bg-themedark-bodybg">
+                  <div class="bg-danger-500 h-full rounded-lg shadow-[0_10px_20px_0_rgba(0,0,0,0.3)]"
+                    style="width: 35%"></div>
+                </div>
+              </div>
+            </div>
+            <hr class="my-0 border-0 border-t border-theme-border dark:border-themedark-border" />
+            <div class="card-body py-3 border-bottom">
+              <a class="flex items-center gap-2" data-pc-toggle="collapse" href="#taskfilassign" role="button"
+                aria-expanded="false" aria-controls="collapseExample">
+                <i class="material-icons-two-tone f-20 bg-primary-500">account_circle</i> Assign User
+              </a>
+              <hr class="my-3 border-0 border-t border-theme-border dark:border-themedark-border" />
+              <div id="taskfilassign">
+                <div class="flex mb-3">
+                  <div class="shrink-0 pr-0">
+                    <img class="img-fluid rounded-full w-12" src="../assets/images/user/avatar-1.jpg"
+                      alt="Generic placeholder image" />
+                  </div>
+                  <div class="grow ltr:ml-2 rtl:mr-2">
+                    <span class="h6">Josephin Doe</span>
+                    <small class="text-muted block">Santa Ana,CA</small>
+                  </div>
+                </div>
+                <div class="flex mb-3">
+                  <div class="shrink-0 pr-0">
+                    <img class="img-fluid rounded-full w-12" src="../assets/images/user/avatar-2.jpg"
+                      alt="Generic placeholder image" />
+                  </div>
+                  <div class="grow ltr:ml-2 rtl:mr-2">
+                    <span class="h6">Ashoka T.</span>
+                    <small class="text-muted block">Santa Ana,CA</small>
+                  </div>
+                </div>
+                <div class="flex mb-3">
+                  <div class="shrink-0 pr-0">
+                    <img class="img-fluid rounded-full w-12" src="../assets/images/user/avatar-3.jpg"
+                      alt="Generic placeholder image" />
+                  </div>
+                  <div class="grow ltr:ml-2 rtl:mr-2">
+                    <span class="h6">Josephin Doe</span>
+                    <small class="text-muted block">Santa Ana,CA</small>
+                  </div>
+                </div>
+                <div class="flex mb-3">
+                  <div class="shrink-0 pr-0">
+                    <img class="img-fluid rounded-full w-12" src="../assets/images/user/avatar-4.jpg"
+                      alt="Generic placeholder image" />
+                  </div>
+                  <div class="grow ltr:ml-2 rtl:mr-2">
+                    <span class="h6">Ashoka T.</span>
+                    <small class="text-muted block">Santa Ana,CA</small>
+                  </div>
+                </div>
+                <div class="flex">
+                  <div class="shrink-0 pr-0">
+                    <img class="img-fluid rounded-full w-12" src="../assets/images/user/avatar-5.jpg"
+                      alt="Generic placeholder image" />
+                  </div>
+                  <div class="grow ltr:ml-2 rtl:mr-2">
+                    <span class="h6">Josephin Doe</span>
+                    <small class="text-muted block">Santa Ana,CA</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- [ Invoice-left ] end -->
+        <!-- [ Invoice-right ] start -->
+        <div class="col-span-12 xl:col-span-9 lg:col-span-8">
+          <div class="card">
+            <div class="card-body !py-3">
+              <div class="flex items-center flex-wrap justify-between gap-4">
+                <div>
+                  <ul class="flex items-center flex-wrap gap-3 m-0">
+                    <li class="list-inline-item dropdown py-1">
+                      <a class="inline-flex items-center gap-1 dropdown-toggle link-secondary" href="#"
+                        data-pc-toggle="dropdown">
+                        <i class="material-icons-two-tone text-lg leading-none bg-primary-500">calendar_today</i> By
+                        Date
+                      </a>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#!">Show all</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#!">Today</a>
+                        <a class="dropdown-item" href="#!">Yesterday</a>
+                        <a class="dropdown-item" href="#!">This week</a>
+                        <a class="dropdown-item" href="#!">This month</a>
+                        <a class="dropdown-item" href="#!">This year</a>
+                      </div>
+                    </li>
+                    <li class="list-inline-item dropdown py-1">
+                      <a class="inline-flex items-center gap-1 dropdown-toggle link-secondary" href="#"
+                        data-pc-toggle="dropdown">
+                        <i class="material-icons-two-tone text-lg leading-none bg-primary-500">emoji_flags</i> By Status
+                      </a>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#!">Show all</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#!">Open</a>
+                        <a class="dropdown-item" href="#!">On hold</a>
+                        <a class="dropdown-item" href="#!">Resolved</a>
+                        <a class="dropdown-item" href="#!">Closed</a>
+                        <a class="dropdown-item" href="#!">Dublicate</a>
+                        <a class="dropdown-item" href="#!">Wontfix</a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <span class="mr-3">View Mode:</span>
+                  <ul class="inline-flex items-center text-center nav-tabs rounded overflow-hidden">
+                    <li class="group active">
+                      <a href="javascript:void(0);" data-pc-toggle="tab" data-pc-target="tasktab-1"
+                        class="inline-block transition-all duration-300 ease-linear">
+                        <div
+                          class="w-8 h-8 bg-primary-500/10 text-primary-500 group-[.active]:bg-primary-500 group-[.active]:text-white inline-flex items-center justify-center">
+                          <i class="fas fa-grip-horizontal text-base leading-none"></i>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="group">
+                      <a href="javascript:void(0);" data-pc-toggle="tab" data-pc-target="tasktab-2"
+                        class="inline-block transition-all duration-300 ease-linear">
+                        <div
+                          class="w-8 h-8 bg-primary-500/10 text-primary-500 group-[.active]:bg-primary-500 group-[.active]:text-white inline-flex items-center justify-center">
+                          <i class="fas fa-list-ul text-base leading-none"></i>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-content">
+            <div class="block tab-pane" id="tasktab-1">
+              <div class="grid grid-cols-12 gap-x-6">
+                <div class="col-span-12 md:col-span-6">
+                  <div class="card">
+                    <div class="card-header !py-4 flex items-center justify-between">
+                      <h5 class="flex items-center gap-1">
+                        <img class="img-fluid rouded-full w-[25px] mr-2" src="../assets/images/user/avatar-2.jpg"
+                          alt="1" />John Doe
+                      </h5>
+                      <div class="dropdown">
+                        <a class="dropdown-toggle arrow-none text-secondary" href="#" data-pc-toggle="dropdown">
+                          <i class="w-5 h-5" data-feather="more-vertical"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end">
+                          <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">report_problem</i>
+                            Pending</a>
+                          <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">done_all</i> Paid</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item active" href="#!"><i
+                              class="material-icons-two-tone">hourglass_full</i>On Hold</a>
+                          <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">cancel</i> Canceled</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-body !py-3 flex items-center justify-between">
+                      <p class="inline-flex item-center gap-1 mb-0">
+                        <i class="material-icons-two-tone text-lg leading-snug bg-danger-500">timer</i> Due : 23 hours
+                      </p>
+                      <div>
+                        <h4 class="inline-flex item-center gap-1 mb-0 ml-2">
+                          <i
+                            class="material-icons-two-tone text-lg leading-snug bg-primary-500">account_balance_wallet</i>
+                          $8,750
+                        </h4>
+                      </div>
+                    </div>
+                    <hr class="my-0 border-0 border-t border-theme-border dark:border-themedark-border" />
+                    <div class="card-body">
+                      <p class="mb-3">A collection of textile samples lay <b>spread out</b> on the table One morning,
+                        when <b>Gregor Samsa</b> woke from troubled...</p>
+                      <table class="table table-xs w-auto table-borderless">
+                        <tbody>
+                          <tr class="!border-none">
+                            <td class="!pl-0 !pb-0"><i
+                                class="material-icons-two-tone bg-primary-500 text-base leading-none">receipt</i>
+                              Invoice no :</td>
+                            <td class="!pb-0">#0028</td>
+                          </tr>
+                          <tr class="!border-none">
+                            <td class="!pl-0 !pb-0"><i
+                                class="material-icons-two-tone bg-primary-500 text-base leading-none">calendar_today</i>
+                              Issued on :</td>
+                            <td class="!pb-0">2020/01/25</td>
+                          </tr>
+                          <tr class="!border-none">
+                            <td class="!pl-0 !pb-0"><i
+                                class="material-icons-two-tone bg-primary-500 text-base leading-none">payment</i>
+                              Method:</td>
+                            <td class="!pb-0">Phonepe</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <p class="m-0">A collection of <b>textile samples</b> lay spread out on the table One morning...
+                      </p>
+                    </div>
+                    <div
+                      class="card-footer flex items-center justify-between !py-3 bg-theme-bodybg/50 dark:bg-themedark-bodybg/50">
+                      <div>
+                        <button class="btn btn-light-success btn-sm"><i class="fas fa-eye me-1"></i>View</button>
+                      </div>
+                      <div>
+                        <div class="dropdown">
+                          <a class="dropdown-toggle btn btn-light-secondary btn-sm" href="#" data-pc-toggle="dropdown">
+                            Action </a>
+                          <div class="dropdown-menu dropdown-menu-end">
+                            <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">print</i> Print
+                              Invoice</a>
+                            <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">cloud_download</i>
+                              Download invoice</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">edit</i>Edit
+                              Invoice</a>
+                            <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">delete</i> Remove
+                              Invoice</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-span-12 md:col-span-6">
+                  <div class="card">
+                    <div class="card-header !py-4 flex items-center justify-between">
+                      <h5 class="flex items-center gap-1">
+                        <img class="img-fluid rouded-full w-[25px] mr-2" src="../assets/images/user/avatar-5.jpg"
+                          alt="1" />Joseph William
+                      </h5>
+                      <div class="dropdown">
+                        <a class="dropdown-toggle arrow-none text-secondary" href="#" data-pc-toggle="dropdown">
+                          <i class="w-5 h-5" data-feather="more-vertical"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end">
+                          <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">report_problem</i>
+                            Pending</a>
+                          <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">done_all</i> Paid</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item active" href="#!"><i
+                              class="material-icons-two-tone">hourglass_full</i>On Hold</a>
+                          <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">cancel</i> Canceled</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-body !py-3 flex items-center justify-between">
+                      <p class="inline-flex item-center gap-1 mb-0">
+                        <i class="material-icons-two-tone text-lg leading-snug bg-danger-500">timer</i> Due : 12 hours
+                      </p>
+                      <div>
+                        <h4 class="inline-flex item-center gap-1 mb-0 ml-2">
+                          <i
+                            class="material-icons-two-tone text-lg leading-snug bg-primary-500">account_balance_wallet</i>
+                          $12,960
+                        </h4>
+                      </div>
+                    </div>
+                    <hr class="my-0 border-0 border-t border-theme-border dark:border-themedark-border" />
+                    <div class="card-body">
+                      <p class="mb-3">A collection of textile samples lay <b>spread out</b> on the table One morning,
+                        when <b>Gregor Samsa</b> woke from troubled...</p>
+                      <table class="table table-xs w-auto table-borderless">
+                        <tbody>
+                          <tr class="!border-none">
+                            <td class="!pl-0 !pb-0"><i
+                                class="material-icons-two-tone bg-primary-500 text-base leading-none">receipt</i>
+                              Invoice no :</td>
+                            <td class="!pb-0">#0031</td>
+                          </tr>
+                          <tr class="!border-none">
+                            <td class="!pl-0 !pb-0"><i
+                                class="material-icons-two-tone bg-primary-500 text-base leading-none">calendar_today</i>
+                              Issued on :</td>
+                            <td class="!pb-0">2020/01/12</td>
+                          </tr>
+                          <tr class="!border-none">
+                            <td class="!pl-0 !pb-0"><i
+                                class="material-icons-two-tone bg-primary-500 text-base leading-none">payment</i>
+                              Method:</td>
+                            <td class="!pb-0">PayU</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <p class="m-0">A <b>collection textile</b> of <b>samples</b> lay spread out One morning on the
+                        table...</p>
+                    </div>
+                    <div
+                      class="card-footer flex items-center justify-between !py-3 bg-theme-bodybg/50 dark:bg-themedark-bodybg/50">
+                      <div>
+                        <button class="btn btn-light-success btn-sm"><i class="fas fa-eye me-1"></i>View</button>
+                      </div>
+                      <div>
+                        <div class="dropdown">
+                          <a class="dropdown-toggle btn btn-light-secondary btn-sm" href="#" data-pc-toggle="dropdown">
+                            Action </a>
+                          <div class="dropdown-menu dropdown-menu-end">
+                            <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">print</i> Print
+                              Invoice</a>
+                            <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">cloud_download</i>
+                              Download invoice</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">edit</i>Edit
+                              Invoice</a>
+                            <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">delete</i> Remove
+                              Invoice</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-span-12 md:col-span-6">
+                  <div class="card">
+                    <div class="card-header !py-4 flex items-center justify-between">
+                      <h5 class="flex items-center gap-1">
+                        <img class="img-fluid rouded-full w-[25px] mr-2" src="../assets/images/user/avatar-1.jpg"
+                          alt="1" />Ashoka T.
+                      </h5>
+                      <div class="dropdown">
+                        <a class="dropdown-toggle arrow-none text-secondary" href="#" data-pc-toggle="dropdown">
+                          <i class="w-5 h-5" data-feather="more-vertical"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end">
+                          <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">report_problem</i>
+                            Pending</a>
+                          <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">done_all</i> Paid</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item active" href="#!"><i
+                              class="material-icons-two-tone">hourglass_full</i>On Hold</a>
+                          <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">cancel</i> Canceled</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-body !py-3 flex items-center justify-between">
+                      <p class="inline-flex item-center gap-1 mb-0">
+                        <i class="material-icons-two-tone text-lg leading-snug bg-danger-500">timer</i> Due : 9 hours
+                      </p>
+                      <div>
+                        <h4 class="inline-flex item-center gap-1 mb-0 ml-2">
+                          <i
+                            class="material-icons-two-tone text-lg leading-snug bg-primary-500">account_balance_wallet</i>
+                          $9,060
+                        </h4>
+                      </div>
+                    </div>
+                    <hr class="my-0 border-0 border-t border-theme-border dark:border-themedark-border" />
+                    <div class="card-body">
+                      <p class="mb-3">A collection of textile samples lay <b>spread out</b> on the table One morning,
+                        when <b>Gregor Samsa</b> woke from troubled...</p>
+                      <table class="table table-xs w-auto table-borderless">
+                        <tbody>
+                          <tr class="!border-none">
+                            <td class="!pl-0 !pb-0"><i
+                                class="material-icons-two-tone bg-primary-500 text-base leading-none">receipt</i>
+                              Invoice no :</td>
+                            <td class="!pb-0">#0005</td>
+                          </tr>
+                          <tr class="!border-none">
+                            <td class="!pl-0 !pb-0"><i
+                                class="material-icons-two-tone bg-primary-500 text-base leading-none">calendar_today</i>
+                              Issued on :</td>
+                            <td class="!pb-0">2020/01/29</td>
+                          </tr>
+                          <tr class="!border-none">
+                            <td class="!pl-0 !pb-0"><i
+                                class="material-icons-two-tone bg-primary-500 text-base leading-none">payment</i>
+                              Method:</td>
+                            <td class="!pb-0">Paypal</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <p class="m-0">A <b>collection textile</b> of <b>samples</b> lay spread out One morning on the
+                        table...</p>
+                    </div>
+                    <div
+                      class="card-footer flex items-center justify-between !py-3 bg-theme-bodybg/50 dark:bg-themedark-bodybg/50">
+                      <div>
+                        <button class="btn btn-light-success btn-sm"><i class="fas fa-eye me-1"></i>View</button>
+                      </div>
+                      <div>
+                        <div class="dropdown">
+                          <a class="dropdown-toggle btn btn-light-secondary btn-sm" href="#" data-pc-toggle="dropdown">
+                            Action </a>
+                          <div class="dropdown-menu dropdown-menu-end">
+                            <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">print</i> Print
+                              Invoice</a>
+                            <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">cloud_download</i>
+                              Download invoice</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">edit</i>Edit
+                              Invoice</a>
+                            <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">delete</i> Remove
+                              Invoice</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-span-12 md:col-span-6">
+                  <div class="card">
+                    <div class="card-header !py-4 flex items-center justify-between">
+                      <h5 class="flex items-center gap-1">
+                        <img class="img-fluid rouded-full w-[25px] mr-2" src="../assets/images/user/avatar-2.jpg"
+                          alt="1" />John Doe
+                      </h5>
+                      <div class="dropdown">
+                        <a class="dropdown-toggle arrow-none text-secondary" href="#" data-pc-toggle="dropdown">
+                          <i class="w-5 h-5" data-feather="more-vertical"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end">
+                          <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">report_problem</i>
+                            Pending</a>
+                          <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">done_all</i> Paid</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item active" href="#!"><i
+                              class="material-icons-two-tone">hourglass_full</i>On Hold</a>
+                          <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">cancel</i> Canceled</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-body !py-3 flex items-center justify-between">
+                      <p class="inline-flex item-center gap-1 mb-0">
+                        <i class="material-icons-two-tone text-lg leading-snug bg-danger-500">timer</i> Due : 23 hours
+                      </p>
+                      <div>
+                        <h4 class="inline-flex item-center gap-1 mb-0 ml-2">
+                          <i
+                            class="material-icons-two-tone text-lg leading-snug bg-primary-500">account_balance_wallet</i>
+                          $8,750
+                        </h4>
+                      </div>
+                    </div>
+                    <hr class="my-0 border-0 border-t border-theme-border dark:border-themedark-border" />
+                    <div class="card-body">
+                      <p class="mb-3">A collection of textile samples lay <b>spread out</b> on the table One morning,
+                        when <b>Gregor Samsa</b> woke from troubled...</p>
+                      <table class="table table-xs w-auto table-borderless">
+                        <tbody>
+                          <tr class="!border-none">
+                            <td class="!pl-0 !pb-0"><i
+                                class="material-icons-two-tone bg-primary-500 text-base leading-none">receipt</i>
+                              Invoice no :</td>
+                            <td class="!pb-0">#0028</td>
+                          </tr>
+                          <tr class="!border-none">
+                            <td class="!pl-0 !pb-0"><i
+                                class="material-icons-two-tone bg-primary-500 text-base leading-none">calendar_today</i>
+                              Issued on :</td>
+                            <td class="!pb-0">2020/01/25</td>
+                          </tr>
+                          <tr class="!border-none">
+                            <td class="!pl-0 !pb-0"><i
+                                class="material-icons-two-tone bg-primary-500 text-base leading-none">payment</i>
+                              Method:</td>
+                            <td class="!pb-0">Phonepe</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <p class="m-0">A collection of <b>textile samples</b> lay spread out on the table One morning...
+                      </p>
+                    </div>
+                    <div
+                      class="card-footer flex items-center justify-between !py-3 bg-theme-bodybg/50 dark:bg-themedark-bodybg/50">
+                      <div>
+                        <button class="btn btn-light-success btn-sm"><i class="fas fa-eye me-1"></i>View</button>
+                      </div>
+                      <div>
+                        <div class="dropdown">
+                          <a class="dropdown-toggle btn btn-light-secondary btn-sm" href="#" data-pc-toggle="dropdown">
+                            Action </a>
+                          <div class="dropdown-menu dropdown-menu-end">
+                            <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">print</i> Print
+                              Invoice</a>
+                            <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">cloud_download</i>
+                              Download invoice</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">edit</i>Edit
+                              Invoice</a>
+                            <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">delete</i> Remove
+                              Invoice</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-span-12 md:col-span-6">
+                  <div class="card">
+                    <div class="card-header !py-4 flex items-center justify-between">
+                      <h5 class="flex items-center gap-1">
+                        <img class="img-fluid rouded-full w-[25px] mr-2" src="../assets/images/user/avatar-5.jpg"
+                          alt="1" />Joseph William
+                      </h5>
+                      <div class="dropdown">
+                        <a class="dropdown-toggle arrow-none text-secondary" href="#" data-pc-toggle="dropdown">
+                          <i class="w-5 h-5" data-feather="more-vertical"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end">
+                          <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">report_problem</i>
+                            Pending</a>
+                          <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">done_all</i> Paid</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item active" href="#!"><i
+                              class="material-icons-two-tone">hourglass_full</i>On Hold</a>
+                          <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">cancel</i> Canceled</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-body !py-3 flex items-center justify-between">
+                      <p class="inline-flex item-center gap-1 mb-0">
+                        <i class="material-icons-two-tone text-lg leading-snug bg-danger-500">timer</i> Due : 12 hours
+                      </p>
+                      <div>
+                        <h4 class="inline-flex item-center gap-1 mb-0 ml-2">
+                          <i
+                            class="material-icons-two-tone text-lg leading-snug bg-primary-500">account_balance_wallet</i>
+                          $12,960
+                        </h4>
+                      </div>
+                    </div>
+                    <hr class="my-0 border-0 border-t border-theme-border dark:border-themedark-border" />
+                    <div class="card-body">
+                      <p class="mb-3">A collection of textile samples lay <b>spread out</b> on the table One morning,
+                        when <b>Gregor Samsa</b> woke from troubled...</p>
+                      <table class="table table-xs w-auto table-borderless">
+                        <tbody>
+                          <tr class="!border-none">
+                            <td class="!pl-0 !pb-0"><i
+                                class="material-icons-two-tone bg-primary-500 text-base leading-none">receipt</i>
+                              Invoice no :</td>
+                            <td class="!pb-0">#0031</td>
+                          </tr>
+                          <tr class="!border-none">
+                            <td class="!pl-0 !pb-0"><i
+                                class="material-icons-two-tone bg-primary-500 text-base leading-none">calendar_today</i>
+                              Issued on :</td>
+                            <td class="!pb-0">2020/01/12</td>
+                          </tr>
+                          <tr class="!border-none">
+                            <td class="!pl-0 !pb-0"><i
+                                class="material-icons-two-tone bg-primary-500 text-base leading-none">payment</i>
+                              Method:</td>
+                            <td class="!pb-0">PayU</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <p class="m-0">A <b>collection textile</b> of <b>samples</b> lay spread out One morning on the
+                        table...</p>
+                    </div>
+                    <div
+                      class="card-footer flex items-center justify-between !py-3 bg-theme-bodybg/50 dark:bg-themedark-bodybg/50">
+                      <div>
+                        <button class="btn btn-light-success btn-sm"><i class="fas fa-eye me-1"></i>View</button>
+                      </div>
+                      <div>
+                        <div class="dropdown">
+                          <a class="dropdown-toggle btn btn-light-secondary btn-sm" href="#" data-pc-toggle="dropdown">
+                            Action </a>
+                          <div class="dropdown-menu dropdown-menu-end">
+                            <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">print</i> Print
+                              Invoice</a>
+                            <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">cloud_download</i>
+                              Download invoice</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">edit</i>Edit
+                              Invoice</a>
+                            <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">delete</i> Remove
+                              Invoice</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-span-12 md:col-span-6">
+                  <div class="card">
+                    <div class="card-header !py-4 flex items-center justify-between">
+                      <h5 class="flex items-center gap-1">
+                        <img class="img-fluid rouded-full w-[25px] mr-2" src="../assets/images/user/avatar-1.jpg"
+                          alt="1" />Ashoka T.
+                      </h5>
+                      <div class="dropdown">
+                        <a class="dropdown-toggle arrow-none text-secondary" href="#" data-pc-toggle="dropdown">
+                          <i class="w-5 h-5" data-feather="more-vertical"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end">
+                          <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">report_problem</i>
+                            Pending</a>
+                          <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">done_all</i> Paid</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item active" href="#!"><i
+                              class="material-icons-two-tone">hourglass_full</i>On Hold</a>
+                          <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">cancel</i> Canceled</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-body !py-3 flex items-center justify-between">
+                      <p class="inline-flex item-center gap-1 mb-0">
+                        <i class="material-icons-two-tone text-lg leading-snug bg-danger-500">timer</i> Due : 9 hours
+                      </p>
+                      <div>
+                        <h4 class="inline-flex item-center gap-1 mb-0 ml-2">
+                          <i
+                            class="material-icons-two-tone text-lg leading-snug bg-primary-500">account_balance_wallet</i>
+                          $9,060
+                        </h4>
+                      </div>
+                    </div>
+                    <hr class="my-0 border-0 border-t border-theme-border dark:border-themedark-border" />
+                    <div class="card-body">
+                      <p class="mb-3">A collection of textile samples lay <b>spread out</b> on the table One morning,
+                        when <b>Gregor Samsa</b> woke from troubled...</p>
+                      <table class="table table-xs w-auto table-borderless">
+                        <tbody>
+                          <tr class="!border-none">
+                            <td class="!pl-0 !pb-0"><i
+                                class="material-icons-two-tone bg-primary-500 text-base leading-none">receipt</i>
+                              Invoice no :</td>
+                            <td class="!pb-0">#0005</td>
+                          </tr>
+                          <tr class="!border-none">
+                            <td class="!pl-0 !pb-0"><i
+                                class="material-icons-two-tone bg-primary-500 text-base leading-none">calendar_today</i>
+                              Issued on :</td>
+                            <td class="!pb-0">2020/01/29</td>
+                          </tr>
+                          <tr class="!border-none">
+                            <td class="!pl-0 !pb-0"><i
+                                class="material-icons-two-tone bg-primary-500 text-base leading-none">payment</i>
+                              Method:</td>
+                            <td class="!pb-0">Paypal</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <p class="m-0">A <b>collection textile</b> of <b>samples</b> lay spread out One morning on the
+                        table...</p>
+                    </div>
+                    <div
+                      class="card-footer flex items-center justify-between !py-3 bg-theme-bodybg/50 dark:bg-themedark-bodybg/50">
+                      <div>
+                        <button class="btn btn-light-success btn-sm"><i class="fas fa-eye me-1"></i>View</button>
+                      </div>
+                      <div>
+                        <div class="dropdown">
+                          <a class="dropdown-toggle btn btn-light-secondary btn-sm" href="#" data-pc-toggle="dropdown">
+                            Action </a>
+                          <div class="dropdown-menu dropdown-menu-end">
+                            <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">print</i> Print
+                              Invoice</a>
+                            <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">cloud_download</i>
+                              Download invoice</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">edit</i>Edit
+                              Invoice</a>
+                            <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">delete</i> Remove
+                              Invoice</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hidden tab-pane" id="tasktab-2">
+              <div class="grid grid-cols-12 gap-6">
+                <div class="col-span-12">
+                  <div class="card">
+                    <div class="card-body !py-3 border-b border-theme-border dark:border-themedark-border">
+                      <div class="grid grid-cols-12 gap-3 sm:gap-6">
+                        <div class="col-span-12 sm:col-span-3 self-center">
+                          <div class="flex items-center h6 gap-1">
+                            <img class="img-fluid rouded-full w-[25px] mr-2" src="../assets/images/user/avatar-2.jpg"
+                              alt="1">John Doe
+                          </div>
+                        </div>
+                        <div class="col-span-12 sm:col-span-3 self-center">
+                          <h5 class="inline-flex item-center gap-1 mb-0 ml-2">
+                            <i
+                              class="material-icons-two-tone text-lg leading-snug bg-primary-500">account_balance_wallet</i>
+                            $8,750
+                          </h5>
+                        </div>
+                        <div class="col-span-12 sm:col-span-6 self-center">
+                          <div class="flex justify-between">
+                            <div class="flex gap-2 items-center">
+                              <p class="d-inline-block mb-0"><i
+                                  class="material-icons-two-tone text-lg leading-none align-sub bg-info-500">receipt</i>
+                                #0028</p>
+                            </div>
+                            <div>
+                              <p class="inline-flex item-center gap-1 mb-0 ml-2">
+                                <i
+                                  class="material-icons-two-tone text-lg leading-snug bg-primary-500">calendar_today</i>
+                                2020/01/25
+                              </p>
+                              <p class="inline-flex item-center gap-1 mb-0 ml-2">
+                                <i class="material-icons-two-tone text-lg leading-snug bg-success-500">payment</i>
+                                Phonepe
+                              </p>
+                              <div class="dropdown inline-block ms-2">
+                                <a class="dropdown-toggle arrow-none text-secondary" href="#" data-pc-toggle="dropdown">
+                                  <i data-feather="more-vertical" class="w-5 h-5"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-end">
+                                  <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">print</i> Print
+                                    Invoice</a>
+                                  <a class="dropdown-item" href="#!"><i
+                                      class="material-icons-two-tone">cloud_download</i>
+                                    Download invoice</a>
+                                  <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">edit</i>Edit
+                                    Invoice</a>
+                                  <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">delete</i>
+                                    Remove Invoice</a>
+                                  <div class="dropdown-divider"></div>
+                                  <a class="dropdown-item" href="#!"><i
+                                      class="material-icons-two-tone">report_problem</i>
+                                    Pending</a>
+                                  <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">done_all</i>
+                                    Paid</a>
+                                  <a class="dropdown-item" href="#!"><i
+                                      class="material-icons-two-tone">hourglass_full</i>On
+                                    Hold</a>
+                                  <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">cancel</i>
+                                    Canceled</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-body !py-3 border-b border-theme-border dark:border-themedark-border">
+                      <div class="grid grid-cols-12 gap-3 sm:gap-6">
+                        <div class="col-span-12 sm:col-span-3 self-center">
+                          <div class="flex items-center h6 gap-1">
+                            <img class="img-fluid rouded-full w-[25px] mr-2" src="../assets/images/user/avatar-5.jpg"
+                              alt="1">Joseph William
+                          </div>
+                        </div>
+                        <div class="col-span-12 sm:col-span-3 self-center">
+                          <h5 class="inline-flex item-center gap-1 mb-0 ml-2">
+                            <i
+                              class="material-icons-two-tone text-lg leading-snug bg-primary-500">account_balance_wallet</i>
+                            $12,960
+                          </h5>
+                        </div>
+                        <div class="col-span-12 sm:col-span-6 self-center">
+                          <div class="flex justify-between">
+                            <div class="flex gap-2 items-center">
+                              <p class="d-inline-block mb-0"><i
+                                  class="material-icons-two-tone text-lg leading-none align-sub bg-info-500">receipt</i>
+                                #0031</p>
+                            </div>
+                            <div>
+                              <p class="inline-flex item-center gap-1 mb-0 ml-2">
+                                <i
+                                  class="material-icons-two-tone text-lg leading-snug bg-primary-500">calendar_today</i>
+                                2020/01/12
+                              </p>
+                              <p class="inline-flex item-center gap-1 mb-0 ml-2">
+                                <i class="material-icons-two-tone text-lg leading-snug bg-success-500">payment</i> PayU
+                              </p>
+                              <div class="dropdown inline-block ms-2">
+                                <a class="dropdown-toggle arrow-none text-secondary" href="#" data-pc-toggle="dropdown">
+                                  <i data-feather="more-vertical" class="w-5 h-5"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-end">
+                                  <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">print</i> Print
+                                    Invoice</a>
+                                  <a class="dropdown-item" href="#!"><i
+                                      class="material-icons-two-tone">cloud_download</i>
+                                    Download invoice</a>
+                                  <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">edit</i>Edit
+                                    Invoice</a>
+                                  <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">delete</i>
+                                    Remove Invoice</a>
+                                  <div class="dropdown-divider"></div>
+                                  <a class="dropdown-item" href="#!"><i
+                                      class="material-icons-two-tone">report_problem</i>
+                                    Pending</a>
+                                  <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">done_all</i>
+                                    Paid</a>
+                                  <a class="dropdown-item" href="#!"><i
+                                      class="material-icons-two-tone">hourglass_full</i>On
+                                    Hold</a>
+                                  <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">cancel</i>
+                                    Canceled</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-body !py-3 border-b border-theme-border dark:border-themedark-border">
+                      <div class="grid grid-cols-12 gap-3 sm:gap-6">
+                        <div class="col-span-12 sm:col-span-3 self-center">
+                          <div class="flex items-center h6 gap-1">
+                            <img class="img-fluid rouded-full w-[25px] mr-2" src="../assets/images/user/avatar-1.jpg"
+                              alt="1">Ashoka T.
+                          </div>
+                        </div>
+                        <div class="col-span-12 sm:col-span-3 self-center">
+                          <h5 class="inline-flex item-center gap-1 mb-0 ml-2">
+                            <i
+                              class="material-icons-two-tone text-lg leading-snug bg-primary-500">account_balance_wallet</i>
+                            $9,060
+                          </h5>
+                        </div>
+                        <div class="col-span-12 sm:col-span-6 self-center">
+                          <div class="flex justify-between">
+                            <div class="flex gap-2 items-center">
+                              <p class="d-inline-block mb-0"><i
+                                  class="material-icons-two-tone text-lg leading-none align-sub bg-info-500">receipt</i>
+                                #0005</p>
+                            </div>
+                            <div>
+                              <p class="inline-flex item-center gap-1 mb-0 ml-2">
+                                <i
+                                  class="material-icons-two-tone text-lg leading-snug bg-primary-500">calendar_today</i>
+                                2020/01/29
+                              </p>
+                              <p class="inline-flex item-center gap-1 mb-0 ml-2">
+                                <i class="material-icons-two-tone text-lg leading-snug bg-success-500">payment</i>
+                                Paypal
+                              </p>
+                              <div class="dropdown inline-block ms-2">
+                                <a class="dropdown-toggle arrow-none text-secondary" href="#" data-pc-toggle="dropdown">
+                                  <i data-feather="more-vertical" class="w-5 h-5"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-end">
+                                  <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">print</i> Print
+                                    Invoice</a>
+                                  <a class="dropdown-item" href="#!"><i
+                                      class="material-icons-two-tone">cloud_download</i>
+                                    Download invoice</a>
+                                  <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">edit</i>Edit
+                                    Invoice</a>
+                                  <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">delete</i>
+                                    Remove Invoice</a>
+                                  <div class="dropdown-divider"></div>
+                                  <a class="dropdown-item" href="#!"><i
+                                      class="material-icons-two-tone">report_problem</i>
+                                    Pending</a>
+                                  <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">done_all</i>
+                                    Paid</a>
+                                  <a class="dropdown-item" href="#!"><i
+                                      class="material-icons-two-tone">hourglass_full</i>On
+                                    Hold</a>
+                                  <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">cancel</i>
+                                    Canceled</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    <div class="card-body !py-3 border-b border-theme-border dark:border-themedark-border">
+                      <div class="grid grid-cols-12 gap-3 sm:gap-6">
+                        <div class="col-span-12 sm:col-span-3 self-center">
+                          <div class="flex items-center h6 gap-1">
+                            <img class="img-fluid rouded-full w-[25px] mr-2" src="../assets/images/user/avatar-2.jpg"
+                              alt="1">John Doe
+                          </div>
+                        </div>
+                        <div class="col-span-12 sm:col-span-3 self-center">
+                          <h5 class="inline-flex item-center gap-1 mb-0 ml-2">
+                            <i
+                              class="material-icons-two-tone text-lg leading-snug bg-primary-500">account_balance_wallet</i>
+                            $8,750
+                          </h5>
+                        </div>
+                        <div class="col-span-12 sm:col-span-6 self-center">
+                          <div class="flex justify-between">
+                            <div class="flex gap-2 items-center">
+                              <p class="d-inline-block mb-0"><i
+                                  class="material-icons-two-tone text-lg leading-none align-sub bg-info-500">receipt</i>
+                                #0028</p>
+                            </div>
+                            <div>
+                              <p class="inline-flex item-center gap-1 mb-0 ml-2">
+                                <i
+                                  class="material-icons-two-tone text-lg leading-snug bg-primary-500">calendar_today</i>
+                                2020/01/25
+                              </p>
+                              <p class="inline-flex item-center gap-1 mb-0 ml-2">
+                                <i class="material-icons-two-tone text-lg leading-snug bg-success-500">payment</i>
+                                Phonepe
+                              </p>
+                              <div class="dropdown inline-block ms-2">
+                                <a class="dropdown-toggle arrow-none text-secondary" href="#" data-pc-toggle="dropdown">
+                                  <i data-feather="more-vertical" class="w-5 h-5"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-end">
+                                  <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">print</i> Print
+                                    Invoice</a>
+                                  <a class="dropdown-item" href="#!"><i
+                                      class="material-icons-two-tone">cloud_download</i>
+                                    Download invoice</a>
+                                  <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">edit</i>Edit
+                                    Invoice</a>
+                                  <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">delete</i>
+                                    Remove Invoice</a>
+                                  <div class="dropdown-divider"></div>
+                                  <a class="dropdown-item" href="#!"><i
+                                      class="material-icons-two-tone">report_problem</i>
+                                    Pending</a>
+                                  <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">done_all</i>
+                                    Paid</a>
+                                  <a class="dropdown-item" href="#!"><i
+                                      class="material-icons-two-tone">hourglass_full</i>On
+                                    Hold</a>
+                                  <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">cancel</i>
+                                    Canceled</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-body !py-3 border-b border-theme-border dark:border-themedark-border">
+                      <div class="grid grid-cols-12 gap-3 sm:gap-6">
+                        <div class="col-span-12 sm:col-span-3 self-center">
+                          <div class="flex items-center h6 gap-1">
+                            <img class="img-fluid rouded-full w-[25px] mr-2" src="../assets/images/user/avatar-5.jpg"
+                              alt="1">Joseph William
+                          </div>
+                        </div>
+                        <div class="col-span-12 sm:col-span-3 self-center">
+                          <h5 class="inline-flex item-center gap-1 mb-0 ml-2">
+                            <i
+                              class="material-icons-two-tone text-lg leading-snug bg-primary-500">account_balance_wallet</i>
+                            $12,960
+                          </h5>
+                        </div>
+                        <div class="col-span-12 sm:col-span-6 self-center">
+                          <div class="flex justify-between">
+                            <div class="flex gap-2 items-center">
+                              <p class="d-inline-block mb-0"><i
+                                  class="material-icons-two-tone text-lg leading-none align-sub bg-info-500">receipt</i>
+                                #0031</p>
+                            </div>
+                            <div>
+                              <p class="inline-flex item-center gap-1 mb-0 ml-2">
+                                <i
+                                  class="material-icons-two-tone text-lg leading-snug bg-primary-500">calendar_today</i>
+                                2020/01/12
+                              </p>
+                              <p class="inline-flex item-center gap-1 mb-0 ml-2">
+                                <i class="material-icons-two-tone text-lg leading-snug bg-success-500">payment</i> PayU
+                              </p>
+                              <div class="dropdown inline-block ms-2">
+                                <a class="dropdown-toggle arrow-none text-secondary" href="#" data-pc-toggle="dropdown">
+                                  <i data-feather="more-vertical" class="w-5 h-5"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-end">
+                                  <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">print</i> Print
+                                    Invoice</a>
+                                  <a class="dropdown-item" href="#!"><i
+                                      class="material-icons-two-tone">cloud_download</i>
+                                    Download invoice</a>
+                                  <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">edit</i>Edit
+                                    Invoice</a>
+                                  <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">delete</i>
+                                    Remove Invoice</a>
+                                  <div class="dropdown-divider"></div>
+                                  <a class="dropdown-item" href="#!"><i
+                                      class="material-icons-two-tone">report_problem</i>
+                                    Pending</a>
+                                  <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">done_all</i>
+                                    Paid</a>
+                                  <a class="dropdown-item" href="#!"><i
+                                      class="material-icons-two-tone">hourglass_full</i>On
+                                    Hold</a>
+                                  <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">cancel</i>
+                                    Canceled</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-body !py-3 border-b border-theme-border dark:border-themedark-border">
+                      <div class="grid grid-cols-12 gap-3 sm:gap-6">
+                        <div class="col-span-12 sm:col-span-3 self-center">
+                          <div class="flex items-center h6 gap-1">
+                            <img class="img-fluid rouded-full w-[25px] mr-2" src="../assets/images/user/avatar-1.jpg"
+                              alt="1">Ashoka T.
+                          </div>
+                        </div>
+                        <div class="col-span-12 sm:col-span-3 self-center">
+                          <h5 class="inline-flex item-center gap-1 mb-0 ml-2">
+                            <i
+                              class="material-icons-two-tone text-lg leading-snug bg-primary-500">account_balance_wallet</i>
+                            $9,060
+                          </h5>
+                        </div>
+                        <div class="col-span-12 sm:col-span-6 self-center">
+                          <div class="flex justify-between">
+                            <div class="flex gap-2 items-center">
+                              <p class="d-inline-block mb-0"><i
+                                  class="material-icons-two-tone text-lg leading-none align-sub bg-info-500">receipt</i>
+                                #0005</p>
+                            </div>
+                            <div>
+                              <p class="inline-flex item-center gap-1 mb-0 ml-2">
+                                <i
+                                  class="material-icons-two-tone text-lg leading-snug bg-primary-500">calendar_today</i>
+                                2020/01/29
+                              </p>
+                              <p class="inline-flex item-center gap-1 mb-0 ml-2">
+                                <i class="material-icons-two-tone text-lg leading-snug bg-success-500">payment</i>
+                                Paypal
+                              </p>
+                              <div class="dropdown inline-block ms-2">
+                                <a class="dropdown-toggle arrow-none text-secondary" href="#" data-pc-toggle="dropdown">
+                                  <i data-feather="more-vertical" class="w-5 h-5"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-end">
+                                  <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">print</i> Print
+                                    Invoice</a>
+                                  <a class="dropdown-item" href="#!"><i
+                                      class="material-icons-two-tone">cloud_download</i>
+                                    Download invoice</a>
+                                  <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">edit</i>Edit
+                                    Invoice</a>
+                                  <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">delete</i>
+                                    Remove Invoice</a>
+                                  <div class="dropdown-divider"></div>
+                                  <a class="dropdown-item" href="#!"><i
+                                      class="material-icons-two-tone">report_problem</i>
+                                    Pending</a>
+                                  <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">done_all</i>
+                                    Paid</a>
+                                  <a class="dropdown-item" href="#!"><i
+                                      class="material-icons-two-tone">hourglass_full</i>On
+                                    Hold</a>
+                                  <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">cancel</i>
+                                    Canceled</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    <div class="card-body !py-3 border-b border-theme-border dark:border-themedark-border">
+                      <div class="grid grid-cols-12 gap-3 sm:gap-6">
+                        <div class="col-span-12 sm:col-span-3 self-center">
+                          <div class="flex items-center h6 gap-1">
+                            <img class="img-fluid rouded-full w-[25px] mr-2" src="../assets/images/user/avatar-2.jpg"
+                              alt="1">John Doe
+                          </div>
+                        </div>
+                        <div class="col-span-12 sm:col-span-3 self-center">
+                          <h5 class="inline-flex item-center gap-1 mb-0 ml-2">
+                            <i
+                              class="material-icons-two-tone text-lg leading-snug bg-primary-500">account_balance_wallet</i>
+                            $8,750
+                          </h5>
+                        </div>
+                        <div class="col-span-12 sm:col-span-6 self-center">
+                          <div class="flex justify-between">
+                            <div class="flex gap-2 items-center">
+                              <p class="d-inline-block mb-0"><i
+                                  class="material-icons-two-tone text-lg leading-none align-sub bg-info-500">receipt</i>
+                                #0028</p>
+                            </div>
+                            <div>
+                              <p class="inline-flex item-center gap-1 mb-0 ml-2">
+                                <i
+                                  class="material-icons-two-tone text-lg leading-snug bg-primary-500">calendar_today</i>
+                                2020/01/25
+                              </p>
+                              <p class="inline-flex item-center gap-1 mb-0 ml-2">
+                                <i class="material-icons-two-tone text-lg leading-snug bg-success-500">payment</i>
+                                Phonepe
+                              </p>
+                              <div class="dropdown inline-block ms-2">
+                                <a class="dropdown-toggle arrow-none text-secondary" href="#" data-pc-toggle="dropdown">
+                                  <i data-feather="more-vertical" class="w-5 h-5"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-end">
+                                  <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">print</i> Print
+                                    Invoice</a>
+                                  <a class="dropdown-item" href="#!"><i
+                                      class="material-icons-two-tone">cloud_download</i>
+                                    Download invoice</a>
+                                  <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">edit</i>Edit
+                                    Invoice</a>
+                                  <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">delete</i>
+                                    Remove Invoice</a>
+                                  <div class="dropdown-divider"></div>
+                                  <a class="dropdown-item" href="#!"><i
+                                      class="material-icons-two-tone">report_problem</i>
+                                    Pending</a>
+                                  <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">done_all</i>
+                                    Paid</a>
+                                  <a class="dropdown-item" href="#!"><i
+                                      class="material-icons-two-tone">hourglass_full</i>On
+                                    Hold</a>
+                                  <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">cancel</i>
+                                    Canceled</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-body !py-3 border-b border-theme-border dark:border-themedark-border">
+                      <div class="grid grid-cols-12 gap-3 sm:gap-6">
+                        <div class="col-span-12 sm:col-span-3 self-center">
+                          <div class="flex items-center h6 gap-1">
+                            <img class="img-fluid rouded-full w-[25px] mr-2" src="../assets/images/user/avatar-5.jpg"
+                              alt="1">Joseph William
+                          </div>
+                        </div>
+                        <div class="col-span-12 sm:col-span-3 self-center">
+                          <h5 class="inline-flex item-center gap-1 mb-0 ml-2">
+                            <i
+                              class="material-icons-two-tone text-lg leading-snug bg-primary-500">account_balance_wallet</i>
+                            $12,960
+                          </h5>
+                        </div>
+                        <div class="col-span-12 sm:col-span-6 self-center">
+                          <div class="flex justify-between">
+                            <div class="flex gap-2 items-center">
+                              <p class="d-inline-block mb-0"><i
+                                  class="material-icons-two-tone text-lg leading-none align-sub bg-info-500">receipt</i>
+                                #0031</p>
+                            </div>
+                            <div>
+                              <p class="inline-flex item-center gap-1 mb-0 ml-2">
+                                <i
+                                  class="material-icons-two-tone text-lg leading-snug bg-primary-500">calendar_today</i>
+                                2020/01/12
+                              </p>
+                              <p class="inline-flex item-center gap-1 mb-0 ml-2">
+                                <i class="material-icons-two-tone text-lg leading-snug bg-success-500">payment</i> PayU
+                              </p>
+                              <div class="dropdown inline-block ms-2">
+                                <a class="dropdown-toggle arrow-none text-secondary" href="#" data-pc-toggle="dropdown">
+                                  <i data-feather="more-vertical" class="w-5 h-5"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-end">
+                                  <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">print</i> Print
+                                    Invoice</a>
+                                  <a class="dropdown-item" href="#!"><i
+                                      class="material-icons-two-tone">cloud_download</i>
+                                    Download invoice</a>
+                                  <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">edit</i>Edit
+                                    Invoice</a>
+                                  <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">delete</i>
+                                    Remove Invoice</a>
+                                  <div class="dropdown-divider"></div>
+                                  <a class="dropdown-item" href="#!"><i
+                                      class="material-icons-two-tone">report_problem</i>
+                                    Pending</a>
+                                  <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">done_all</i>
+                                    Paid</a>
+                                  <a class="dropdown-item" href="#!"><i
+                                      class="material-icons-two-tone">hourglass_full</i>On
+                                    Hold</a>
+                                  <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">cancel</i>
+                                    Canceled</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-body !py-3 border-b border-theme-border dark:border-themedark-border">
+                      <div class="grid grid-cols-12 gap-3 sm:gap-6">
+                        <div class="col-span-12 sm:col-span-3 self-center">
+                          <div class="flex items-center h6 gap-1">
+                            <img class="img-fluid rouded-full w-[25px] mr-2" src="../assets/images/user/avatar-1.jpg"
+                              alt="1">Ashoka T.
+                          </div>
+                        </div>
+                        <div class="col-span-12 sm:col-span-3 self-center">
+                          <h5 class="inline-flex item-center gap-1 mb-0 ml-2">
+                            <i
+                              class="material-icons-two-tone text-lg leading-snug bg-primary-500">account_balance_wallet</i>
+                            $9,060
+                          </h5>
+                        </div>
+                        <div class="col-span-12 sm:col-span-6 self-center">
+                          <div class="flex justify-between">
+                            <div class="flex gap-2 items-center">
+                              <p class="d-inline-block mb-0"><i
+                                  class="material-icons-two-tone text-lg leading-none align-sub bg-info-500">receipt</i>
+                                #0005</p>
+                            </div>
+                            <div>
+                              <p class="inline-flex item-center gap-1 mb-0 ml-2">
+                                <i
+                                  class="material-icons-two-tone text-lg leading-snug bg-primary-500">calendar_today</i>
+                                2020/01/29
+                              </p>
+                              <p class="inline-flex item-center gap-1 mb-0 ml-2">
+                                <i class="material-icons-two-tone text-lg leading-snug bg-success-500">payment</i>
+                                Paypal
+                              </p>
+                              <div class="dropdown inline-block ms-2">
+                                <a class="dropdown-toggle arrow-none text-secondary" href="#" data-pc-toggle="dropdown">
+                                  <i data-feather="more-vertical" class="w-5 h-5"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-end">
+                                  <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">print</i> Print
+                                    Invoice</a>
+                                  <a class="dropdown-item" href="#!"><i
+                                      class="material-icons-two-tone">cloud_download</i>
+                                    Download invoice</a>
+                                  <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">edit</i>Edit
+                                    Invoice</a>
+                                  <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">delete</i>
+                                    Remove Invoice</a>
+                                  <div class="dropdown-divider"></div>
+                                  <a class="dropdown-item" href="#!"><i
+                                      class="material-icons-two-tone">report_problem</i>
+                                    Pending</a>
+                                  <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">done_all</i>
+                                    Paid</a>
+                                  <a class="dropdown-item" href="#!"><i
+                                      class="material-icons-two-tone">hourglass_full</i>On
+                                    Hold</a>
+                                  <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">cancel</i>
+                                    Canceled</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    <div class="card-body !py-3 border-b border-theme-border dark:border-themedark-border">
+                      <div class="grid grid-cols-12 gap-3 sm:gap-6">
+                        <div class="col-span-12 sm:col-span-3 self-center">
+                          <div class="flex items-center h6 gap-1">
+                            <img class="img-fluid rouded-full w-[25px] mr-2" src="../assets/images/user/avatar-2.jpg"
+                              alt="1">John Doe
+                          </div>
+                        </div>
+                        <div class="col-span-12 sm:col-span-3 self-center">
+                          <h5 class="inline-flex item-center gap-1 mb-0 ml-2">
+                            <i
+                              class="material-icons-two-tone text-lg leading-snug bg-primary-500">account_balance_wallet</i>
+                            $8,750
+                          </h5>
+                        </div>
+                        <div class="col-span-12 sm:col-span-6 self-center">
+                          <div class="flex justify-between">
+                            <div class="flex gap-2 items-center">
+                              <p class="d-inline-block mb-0"><i
+                                  class="material-icons-two-tone text-lg leading-none align-sub bg-info-500">receipt</i>
+                                #0028</p>
+                            </div>
+                            <div>
+                              <p class="inline-flex item-center gap-1 mb-0 ml-2">
+                                <i
+                                  class="material-icons-two-tone text-lg leading-snug bg-primary-500">calendar_today</i>
+                                2020/01/25
+                              </p>
+                              <p class="inline-flex item-center gap-1 mb-0 ml-2">
+                                <i class="material-icons-two-tone text-lg leading-snug bg-success-500">payment</i>
+                                Phonepe
+                              </p>
+                              <div class="dropdown inline-block ms-2">
+                                <a class="dropdown-toggle arrow-none text-secondary" href="#" data-pc-toggle="dropdown">
+                                  <i data-feather="more-vertical" class="w-5 h-5"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-end">
+                                  <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">print</i> Print
+                                    Invoice</a>
+                                  <a class="dropdown-item" href="#!"><i
+                                      class="material-icons-two-tone">cloud_download</i>
+                                    Download invoice</a>
+                                  <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">edit</i>Edit
+                                    Invoice</a>
+                                  <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">delete</i>
+                                    Remove Invoice</a>
+                                  <div class="dropdown-divider"></div>
+                                  <a class="dropdown-item" href="#!"><i
+                                      class="material-icons-two-tone">report_problem</i>
+                                    Pending</a>
+                                  <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">done_all</i>
+                                    Paid</a>
+                                  <a class="dropdown-item" href="#!"><i
+                                      class="material-icons-two-tone">hourglass_full</i>On
+                                    Hold</a>
+                                  <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">cancel</i>
+                                    Canceled</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-body !py-3 border-b border-theme-border dark:border-themedark-border">
+                      <div class="grid grid-cols-12 gap-3 sm:gap-6">
+                        <div class="col-span-12 sm:col-span-3 self-center">
+                          <div class="flex items-center h6 gap-1">
+                            <img class="img-fluid rouded-full w-[25px] mr-2" src="../assets/images/user/avatar-5.jpg"
+                              alt="1">Joseph William
+                          </div>
+                        </div>
+                        <div class="col-span-12 sm:col-span-3 self-center">
+                          <h5 class="inline-flex item-center gap-1 mb-0 ml-2">
+                            <i
+                              class="material-icons-two-tone text-lg leading-snug bg-primary-500">account_balance_wallet</i>
+                            $12,960
+                          </h5>
+                        </div>
+                        <div class="col-span-12 sm:col-span-6 self-center">
+                          <div class="flex justify-between">
+                            <div class="flex gap-2 items-center">
+                              <p class="d-inline-block mb-0"><i
+                                  class="material-icons-two-tone text-lg leading-none align-sub bg-info-500">receipt</i>
+                                #0031</p>
+                            </div>
+                            <div>
+                              <p class="inline-flex item-center gap-1 mb-0 ml-2">
+                                <i
+                                  class="material-icons-two-tone text-lg leading-snug bg-primary-500">calendar_today</i>
+                                2020/01/12
+                              </p>
+                              <p class="inline-flex item-center gap-1 mb-0 ml-2">
+                                <i class="material-icons-two-tone text-lg leading-snug bg-success-500">payment</i> PayU
+                              </p>
+                              <div class="dropdown inline-block ms-2">
+                                <a class="dropdown-toggle arrow-none text-secondary" href="#" data-pc-toggle="dropdown">
+                                  <i data-feather="more-vertical" class="w-5 h-5"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-end">
+                                  <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">print</i> Print
+                                    Invoice</a>
+                                  <a class="dropdown-item" href="#!"><i
+                                      class="material-icons-two-tone">cloud_download</i>
+                                    Download invoice</a>
+                                  <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">edit</i>Edit
+                                    Invoice</a>
+                                  <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">delete</i>
+                                    Remove Invoice</a>
+                                  <div class="dropdown-divider"></div>
+                                  <a class="dropdown-item" href="#!"><i
+                                      class="material-icons-two-tone">report_problem</i>
+                                    Pending</a>
+                                  <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">done_all</i>
+                                    Paid</a>
+                                  <a class="dropdown-item" href="#!"><i
+                                      class="material-icons-two-tone">hourglass_full</i>On
+                                    Hold</a>
+                                  <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">cancel</i>
+                                    Canceled</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-body !py-3 border-b border-theme-border dark:border-themedark-border">
+                      <div class="grid grid-cols-12 gap-3 sm:gap-6">
+                        <div class="col-span-12 sm:col-span-3 self-center">
+                          <div class="flex items-center h6 gap-1">
+                            <img class="img-fluid rouded-full w-[25px] mr-2" src="../assets/images/user/avatar-1.jpg"
+                              alt="1">Ashoka T.
+                          </div>
+                        </div>
+                        <div class="col-span-12 sm:col-span-3 self-center">
+                          <h5 class="inline-flex item-center gap-1 mb-0 ml-2">
+                            <i
+                              class="material-icons-two-tone text-lg leading-snug bg-primary-500">account_balance_wallet</i>
+                            $9,060
+                          </h5>
+                        </div>
+                        <div class="col-span-12 sm:col-span-6 self-center">
+                          <div class="flex justify-between">
+                            <div class="flex gap-2 items-center">
+                              <p class="d-inline-block mb-0"><i
+                                  class="material-icons-two-tone text-lg leading-none align-sub bg-info-500">receipt</i>
+                                #0005</p>
+                            </div>
+                            <div>
+                              <p class="inline-flex item-center gap-1 mb-0 ml-2">
+                                <i
+                                  class="material-icons-two-tone text-lg leading-snug bg-primary-500">calendar_today</i>
+                                2020/01/29
+                              </p>
+                              <p class="inline-flex item-center gap-1 mb-0 ml-2">
+                                <i class="material-icons-two-tone text-lg leading-snug bg-success-500">payment</i>
+                                Paypal
+                              </p>
+                              <div class="dropdown inline-block ms-2">
+                                <a class="dropdown-toggle arrow-none text-secondary" href="#" data-pc-toggle="dropdown">
+                                  <i data-feather="more-vertical" class="w-5 h-5"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-end">
+                                  <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">print</i> Print
+                                    Invoice</a>
+                                  <a class="dropdown-item" href="#!"><i
+                                      class="material-icons-two-tone">cloud_download</i>
+                                    Download invoice</a>
+                                  <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">edit</i>Edit
+                                    Invoice</a>
+                                  <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">delete</i>
+                                    Remove Invoice</a>
+                                  <div class="dropdown-divider"></div>
+                                  <a class="dropdown-item" href="#!"><i
+                                      class="material-icons-two-tone">report_problem</i>
+                                    Pending</a>
+                                  <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">done_all</i>
+                                    Paid</a>
+                                  <a class="dropdown-item" href="#!"><i
+                                      class="material-icons-two-tone">hourglass_full</i>On
+                                    Hold</a>
+                                  <a class="dropdown-item" href="#!"><i class="material-icons-two-tone">cancel</i>
+                                    Canceled</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- [ Invoice-right ] end -->
+      </div>
+      <!-- [ Invoice ] end -->
+    </div>
+  </div>
+  <!-- [ Main Content ] end -->
+  @@include('../layouts/footer-block.html') @@include('../layouts/footer-js.html')
+  @@include('../layouts/customizer.html')
+</body>
+
+</html>

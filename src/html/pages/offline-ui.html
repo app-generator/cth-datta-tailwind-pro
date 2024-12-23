@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en" @@bodySetup>
+  <!-- [Head] start -->
+
+  <head>
+    @@include('../layouts/head-page-meta.html', {'title': 'Site is Under Maintenance'}) @@include('../layouts/head-css.html')
+  </head>
+  <!-- [Head] end -->
+  <!-- [Body] Start -->
+
+  <body>
+    @@include('../layouts/loader.html')
+    <!-- [ Main Content ] start -->
+    <div class="maintenance-block offline min-h-screen w-full flex items-center justify-center bg-[radial-gradient(#94acbe,#253653)]">
+      <div class="offline-wrapper relative w-full h-full flex items-center">
+        <img src="../assets/images/pages/sparcle-1.png" alt="User-Image" class="img-fluid absolute top-0 inset-x-0 animate-[sparcle_3.1s_cubic-bezier(0.65,0.815,0.735,0.395)_infinite]" />
+        <img src="../assets/images/pages/sparcle-2.png" alt="User-Image" class="img-fluid absolute top-0 inset-x-0 animate-[sparcle_3.1s_cubic-bezier(0.65,0.815,0.735,0.395)_infinite]" style="animation-delay: 1.19s;"/>
+        <div class="container off-main relative z-10">
+          <div class="flex justify-center">
+            <div class="w-2/4">
+              <div class="text-center">
+                <div class="moon bg-white/40 w-[150px] h-[150px] rounded-full absolute top-[12%] left-[50%] -translate-x-1/2">
+                  <div class="absolute inset-0 rounded-full shadow-[inset_0_0_20px_5px_rgba(255,255,255,0.4)] animate-[sunwawe_2.1s_cubic-bezier(0.165,0.84,0.44,1)_infinite]" style="animation-delay: 1.5s;"></div>
+                  <div class="absolute inset-0 rounded-full shadow-[inset_0_0_20px_5px_rgba(255,255,255,0.4)] animate-[sunwawe_2.1s_cubic-bezier(0.165,0.84,0.44,1)_infinite]"></div>
+                </div>
+                <img src="../assets/images/pages/ship.svg" alt="" class="w-[500px] max-w-full mx-auto animate-[boatanim_12s_ease-in-out_infinite]" />
+              </div>
+            </div>
+          </div>
+          <div class="row m-0 justify-content-center off-content">
+            <div class="col-sm-12 p-0">
+              <div class="text-center">
+                <h1 class="text-white uppercase">Offline</h1>
+                <h5 class="text-white font-normal mb-8">The site is temporarily down</h5>
+                <button class="btn btn-primary mb-4"><i class="feather icon-refresh-ccw mr-2"></i>Reload</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- [ Main Content ] end -->
+    @@include('../layouts/footer-js.html') @@include('../layouts/customizer.html')
+  </body>
+  <!-- [Body] end -->
+</html>

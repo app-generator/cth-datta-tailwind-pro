@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en" @@bodySetup>
+
+<head>
+  @@include('../layouts/head-page-meta.html', {'title': 'Tooltip'})
+  @@include('../layouts/head-css.html')
+</head>
+
+<body>
+
+  @@include('../layouts/layout-vertical.html')
+
+  <!-- [ Main Content ] start -->
+  <div class="pc-container">
+    <div class="pc-content">
+      @@include('../layouts/breadcrumb.html', {'breadcrumb-item': 'Basic UI', 'breadcrumb-item-active': 'Tooltip'})
+      <!-- [ Main Content ] start -->
+      <div class="grid grid-cols-12 gap-6">
+        <!-- [ tooltip ] start -->
+        <div class="col-span-12">
+          <div class="card">
+            <div class="card-header">
+              <h5>Tooltip</h5>
+            </div>
+            <div class="card-body btn-page pc-component">
+              <div class="flex flex-wrap gap-4">
+                <button type="button" class="btn btn-danger" data-pc-toggle="tooltip" data-pc-placement="top"
+                  data-pc-title="tooltip on top">
+                  Top
+                </button>
+                <button type="button" class="btn btn-primary" data-pc-toggle="tooltip" data-pc-placement="left"
+                  data-pc-title="tooltip on left">
+                  Left
+                </button>
+                <button type="button" class="btn btn-success" data-pc-toggle="tooltip" data-pc-placement="right"
+                  data-pc-title="tooltip on right">
+                  Right
+                </button>
+                <button type="button" class="btn btn-warning" data-pc-toggle="tooltip" data-pc-placement="bottom"
+                  data-pc-title="tooltip on bottom">
+                  Bottom
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- [ tooltip ] end -->
+      </div>
+      <!-- [ Main Content ] end -->
+    </div>
+  </div>
+  <!-- [ Main Content ] end -->
+  @@include('../layouts/footer-block.html') @@include('../layouts/footer-js.html')
+  @@include('../layouts/customizer.html')
+</body>
+
+</html>

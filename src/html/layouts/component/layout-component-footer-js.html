@@ -1,0 +1,51 @@
+<script>
+  var elem = document.querySelectorAll('.component-list-card a');
+  for (var l = 0; l < elem.length; l++) {
+    var pageUrl = window.location.href.split(/[?#]/)[0];
+    if (elem[l].href == pageUrl && elem[l].getAttribute('href') != '') {
+      elem[l].setAttribute('open', '');
+    }
+  }
+
+  document.querySelector('#compo-menu-search').addEventListener('keyup', function () {
+    var tval = document.querySelector('#compo-menu-search').value.toLowerCase();
+    var elem = document.querySelectorAll('.component-list-card a');
+    for (var l = 0; l < elem.length; l++) {
+      var aval = elem[l].innerHTML.toLowerCase();
+      var n = aval.indexOf(tval);
+      if (n !== -1) {
+        elem[l].style.display = 'block';
+      } else {
+        elem[l].style.display = 'none';
+      }
+    }
+  });
+
+  //
+  var action = document.querySelector('#action-component-list-card');
+  var overlayclose = document.querySelector('#pc-component-overlay');
+  var buttonclose = document.querySelector('#close-component-list-card');
+  var target = document.querySelector('#component-list-card');
+  if (action) {
+    action.addEventListener('click', function (event) {
+      if (target) {
+        target.setAttribute('open', '');
+      }
+    });
+  }
+  if (overlayclose) {
+    overlayclose.addEventListener('click', function (event) {
+      close_component_list_card();
+    });
+  }
+  if (buttonclose) {
+    buttonclose.addEventListener('click', function (event) {
+      close_component_list_card();
+    });
+  }
+  function close_component_list_card() {
+    if (target) {
+      target.removeAttribute('open');
+    }
+  }
+</script>

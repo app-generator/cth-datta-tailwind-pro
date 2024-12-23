@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en" @@bodySetup>
+<!-- [Head] start -->
+
+<head>
+  @@include('../layouts/head-page-meta.html', {'title': 'Crypto'})
+  <!-- map-vector css -->
+  <link rel="stylesheet" href="../assets/css/plugins/jsvectormap.min.css" />
+  @@include('../layouts/head-css.html')
+</head>
+<!-- [Head] end -->
+<!-- [Body] Start -->
+
+<body>
+  @@include('../layouts/layout-vertical.html')
+
+  <!-- [ Main Content ] start -->
+  <div class="pc-container">
+    <div class="pc-content">
+      @@include('../layouts/breadcrumb.html', {'breadcrumb-item': 'Dashboard', 'breadcrumb-item-active': 'Crypto'})
+      <!-- [ Main Content ] start -->
+      <div class="grid grid-cols-12 gap-x-6">
+        <div class="col-span-12 xl:col-span-4 md:col-span-6">
+          <div class="card bg-theme-bg-1 overflow-hidden">
+            <div class="card-body">
+              <h5 class="text-white mb-2">Bitcoin Wallet</h5>
+              <h2 class="text-white mb-3 font-light">$9,302</h2>
+              <span class="text-white block">Ratings by Market Capitalization</span>
+              <i
+                class="fab fa-btc text-[70px] text-white absolute ltr:right-[50px] rtl:left-[50px] top-[50%] -translate-y-1/2 opacity-50"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-12 xl:col-span-4 md:col-span-6">
+          <div class="card bg-theme-bg-2 overflow-hidden">
+            <div class="card-body">
+              <h5 class="text-white mb-2">Bitcoin Wallet</h5>
+              <h2 class="text-white mb-3 font-light">$8,101</h2>
+              <span class="text-white block">Ratings by Market Capitalization</span>
+              <i
+                class="fas fa-dollar-sign text-[70px] text-white absolute ltr:right-[50px] rtl:left-[50px] top-[50%] -translate-y-1/2 opacity-50"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-12 xl:col-span-4">
+          <div class="card bg-primary-500 overflow-hidden">
+            <div class="card-body">
+              <h5 class="text-white mb-2">Bitcoin Wallet</h5>
+              <h2 class="text-white mb-3 font-light">$7,501</h2>
+              <span class="text-white block">Ratings by Market Capitalization</span>
+              <i
+                class="fas fa-pound-sign text-[70px] text-white absolute ltr:right-[50px] rtl:left-[50px] top-[50%] -translate-y-1/2 opacity-50"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-12 xl:col-span-8">
+          <div class="card">
+            <div class="card-header">
+              <h5>Statistics</h5>
+            </div>
+            <div class="card-body">
+              <div id="line-area2" class="lineAreaDashboard"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-12 xl:col-span-4">
+          <div class="card note-bar">
+            <div class="card-header">
+              <h5>Notifications</h5>
+            </div>
+            <div class="card-body !p-0">
+              <div
+                class="rounded-lg *:py-6 *:px-[25px] divide-y divide-inherit border-theme-border dark:border-themedark-border">
+                <a href="#!" class="flex friendlist-box">
+                  <div class="shrink-0">
+                    <i class="far fa-bell text-[30px] opacity-20"></i>
+                  </div>
+                  <div class="grow ltr:ml-3 rtl:mr-3">
+                    <h6>New order received</h6>
+                    <span class="text-[12px] ltr:float-right rtl:float-left text-muted">12.56</span>
+                    <p class="text-muted m-0">2 unread notification</p>
+                  </div>
+                </a>
+                <a href="#!" class="flex friendlist-box">
+                  <div class="shrink-0">
+                    <i class="far fa-bell text-[30px] opacity-20"></i>
+                  </div>
+                  <div class="grow ltr:ml-3 rtl:mr-3">
+                    <h6>New user register</h6>
+                    <span class="text-[12px] ltr:float-right rtl:float-left text-muted">12.36</span>
+                    <p class="text-muted m-0">xx messages</p>
+                  </div>
+                </a>
+                <a href="#!" class="flex friendlist-box">
+                  <div class="shrink-0">
+                    <i class="far fa-bell text-[30px] opacity-20"></i>
+                  </div>
+                  <div class="grow ltr:ml-3 rtl:mr-3">
+                    <h6>New order register</h6>
+                    <span class="text-[12px] ltr:float-right rtl:float-left text-muted">11.45</span>
+                    <p class="text-muted m-0">2 read notification</p>
+                  </div>
+                </a>
+                <a href="#!" class="flex friendlist-box">
+                  <div class="shrink-0">
+                    <i class="far fa-bell text-[30px] opacity-20"></i>
+                  </div>
+                  <div class="grow ltr:ml-3 rtl:mr-3">
+                    <h6>New order prepend</h6>
+                    <span class="text-[12px] ltr:float-right rtl:float-left text-muted">9.39</span>
+                    <p class="text-muted m-0">xx messages</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-12 xl:col-span-8">
+          <div class="card">
+            <div class="card-header">
+              <h5>Users from United States</h5>
+            </div>
+            <div class="card-body">
+              <div id="world-low" class="set-map" style="height: 265px"> </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-12 xl:col-span-4">
+          <div class="card overflow-hidden">
+            <div class="card-header">
+              <h5>Statistics</h5>
+            </div>
+            <div class="card-body">
+              <h3 class="font-light">$ 894.39</h3>
+            </div>
+            <div id="Earnings-chart"></div>
+          </div>
+        </div>
+      </div>
+      <!-- [ Main Content ] end -->
+    </div>
+  </div>
+  <!-- [ Main Content ] end -->
+  @@include('../layouts/footer-block.html') @@include('../layouts/customizer.html')
+  <!-- [Page Specific JS] start -->
+  <script src="../assets/js/plugins/apexcharts.min.js"></script>
+  <script src="../assets/js/plugins/jsvectormap.min.js"></script>
+  <script src="../assets/js/plugins/world.js"></script>
+
+  <!-- custom widgets js -->
+  <script src="../assets/js/widgets/line-area2.js"></script>
+  <script src="../assets/js/widgets/world-low.js"></script>
+  <script src="../assets/js/widgets/Earnings-chart.js"></script>
+  <!-- [Page Specific JS] end -->
+  @@include('../layouts/footer-js.html')
+</body>
+<!-- [Body] end -->
+
+</html>

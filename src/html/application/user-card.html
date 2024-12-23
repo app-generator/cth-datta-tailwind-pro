@@ -1,0 +1,1349 @@
+<!doctype html>
+<html lang="en" @@bodySetup>
+
+<head>
+  @@include('../layouts/head-page-meta.html', {'title': 'User Card'}) @@include('../layouts/head-css.html')
+</head>
+
+<body>
+  @@include('../layouts/layout-vertical.html')
+  <!-- [ Main Content ] start -->
+  <div class="pc-container">
+    <div class="pc-content">
+      @@include('../layouts/breadcrumb.html', {'breadcrumb-item': 'User', 'breadcrumb-item-active': 'User card'})
+      <!-- [ Main Content ] start -->
+      <div class="grid grid-cols-12 gap-6">
+        <div class="col-span-12">
+          <div class="card">
+            <div class="card-body">
+              <ul class="flex flex-wrap w-full text-center nav-tabs">
+                <li class="group active">
+                  <a href="javascript:void(0);" data-pc-toggle="tab" data-pc-target="basicpills-1"
+                    class="inline-block px-4 py-2 transition-all duration-300 ease-linear rounded-lg text-primary-500 group-[.active]:bg-primary-500 group-[.active]:text-white">
+                    Simple
+                  </a>
+                </li>
+                <li class="group">
+                  <a href="javascript:void(0);" data-pc-toggle="tab" data-pc-target="basicpills-2"
+                    class="inline-block px-4 py-2 transition-all duration-300 ease-linear rounded-lg text-primary-500 group-[.active]:bg-primary-500 group-[.active]:text-white">
+                    Clip image
+                  </a>
+                </li>
+                <li class="group">
+                  <a href="javascript:void(0);" data-pc-toggle="tab" data-pc-target="basicpills-3"
+                    class="inline-block px-4 py-2 transition-all duration-300 ease-linear rounded-lg text-primary-500 group-[.active]:bg-primary-500 group-[.active]:text-white">
+                    Footer
+                  </a>
+                </li>
+                <li class="group">
+                  <a href="javascript:void(0);" data-pc-toggle="tab" data-pc-target="basicpills-4"
+                    class="inline-block px-4 py-2 transition-all duration-300 ease-linear rounded-lg text-primary-500 group-[.active]:bg-primary-500 group-[.active]:text-white">
+                    Social
+                  </a>
+                </li>
+                <li class="group">
+                  <a href="javascript:void(0);" data-pc-toggle="tab" data-pc-target="basicpills-5"
+                    class="inline-block px-4 py-2 transition-all duration-300 ease-linear rounded-lg text-primary-500 group-[.active]:bg-primary-500 group-[.active]:text-white">
+                    Other
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="mt-5 tab-content">
+            <div class="block tab-pane" id="basicpills-1">
+              <div class="grid grid-cols-12 gap-6">
+                <div class="col-span-12 xl:col-span-4 md:col-span-6">
+                  <h6 class="text-center mb-3">Simple</h6>
+                  <div class="card user-card user-card-1">
+                    <div class="card-header !border-b-0 !p-2 !pb-0">
+                      <div class="cover-img-block">
+                        <img src="../assets/images/widget/slider5.jpg" alt="" class="img-fluid" />
+                      </div>
+                    </div>
+                    <div class="card-body !pt-0">
+                      <div class="user-about-block text-center -mt-5">
+                        <img
+                          class="rounded-full w-20 mx-auto shadow-[0_0_0_5px_#fff] shadow-theme-cardbg dark:shadow-themedark-cardbg"
+                          src="../assets/images/user/avatar-2.jpg" alt="User image" />
+                      </div>
+                      <div class="text-center">
+                        <h6 class="mb-1 mt-3">Josephin Doe</h6>
+                        <p class="mb-3 text-muted">UI/UX Designer</p>
+                        <p class="mb-1">Lorem Ipsum is simply dummy text</p>
+                        <p class="mb-0">been the industry's standard</p>
+                      </div>
+                      <hr
+                        class="w-20 pt-1 mx-auto my-4 border-0 border-t border-theme-border dark:border-themedark-border" />
+                      <div class="grid grid-cols-12 gap-6 text-center">
+                        <div class="col-span-4">
+                          <h6 class="mb-1">37</h6>
+                          <p class="mb-0">Mails</p>
+                        </div>
+                        <div class="col-span-4">
+                          <h6 class="mb-1">2749</h6>
+                          <p class="mb-0">Followers</p>
+                        </div>
+                        <div class="col-span-4">
+                          <h6 class="mb-1">678</h6>
+                          <p class="mb-0">Following</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-span-12 xl:col-span-4 md:col-span-6">
+                  <h6 class="text-center mb-3">With option</h6>
+                  <div class="card user-card user-card-1">
+                    <div class="card-header !border-b-0 !p-2 !pb-0">
+                      <div class="cover-img-block">
+                        <img src="../assets/images/widget/slider7.jpg" alt="" class="img-fluid" />
+                      </div>
+                    </div>
+                    <div class="card-body !pt-0">
+                      <div class="user-about-block text-center -mt-5">
+                        <div class="grid grid-cols-12 gap-6 text-center">
+                          <div class="col-span-4 self-end pb-3">
+                            <a href="#!"><i class="icon feather icon-star text-muted text-[20px]"></i></a>
+                          </div>
+                          <div class="col-span-4 self-end ">
+                            <img
+                              class="rounded-full w-20 mx-auto shadow-[0_0_0_5px_#fff] shadow-theme-cardbg dark:shadow-themedark-cardbg"
+                              src="../assets/images/user/avatar-1.jpg" alt="User image" />
+                          </div>
+                          <div class="col-span-4 self-end pb-3 ltr:text-end rtl:text-left">
+                            <div class="dropdown">
+                              <a class="arrow-none dropdown-toggle" data-pc-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false"><i class="feather icon-more-horizontal"></i></a>
+                              <div class="dropdown-menu dropdown-menu-end">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="text-center">
+                        <h6 class="mb-1 mt-3">Josephin Doe</h6>
+                        <p class="mb-3 text-muted">UI/UX Designer</p>
+                        <p class="mb-1">Lorem Ipsum is simply dummy text</p>
+                        <p class="mb-0">been the industry's standard</p>
+                      </div>
+                      <hr
+                        class="w-20 pt-1 mx-auto my-4 border-0 border-t border-theme-border dark:border-themedark-border" />
+                      <div class="grid grid-cols-12 gap-6 text-center">
+                        <div class="col-span-4">
+                          <h6 class="mb-1">37</h6>
+                          <p class="mb-0">Mails</p>
+                        </div>
+                        <div class="col-span-4">
+                          <h6 class="mb-1">2749</h6>
+                          <p class="mb-0">Followers</p>
+                        </div>
+                        <div class="col-span-4">
+                          <h6 class="mb-1">678</h6>
+                          <p class="mb-0">Following</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-span-12 xl:col-span-4 md:col-span-6">
+                  <h6 class="text-center mb-3">Option selected</h6>
+                  <div class="card user-card user-card-1">
+                    <div class="card-header !border-b-0 !p-2 !pb-0">
+                      <div class="cover-img-block">
+                        <img src="../assets/images/widget/slider6.jpg" alt="" class="img-fluid" />
+                      </div>
+                    </div>
+                    <div class="card-body !pt-0">
+                      <div class="user-about-block text-center -mt-5">
+                        <div class="grid grid-cols-12 gap-6 text-center">
+                          <div class="col-span-4 self-end pb-3">
+                            <a href="#!"><i class="icon feather icon-star-on text-warning text-[20px]"></i></a>
+                          </div>
+                          <div class="col-span-4 self-end ">
+                            <img
+                              class="rounded-full w-20 mx-auto shadow-[0_0_0_5px_#fff] shadow-theme-cardbg dark:shadow-themedark-cardbg"
+                              src="../assets/images/user/avatar-3.jpg" alt="User image" />
+                          </div>
+                          <div class="col-span-4 self-end pb-3 ltr:text-end rtl:text-left">
+                            <div class="dropdown">
+                              <a class="arrow-none dropdown-toggle" data-pc-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false"><i class="feather icon-more-horizontal"></i></a>
+                              <div class="dropdown-menu dropdown-menu-end">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="text-center">
+                        <h6 class="mb-1 mt-3">Josephin Doe</h6>
+                        <p class="mb-3 text-muted">UI/UX Designer</p>
+                        <p class="mb-1">Lorem Ipsum is simply dummy text</p>
+                        <p class="mb-0">been the industry's standard</p>
+                      </div>
+                      <hr
+                        class="w-20 pt-1 mx-auto my-4 border-0 border-t border-theme-border dark:border-themedark-border" />
+                      <div class="grid grid-cols-12 gap-6 text-center">
+                        <div class="col-span-4">
+                          <h6 class="mb-1">37</h6>
+                          <p class="mb-0">Mails</p>
+                        </div>
+                        <div class="col-span-4">
+                          <h6 class="mb-1">2749</h6>
+                          <p class="mb-0">Followers</p>
+                        </div>
+                        <div class="col-span-4">
+                          <h6 class="mb-1">678</h6>
+                          <p class="mb-0">Following</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-span-12 xl:col-span-4 md:col-span-6">
+                  <h6 class="text-center mb-3">Certificated badge</h6>
+                  <div class="card user-card user-card-1">
+                    <div class="card-header !border-b-0 !p-2 !pb-0">
+                      <div class="cover-img-block">
+                        <img src="../assets/images/widget/slider6.jpg" alt="" class="img-fluid" />
+                      </div>
+                    </div>
+                    <div class="card-body !pt-0">
+                      <div class="user-about-block text-center -mt-5">
+                        <div class="grid grid-cols-12 gap-6 text-center">
+                          <div class="col-span-4 self-end pb-3">
+                            <a href="#!"><i class="icon feather icon-star-on text-warning text-[20px]"></i></a>
+                          </div>
+                          <div class="col-span-4 self-end ">
+                            <div class="relative inline-block">
+                              <img
+                                class="rounded-full w-20 mx-auto shadow-[0_0_0_5px_#fff] shadow-theme-cardbg dark:shadow-themedark-cardbg"
+                                src="../assets/images/user/avatar-5.jpg" alt="User image" />
+                              <div
+                                class="certificated-badge absolute bottom-[-5px] right-[-5px] rounded-full w-[30px] h-[30px] bg-theme-cardbg dark:bg-themedark-cardbg p-[5px_3px]">
+                                <i class="fas fa-certificate text-primary-500 bg-icon text-[22px]"></i>
+                                <i
+                                  class="fas fa-check front-icon text-white text-[11px] absolute top-[11px] left-[9px]"></i>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-span-4 self-end pb-3 ltr:text-end rtl:text-left">
+                            <div class="dropdown">
+                              <a class="arrow-none dropdown-toggle" data-pc-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false"><i class="feather icon-more-horizontal"></i></a>
+                              <div class="dropdown-menu dropdown-menu-end">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="text-center">
+                        <h6 class="mb-1 mt-3">Josephin Doe</h6>
+                        <p class="mb-3 text-muted">UI/UX Designer</p>
+                        <p class="mb-1">Lorem Ipsum is simply dummy text</p>
+                        <p class="mb-0">been the industry's standard</p>
+                      </div>
+                      <hr
+                        class="w-20 pt-1 mx-auto my-4 border-0 border-t border-theme-border dark:border-themedark-border" />
+                      <div class="grid grid-cols-12 gap-6 text-center">
+                        <div class="col-span-4">
+                          <h6 class="mb-1">37</h6>
+                          <p class="mb-0">Mails</p>
+                        </div>
+                        <div class="col-span-4">
+                          <h6 class="mb-1">2749</h6>
+                          <p class="mb-0">Followers</p>
+                        </div>
+                        <div class="col-span-4">
+                          <h6 class="mb-1">678</h6>
+                          <p class="mb-0">Following</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-span-12 xl:col-span-4 md:col-span-6">
+                  <h6 class="text-center mb-3">Hover data</h6>
+                  <div class="card user-card user-card-1 relative overflow-hidden group">
+                    <div class="card-header !border-b-0 !p-2 !pb-0">
+                      <div class="cover-img-block">
+                        <img src="../assets/images/widget/slider5.jpg" alt="" class="img-fluid" />
+                      </div>
+                    </div>
+                    <div class="card-body !pt-0">
+                      <div class="user-about-block text-center -mt-5">
+                        <img
+                          class="rounded-full w-20 mx-auto shadow-[0_0_0_5px_#fff] shadow-theme-cardbg dark:shadow-themedark-cardbg"
+                          src="../assets/images/user/avatar-2.jpg" alt="User image" />
+                      </div>
+                      <div class="text-center">
+                        <h6 class="mb-1 mt-3">Josephin Doe</h6>
+                        <p class="mb-3 text-muted">UI/UX Designer</p>
+                        <p class="mb-1">Lorem Ipsum is simply dummy text</p>
+                        <p class="mb-0">been the industry's standard</p>
+                      </div>
+                      <hr
+                        class="w-20 pt-1 mx-auto my-4 border-0 border-t border-theme-border dark:border-themedark-border" />
+                      <div class="grid grid-cols-12 gap-6 text-center">
+                        <div class="col-span-4">
+                          <h6 class="mb-1">37</h6>
+                          <p class="mb-0">Mails</p>
+                        </div>
+                        <div class="col-span-4">
+                          <h6 class="mb-1">2749</h6>
+                          <p class="mb-0">Followers</p>
+                        </div>
+                        <div class="col-span-4">
+                          <h6 class="mb-1">678</h6>
+                          <p class="mb-0">Following</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="card-body text-white absolute inset-0 flex items-center justify-center bg-dark-500/90 scale-0 group-hover:scale-100 transition-all duration-300">
+                      <div class="text-center">
+                        <h4 class="text-white mb-3">Hire Me?</h4>
+                        <p class="mb-1">Lorem Ipsum is simply dummy text</p>
+                        <p class="mb-4">been the industry's standard</p>
+                        <button type="button" class="btn my-1 btn-warning ltr:mr-2 rtl:ml-2"><i
+                            class="feather icon-link"></i> Meating</button>
+                        <button type="button" class="btn my-1 btn-danger"><i class="feather icon-download"></i>
+                          Resume</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hidden tab-pane" id="basicpills-2">
+              <div class="grid grid-cols-12 gap-6">
+                <div class="col-span-12 xl:col-span-4 md:col-span-6">
+                  <h6 class="text-center mb-3">Left</h6>
+                  <div class="card user-card user-card-1">
+                    <div class="card-header !border-b-0 !p-2 !pb-0">
+                      <div class="cover-img-block" style="clip-path:polygon(0 0, 100% 0%, 100% 100%, 0% 80%)">
+                        <img src="../assets/images/widget/slider5.jpg" alt="" class="img-fluid" />
+                      </div>
+                    </div>
+                    <div class="card-body !pt-0">
+                      <div class="user-about-block text-center -mt-5">
+                        <div class="grid grid-cols-12 gap-6 text-center">
+                          <div class="col-span-4 self-end pb-3">
+                            <a href="#!"><i class="icon feather icon-star-on text-warning text-[20px]"></i></a>
+                          </div>
+                          <div class="col-span-4 self-end ">
+                            <div class="relative inline-block">
+                              <img
+                                class="rounded-full w-20 mx-auto shadow-[0_0_0_5px_#fff] shadow-theme-cardbg dark:shadow-themedark-cardbg"
+                                src="../assets/images/user/avatar-1.jpg" alt="User image" />
+                              <div
+                                class="certificated-badge absolute bottom-[-5px] right-[-5px] rounded-full w-[30px] h-[30px] bg-theme-cardbg dark:bg-themedark-cardbg p-[5px_3px]">
+                                <i class="fas fa-certificate text-primary-500 bg-icon text-[22px]"></i>
+                                <i
+                                  class="fas fa-check front-icon text-white text-[11px] absolute top-[11px] left-[9px]"></i>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-span-4 self-end pb-3 ltr:text-end rtl:text-left">
+                            <div class="dropdown">
+                              <a class="arrow-none dropdown-toggle" data-pc-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false"><i class="feather icon-more-horizontal"></i></a>
+                              <div class="dropdown-menu dropdown-menu-end">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="text-center">
+                        <h6 class="mb-1 mt-3">Josephin Doe</h6>
+                        <p class="mb-3 text-muted">UI/UX Designer</p>
+                        <p class="mb-1">Lorem Ipsum is simply dummy text</p>
+                        <p class="mb-0">been the industry's standard</p>
+                      </div>
+                      <hr
+                        class="w-20 pt-1 mx-auto my-4 border-0 border-t border-theme-border dark:border-themedark-border" />
+                      <div class="grid grid-cols-12 gap-6 text-center">
+                        <div class="col-span-4">
+                          <h6 class="mb-1">37</h6>
+                          <p class="mb-0">Mails</p>
+                        </div>
+                        <div class="col-span-4">
+                          <h6 class="mb-1">2749</h6>
+                          <p class="mb-0">Followers</p>
+                        </div>
+                        <div class="col-span-4">
+                          <h6 class="mb-1">678</h6>
+                          <p class="mb-0">Following</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-span-12 xl:col-span-4 md:col-span-6">
+                  <h6 class="text-center mb-3">Center</h6>
+                  <div class="card user-card user-card-1">
+                    <div class="card-header !border-b-0 !p-2 !pb-0">
+                      <div class="cover-img-block" style="clip-path:polygon(0 0, 100% 0%, 100% 80%, 50% 100%, 0% 80%)">
+                        <img src="../assets/images/widget/slider6.jpg" alt="" class="img-fluid" />
+                      </div>
+                    </div>
+                    <div class="card-body !pt-0">
+                      <div class="user-about-block text-center -mt-5">
+                        <div class="grid grid-cols-12 gap-6 text-center">
+                          <div class="col-span-4 self-end pb-3">
+                            <a href="#!"><i class="icon feather icon-star-on text-warning text-[20px]"></i></a>
+                          </div>
+                          <div class="col-span-4 self-end ">
+                            <div class="relative inline-block">
+                              <img
+                                class="rounded-full w-20 mx-auto shadow-[0_0_0_5px_#fff] shadow-theme-cardbg dark:shadow-themedark-cardbg"
+                                src="../assets/images/user/avatar-2.jpg" alt="User image" />
+                              <div
+                                class="certificated-badge absolute bottom-[-5px] right-[-5px] rounded-full w-[30px] h-[30px] bg-theme-cardbg dark:bg-themedark-cardbg p-[5px_3px]">
+                                <i class="fas fa-certificate text-primary-500 bg-icon text-[22px]"></i>
+                                <i
+                                  class="fas fa-check front-icon text-white text-[11px] absolute top-[11px] left-[9px]"></i>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-span-4 self-end pb-3 ltr:text-end rtl:text-left">
+                            <div class="dropdown">
+                              <a class="arrow-none dropdown-toggle" data-pc-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false"><i class="feather icon-more-horizontal"></i></a>
+                              <div class="dropdown-menu dropdown-menu-end">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="text-center">
+                        <h6 class="mb-1 mt-3">Josephin Doe</h6>
+                        <p class="mb-3 text-muted">UI/UX Designer</p>
+                        <p class="mb-1">Lorem Ipsum is simply dummy text</p>
+                        <p class="mb-0">been the industry's standard</p>
+                      </div>
+                      <hr
+                        class="w-20 pt-1 mx-auto my-4 border-0 border-t border-theme-border dark:border-themedark-border" />
+                      <div class="grid grid-cols-12 gap-6 text-center">
+                        <div class="col-span-4">
+                          <h6 class="mb-1">37</h6>
+                          <p class="mb-0">Mails</p>
+                        </div>
+                        <div class="col-span-4">
+                          <h6 class="mb-1">2749</h6>
+                          <p class="mb-0">Followers</p>
+                        </div>
+                        <div class="col-span-4">
+                          <h6 class="mb-1">678</h6>
+                          <p class="mb-0">Following</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-span-12 xl:col-span-4 md:col-span-6">
+                  <h6 class="text-center mb-3">Left</h6>
+                  <div class="card user-card user-card-1">
+                    <div class="card-header !border-b-0 !p-2 !pb-0">
+                      <div class="cover-img-block" style="clip-path:polygon(0 0, 100% 0%, 100% 80%, 0% 100%)">
+                        <img src="../assets/images/widget/slider7.jpg" alt="" class="img-fluid" />
+                      </div>
+                    </div>
+                    <div class="card-body !pt-0">
+                      <div class="user-about-block text-center -mt-5">
+                        <div class="grid grid-cols-12 gap-6 text-center">
+                          <div class="col-span-4 self-end pb-3">
+                            <a href="#!"><i class="icon feather icon-star-on text-warning text-[20px]"></i></a>
+                          </div>
+                          <div class="col-span-4 self-end ">
+                            <div class="relative inline-block">
+                              <img
+                                class="rounded-full w-20 mx-auto shadow-[0_0_0_5px_#fff] shadow-theme-cardbg dark:shadow-themedark-cardbg"
+                                src="../assets/images/user/avatar-3.jpg" alt="User image" />
+                              <div
+                                class="certificated-badge absolute bottom-[-5px] right-[-5px] rounded-full w-[30px] h-[30px] bg-theme-cardbg dark:bg-themedark-cardbg p-[5px_3px]">
+                                <i class="fas fa-certificate text-primary-500 bg-icon text-[22px]"></i>
+                                <i
+                                  class="fas fa-check front-icon text-white text-[11px] absolute top-[11px] left-[9px]"></i>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-span-4 self-end pb-3 ltr:text-end rtl:text-left">
+                            <div class="dropdown">
+                              <a class="arrow-none dropdown-toggle" data-pc-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false"><i class="feather icon-more-horizontal"></i></a>
+                              <div class="dropdown-menu dropdown-menu-end">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="text-center">
+                        <h6 class="mb-1 mt-3">Josephin Doe</h6>
+                        <p class="mb-3 text-muted">UI/UX Designer</p>
+                        <p class="mb-1">Lorem Ipsum is simply dummy text</p>
+                        <p class="mb-0">been the industry's standard</p>
+                      </div>
+                      <hr
+                        class="w-20 pt-1 mx-auto my-4 border-0 border-t border-theme-border dark:border-themedark-border" />
+                      <div class="grid grid-cols-12 gap-6 text-center">
+                        <div class="col-span-4">
+                          <h6 class="mb-1">37</h6>
+                          <p class="mb-0">Mails</p>
+                        </div>
+                        <div class="col-span-4">
+                          <h6 class="mb-1">2749</h6>
+                          <p class="mb-0">Followers</p>
+                        </div>
+                        <div class="col-span-4">
+                          <h6 class="mb-1">678</h6>
+                          <p class="mb-0">Following</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hidden tab-pane" id="basicpills-3">
+              <div class="grid grid-cols-12 gap-6">
+                <div class="col-span-12 xl:col-span-4 md:col-span-6">
+                  <h6 class="text-center mb-3">Footer gray</h6>
+                  <div class="card user-card user-card-1">
+                    <div class="card-header !border-b-0 !p-2 !pb-0">
+                      <div class="cover-img-block">
+                        <img src="../assets/images/widget/slider7.jpg" alt="" class="img-fluid" />
+                      </div>
+                    </div>
+                    <div class="card-body !pt-0">
+                      <div class="user-about-block text-center -mt-5">
+                        <div class="grid grid-cols-12 gap-6 text-center">
+                          <div class="col-span-4 self-end pb-3">
+                          </div>
+                          <div class="col-span-4 self-end ">
+                            <div class="relative inline-block">
+                              <img
+                                class="rounded-full w-20 mx-auto shadow-[0_0_0_5px_#fff] shadow-theme-cardbg dark:shadow-themedark-cardbg"
+                                src="../assets/images/user/avatar-1.jpg" alt="User image" />
+                              <div
+                                class="certificated-badge absolute bottom-[-5px] right-[-5px] rounded-full w-[30px] h-[30px] bg-theme-cardbg dark:bg-themedark-cardbg p-[5px_3px]">
+                                <i class="fas fa-certificate text-primary-500 bg-icon text-[22px]"></i>
+                                <i
+                                  class="fas fa-check front-icon text-white text-[11px] absolute top-[11px] left-[9px]"></i>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-span-4 self-end pb-3 ltr:text-end rtl:text-left">
+                            <div class="dropdown">
+                              <a class="arrow-none dropdown-toggle" data-pc-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false"><i class="feather icon-more-horizontal"></i></a>
+                              <div class="dropdown-menu dropdown-menu-end">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="text-center">
+                        <h6 class="mb-1 mt-3">Josephin Doe</h6>
+                        <p class="mb-3 text-muted">UI/UX Designer</p>
+                        <p class="mb-1">Lorem Ipsum is simply dummy text</p>
+                        <p class="mb-0">been the industry's standard</p>
+                      </div>
+                    </div>
+                    <div class="card-footer bg-secondary-500 text-white">
+                      <div class="grid grid-cols-12 gap-6 text-center">
+                        <div class="col-span-4">
+                          <h6 class="mb-1 text-white">37</h6>
+                          <p class="mb-0">Mails</p>
+                        </div>
+                        <div class="col-span-4">
+                          <h6 class="mb-1 text-white">2749</h6>
+                          <p class="mb-0">Followers</p>
+                        </div>
+                        <div class="col-span-4">
+                          <h6 class="mb-1 text-white">678</h6>
+                          <p class="mb-0">Following</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-span-12 xl:col-span-4 md:col-span-6">
+                  <h6 class="text-center mb-3">Footer white</h6>
+                  <div class="card user-card user-card-1">
+                    <div class="card-header !border-b-0 !p-2 !pb-0">
+                      <div class="cover-img-block">
+                        <img src="../assets/images/widget/slider6.jpg" alt="" class="img-fluid" />
+                      </div>
+                    </div>
+                    <div class="card-body !pt-0">
+                      <div class="user-about-block text-center -mt-5">
+                        <div class="grid grid-cols-12 gap-6 text-center">
+                          <div class="col-span-4 self-end pb-3">
+                          </div>
+                          <div class="col-span-4 self-end ">
+                            <div class="relative inline-block">
+                              <img
+                                class="rounded-full w-20 mx-auto shadow-[0_0_0_5px_#fff] shadow-theme-cardbg dark:shadow-themedark-cardbg"
+                                src="../assets/images/user/avatar-2.jpg" alt="User image" />
+                              <div
+                                class="certificated-badge absolute bottom-[-5px] right-[-5px] rounded-full w-[30px] h-[30px] bg-theme-cardbg dark:bg-themedark-cardbg p-[5px_3px]">
+                                <i class="fas fa-certificate text-primary-500 bg-icon text-[22px]"></i>
+                                <i
+                                  class="fas fa-check front-icon text-white text-[11px] absolute top-[11px] left-[9px]"></i>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-span-4 self-end pb-3 ltr:text-end rtl:text-left">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="text-center">
+                        <h6 class="mb-1 mt-3">Josephin Doe</h6>
+                        <p class="mb-3 text-muted">UI/UX Designer</p>
+                        <p class="mb-1">Lorem Ipsum is simply dummy text</p>
+                        <p class="mb-0">been the industry's standard</p>
+                      </div>
+                    </div>
+                    <div class="card-footer">
+                      <div class="grid grid-cols-12 gap-6 text-center">
+                        <div class="col-span-4">
+                          <h6 class="mb-1">37</h6>
+                          <p class="mb-0">Mails</p>
+                        </div>
+                        <div class="col-span-4">
+                          <h6 class="mb-1">2749</h6>
+                          <p class="mb-0">Followers</p>
+                        </div>
+                        <div class="col-span-4">
+                          <h6 class="mb-1">678</h6>
+                          <p class="mb-0">Following</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-span-12 xl:col-span-4 md:col-span-6">
+                  <h6 class="text-center mb-3">Social link</h6>
+                  <div class="card user-card user-card-1">
+                    <div class="card-header !border-b-0 !p-2 !pb-0">
+                      <div class="cover-img-block" style="clip-path:polygon(0 0, 100% 0%, 100% 80%, 0% 100%)">
+                        <img src="../assets/images/widget/slider5.jpg" alt="" class="img-fluid" />
+                      </div>
+                    </div>
+                    <div class="card-body !pt-0">
+                      <div class="user-about-block text-center -mt-5">
+                        <div class="grid grid-cols-12 gap-6 text-center">
+                          <div class="col-span-4 self-center pb-3">
+                            <div class="relative inline-block">
+                              <img
+                                class="rounded-full w-20 shadow-[0_0_0_5px_#fff] shadow-theme-cardbg dark:shadow-themedark-cardbg"
+                                src="../assets/images/user/avatar-3.jpg" alt="User image" />
+                            </div>
+                          </div>
+                          <div class="col-span-4 self-center ">
+                            <h6 class="mb-1 mt-3">Josephin Doe</h6>
+                            <p class="mb-0 text-muted">UI/UX Designer</p>
+                          </div>
+                          <div class="col-span-4 self-center pb-3 ltr:text-end rtl:text-left">
+                            <div class="dropdown">
+                              <a class="arrow-none dropdown-toggle" data-pc-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false"><i class="feather icon-more-horizontal"></i></a>
+                              <div class="dropdown-menu dropdown-menu-end">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <p class="mb-1">Lorem Ipsum is simply dummy text</p>
+                        <p class="mb-0">been the industry's standard</p>
+                      </div>
+                      <ul class="flex flex-wrap gap-2 text-[20px] mt-3 mb-0">
+                        <li class="list-inline-item"><a href="#!" class="text-[#4267b2]"><i
+                              class="fab fa-facebook-f"></i></a></li>
+                        <li class="list-inline-item"><a href="#!" class="text-[#42c0fb]"><i
+                              class="fab fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#!" class="text-[#ec4a89]"><i
+                              class="fab fa-dribbble"></i></a></li>
+                        <li class="list-inline-item"><a href="#!" class="text-[#bf2131]"><i
+                              class="fab fa-pinterest"></i></a></li>
+                        <li class="list-inline-item"><a href="#!" class="text-[#e0291d]"><i
+                              class="fab fa-youtube"></i></a></li>
+                        <li class="list-inline-item"><a href="#!" class="text-[#c73e2e]"><i
+                              class="fab fa-google-plus-g"></i></a></li>
+                        <li class="list-inline-item"><a href="#!" class="text-[#0077b5]"><i
+                              class="fab fa-linkedin-in"></i></a></li>
+                      </ul>
+                    </div>
+                    <div class="card-footer">
+                      <div class="grid grid-cols-12 gap-6 text-center">
+                        <div class="col-span-4">
+                          <h6 class="mb-1">37</h6>
+                          <p class="mb-0">Mails</p>
+                        </div>
+                        <div class="col-span-4">
+                          <h6 class="mb-1">2749</h6>
+                          <p class="mb-0">Followers</p>
+                        </div>
+                        <div class="col-span-4">
+                          <h6 class="mb-1">678</h6>
+                          <p class="mb-0">Following</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hidden tab-pane" id="basicpills-4">
+              <div class="grid grid-cols-12 gap-6">
+                <div class="col-span-12">
+                  <h6 class="text-center mb-3">Social profile</h6>
+                  <div class="card user-card user-card-1">
+                    <div class="card-header !border-b-0 !p-2 !pb-0">
+                      <div class="cover-img-block relative group"
+                        style="clip-path:polygon(0 0, 100% 0%, 100% 80%, 0% 100%)">
+                        <img src="../assets/images/profile/cover.jpg" alt="" class="w-100 group-hover:grayscale" />
+                        <div class="overlay absolute inset-0 group-hover:bg-[rgba(0,0,0,0.4)]"></div>
+                      </div>
+                    </div>
+                    <div class="card-body !pt-0">
+                      <div class="user-about-block -mt-5">
+                        <div class="grid grid-cols-12 gap-6">
+                          <div class="col-span-4 self-center pb-3">
+                            <div class="relative inline-block">
+                              <img
+                                class="rounded-full w-24 shadow-[0_0_0_5px_#fff] shadow-theme-cardbg dark:shadow-themedark-cardbg"
+                                src="../assets/images/user/avatar-3.jpg" alt="User image" />
+                            </div>
+                          </div>
+                          <div class="col-span-4 self-center ">
+                            <h6 class="mb-1 mt-3">Josephin Doe</h6>
+                            <p class="mb-0 text-muted">UI/UX Designer</p>
+                          </div>
+                          <div class="col-span-4 self-center">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-span-12 xl:col-span-4 md:col-span-6">
+                  <h6 class="text-center mb-3">Certificated badge</h6>
+                  <div class="card user-card user-card-1">
+                    <div class="card-body">
+                      <div class="text-center">
+                        <div class="user-about-block text-center">
+                          <div class="relative inline-block">
+                            <img
+                              class="rounded-full w-36 mx-auto shadow-[0_0_0_5px_#fff] shadow-theme-cardbg dark:shadow-themedark-cardbg"
+                              src="../assets/images/user/avatar-3.jpg" alt="User image" />
+                            <div
+                              class="certificated-badge absolute bottom-[5px] right-[5px] rounded-full w-[40px] h-[40px] bg-theme-cardbg dark:bg-themedark-cardbg p-[5px_3px]">
+                              <i class="fas fa-certificate text-primary-500 bg-icon text-[30px]"></i>
+                              <i
+                                class="fas fa-medal front-icon text-white text-[14px] absolute top-[14px] left-[13px]"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <h3 class="mb-1 mt-3">Josephin Doe</h3>
+                        <p class="mb-3 text-muted">UI/UX Designer</p>
+                      </div>
+                    </div>
+                    <div class="card-footer bg-theme-bodybg/50 dark:bg-themedark-bodybg/50">
+                      <div class="grid grid-cols-12 gap-6 text-center">
+                        <div class="col-span-4">
+                          <h6 class="mb-1">37</h6>
+                          <p class="mb-0">Mails</p>
+                        </div>
+                        <div class="col-span-4">
+                          <h6 class="mb-1">2749</h6>
+                          <p class="mb-0">Followers</p>
+                        </div>
+                        <div class="col-span-4">
+                          <h6 class="mb-1">678</h6>
+                          <p class="mb-0">Following</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-span-12 xl:col-span-4 md:col-span-6">
+                  <h6 class="text-center mb-3">Social link 1</h6>
+                  <div class="card user-card user-card-1">
+                    <div class="card-body">
+                      <div class="text-center">
+                        <div class="user-about-block text-center">
+                          <div class="relative inline-block">
+                            <img
+                              class="rounded-full w-36 mx-auto shadow-[0_0_0_5px_#fff] shadow-theme-cardbg dark:shadow-themedark-cardbg"
+                              src="../assets/images/user/avatar-1.jpg" alt="User image" />
+                          </div>
+                        </div>
+                        <h3 class="mb-1 mt-3">Josephin Doe</h3>
+                        <p class="mb-3 text-muted">UI/UX Designer</p>
+                        <ul class="flex flex-wrap items-center justify-center gap-2 text-[20px] mt-3 mb-0">
+                          <li class="list-inline-item"><a href="#!" class="text-[#4267b2]"><i
+                                class="fab fa-facebook-f"></i></a></li>
+                          <li class="list-inline-item"><a href="#!" class="text-[#42c0fb]"><i
+                                class="fab fa-twitter"></i></a></li>
+                          <li class="list-inline-item"><a href="#!" class="text-[#ec4a89]"><i
+                                class="fab fa-dribbble"></i></a></li>
+                          <li class="list-inline-item"><a href="#!" class="text-[#bf2131]"><i
+                                class="fab fa-pinterest"></i></a></li>
+                          <li class="list-inline-item"><a href="#!" class="text-[#e0291d]"><i
+                                class="fab fa-youtube"></i></a></li>
+                          <li class="list-inline-item"><a href="#!" class="text-[#c73e2e]"><i
+                                class="fab fa-google-plus-g"></i></a></li>
+                          <li class="list-inline-item"><a href="#!" class="text-[#0077b5]"><i
+                                class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="card-footer bg-theme-bodybg/50 dark:bg-themedark-bodybg/50">
+                      <div class="grid grid-cols-12 gap-6 text-center">
+                        <div class="col-span-4">
+                          <h6 class="mb-1">37</h6>
+                          <p class="mb-0">Mails</p>
+                        </div>
+                        <div class="col-span-4">
+                          <h6 class="mb-1">2749</h6>
+                          <p class="mb-0">Followers</p>
+                        </div>
+                        <div class="col-span-4">
+                          <h6 class="mb-1">678</h6>
+                          <p class="mb-0">Following</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-span-12 xl:col-span-4 md:col-span-6">
+                  <h6 class="text-center mb-3">Social link 2 on hover</h6>
+                  <div class="card user-card user-card-1 group overflow-hidden">
+                    <div class="card-body">
+                      <div class="text-center">
+                        <div class="user-about-block text-center">
+                          <div class="relative inline-block">
+                            <img
+                              class="rounded-full w-36 mx-auto shadow-[0_0_0_5px_#fff] shadow-theme-cardbg dark:shadow-themedark-cardbg"
+                              src="../assets/images/user/avatar-3.jpg" alt="User image" />
+                          </div>
+                        </div>
+                        <h3 class="mb-1 mt-3">Josephin Doe</h3>
+                        <p class="mb-3 text-muted">UI/UX Designer</p>
+                        <ul
+                          class="flex flex-col gap-1 text-[20px] mt-3 mb-0 absolute top-5 ltr:left-5 rtl:right-5 *:transition-all ltr:*:ml-[-100px] rtl:*:mr-[-100px] ltr:group-hover:*:ml-0 rtl:group-hover:*:mr-0">
+                          <li class="list-inline-item delay-[50ms]"><a href="#!" class="text-[#4267b2]"><i
+                                class="fab fa-facebook-f"></i></a></li>
+                          <li class="list-inline-item delay-[100ms]"><a href="#!" class="text-[#42c0fb]"><i
+                                class="fab fa-twitter"></i></a></li>
+                          <li class="list-inline-item delay-[150ms]"><a href="#!" class="text-[#ec4a89]"><i
+                                class="fab fa-dribbble"></i></a></li>
+                          <li class="list-inline-item delay-[200ms]"><a href="#!" class="text-[#bf2131]"><i
+                                class="fab fa-pinterest"></i></a></li>
+                          <li class="list-inline-item delay-[250ms]"><a href="#!" class="text-[#e0291d]"><i
+                                class="fab fa-youtube"></i></a></li>
+                          <li class="list-inline-item delay-[300ms]"><a href="#!" class="text-[#c73e2e]"><i
+                                class="fab fa-google-plus-g"></i></a></li>
+                          <li class="list-inline-item delay-[350ms]"><a href="#!" class="text-[#0077b5]"><i
+                                class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="card-footer bg-theme-bodybg/50 dark:bg-themedark-bodybg/50">
+                      <div class="grid grid-cols-12 gap-6 text-center">
+                        <div class="col-span-4">
+                          <h6 class="mb-1">37</h6>
+                          <p class="mb-0">Mails</p>
+                        </div>
+                        <div class="col-span-4">
+                          <h6 class="mb-1">2749</h6>
+                          <p class="mb-0">Followers</p>
+                        </div>
+                        <div class="col-span-4">
+                          <h6 class="mb-1">678</h6>
+                          <p class="mb-0">Following</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hidden tab-pane" id="basicpills-5">
+              <div class="grid grid-cols-12 gap-6">
+                <div class="col-span-12 xl:col-span-4 md:col-span-6">
+                  <h6 class="text-center mb-3">User card 3</h6>
+                  <div class="card user-card user-card-1">
+                    <div class="card-body">
+                      <div class="text-center">
+                        <div class="user-about-block text-center">
+                          <div class="relative inline-block">
+                            <img
+                              class="rounded-full w-36 mx-auto shadow-[0_0_0_5px_#fff] shadow-theme-cardbg dark:shadow-themedark-cardbg"
+                              src="../assets/images/user/avatar-1.jpg" alt="User image" />
+                          </div>
+                        </div>
+                        <h3 class="mb-1 mt-3">Sara Soudein</h3>
+                        <p class="mb-3 text-muted">UI/UX Designer</p>
+                      </div>
+                    </div>
+                    <div class="card-footer bg-theme-bodybg/50 dark:bg-themedark-bodybg/50">
+                      <div class="grid grid-cols-12 gap-6 text-center">
+                        <div class="col-span-4">
+                          <h6 class="mb-1">37</h6>
+                          <p class="mb-0">Mails</p>
+                        </div>
+                        <div class="col-span-4">
+                          <h6 class="mb-1">2749</h6>
+                          <p class="mb-0">Followers</p>
+                        </div>
+                        <div class="col-span-4">
+                          <h6 class="mb-1">678</h6>
+                          <p class="mb-0">Following</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-span-12 xl:col-span-4 md:col-span-6">
+                  <h6 class="text-center mb-3">Hover data</h6>
+                  <div class="card user-card user-card-1 overflow-hidden group">
+                    <div class="card-body">
+                      <div class="text-center">
+                        <div class="user-about-block text-center">
+                          <div class="relative inline-block">
+                            <img
+                              class="rounded-full w-36 mx-auto shadow-[0_0_0_5px_#fff] shadow-theme-cardbg dark:shadow-themedark-cardbg"
+                              src="../assets/images/user/avatar-2.jpg" alt="User image" />
+                          </div>
+                        </div>
+                        <h3 class="mb-1 mt-3">Jully Doe</h3>
+                        <p class="mb-3 text-muted">UI/UX Designer</p>
+                      </div>
+                    </div>
+                    <div class="card-footer bg-theme-bodybg/50 dark:bg-themedark-bodybg/50">
+                      <div class="grid grid-cols-12 gap-6 text-center">
+                        <div class="col-span-4">
+                          <h6 class="mb-1">37</h6>
+                          <p class="mb-0">Mails</p>
+                        </div>
+                        <div class="col-span-4">
+                          <h6 class="mb-1">2749</h6>
+                          <p class="mb-0">Followers</p>
+                        </div>
+                        <div class="col-span-4">
+                          <h6 class="mb-1">678</h6>
+                          <p class="mb-0">Following</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="card-body text-white absolute inset-0 flex items-center justify-center bg-dark-500/90 scale-0 group-hover:scale-100 transition-all duration-300">
+                      <div class="text-center">
+                        <h4 class="text-white mb-3">Hire Me?</h4>
+                        <p class="mb-1">Lorem Ipsum is simply dummy text</p>
+                        <p class="mb-4">been the industry's standard</p>
+                        <button type="button" class="btn my-1 btn-warning ltr:mr-2 rtl:ml-2"><i
+                            class="feather icon-link"></i> Meating</button>
+                        <button type="button" class="btn my-1 btn-danger"><i class="feather icon-download"></i>
+                          Resume</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-span-12 xl:col-span-4 md:col-span-6">
+                  <h6 class="text-center mb-3">Badge</h6>
+                  <div class="card user-card user-card-1">
+                    <div class="card-body">
+                      <div class="text-center">
+                        <div class="user-about-block text-center">
+                          <div class="relative inline-block">
+                            <img
+                              class="rounded-full w-36 mx-auto shadow-[0_0_0_5px_#fff] shadow-theme-cardbg dark:shadow-themedark-cardbg"
+                              src="../assets/images/user/avatar-3.jpg" alt="User image" />
+                            <div
+                              class="certificated-badge absolute bottom-[5px] right-[5px] rounded-full w-[40px] h-[40px] bg-theme-cardbg dark:bg-themedark-cardbg p-[5px_3px]">
+                              <i class="fas fa-certificate text-primary-500 bg-icon text-[30px]"></i>
+                              <i
+                                class="fas fa-medal front-icon text-white text-[14px] absolute top-[14px] left-[13px]"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <h3 class="mb-1 mt-3">Josephin Doe</h3>
+                        <p class="mb-3 text-muted">UI/UX Designer</p>
+                      </div>
+                    </div>
+                    <div class="card-footer bg-theme-bodybg/50 dark:bg-themedark-bodybg/50">
+                      <div class="grid grid-cols-12 gap-6 text-center">
+                        <div class="col-span-4">
+                          <h6 class="mb-1">37</h6>
+                          <p class="mb-0">Mails</p>
+                        </div>
+                        <div class="col-span-4">
+                          <h6 class="mb-1">2749</h6>
+                          <p class="mb-0">Followers</p>
+                        </div>
+                        <div class="col-span-4">
+                          <h6 class="mb-1">678</h6>
+                          <p class="mb-0">Following</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-span-12 xl:col-span-4 md:col-span-6">
+                  <h6 class="text-center mb-3">Social link</h6>
+                  <div class="card user-card user-card-1">
+                    <div class="card-body">
+                      <div class="text-center">
+                        <div class="user-about-block text-center">
+                          <div class="relative inline-block">
+                            <img
+                              class="rounded-full w-36 mx-auto shadow-[0_0_0_5px_#fff] shadow-theme-cardbg dark:shadow-themedark-cardbg"
+                              src="../assets/images/user/avatar-1.jpg" alt="User image" />
+                          </div>
+                        </div>
+                        <h3 class="mb-1 mt-3">Josephin Doe</h3>
+                        <p class="mb-3 text-muted">UI/UX Designer</p>
+                        <ul class="flex flex-wrap items-center justify-center gap-2 text-[20px] mt-3 mb-0">
+                          <li class="list-inline-item"><a href="#!" class="text-[#4267b2]"><i
+                                class="fab fa-facebook-f"></i></a></li>
+                          <li class="list-inline-item"><a href="#!" class="text-[#42c0fb]"><i
+                                class="fab fa-twitter"></i></a></li>
+                          <li class="list-inline-item"><a href="#!" class="text-[#ec4a89]"><i
+                                class="fab fa-dribbble"></i></a></li>
+                          <li class="list-inline-item"><a href="#!" class="text-[#bf2131]"><i
+                                class="fab fa-pinterest"></i></a></li>
+                          <li class="list-inline-item"><a href="#!" class="text-[#e0291d]"><i
+                                class="fab fa-youtube"></i></a></li>
+                          <li class="list-inline-item"><a href="#!" class="text-[#c73e2e]"><i
+                                class="fab fa-google-plus-g"></i></a></li>
+                          <li class="list-inline-item"><a href="#!" class="text-[#0077b5]"><i
+                                class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="card-footer bg-theme-bodybg/50 dark:bg-themedark-bodybg/50">
+                      <div class="grid grid-cols-12 gap-6 text-center">
+                        <div class="col-span-4">
+                          <h6 class="mb-1">37</h6>
+                          <p class="mb-0">Mails</p>
+                        </div>
+                        <div class="col-span-4">
+                          <h6 class="mb-1">2749</h6>
+                          <p class="mb-0">Followers</p>
+                        </div>
+                        <div class="col-span-4">
+                          <h6 class="mb-1">678</h6>
+                          <p class="mb-0">Following</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-span-12 xl:col-span-4 md:col-span-6">
+                  <h6 class="text-center mb-3">Social link on hover</h6>
+                  <div class="card user-card user-card-1 group overflow-hidden">
+                    <div class="card-body">
+                      <div class="text-center">
+                        <div class="user-about-block text-center">
+                          <div class="relative inline-block">
+                            <img
+                              class="rounded-full w-36 mx-auto shadow-[0_0_0_5px_#fff] shadow-theme-cardbg dark:shadow-themedark-cardbg"
+                              src="../assets/images/user/avatar-3.jpg" alt="User image" />
+                          </div>
+                        </div>
+                        <h3 class="mb-1 mt-3">Josephin Doe</h3>
+                        <p class="mb-3 text-muted">UI/UX Designer</p>
+                        <ul
+                        class="flex flex-col gap-1 text-[20px] mt-3 mb-0 absolute top-5 ltr:left-5 rtl:right-5 *:transition-all ltr:*:ml-[-100px] rtl:*:mr-[-100px] ltr:group-hover:*:ml-0 rtl:group-hover:*:mr-0">
+                          <li class="list-inline-item delay-[50ms]"><a href="#!" class="text-[#4267b2]"><i
+                                class="fab fa-facebook-f"></i></a></li>
+                          <li class="list-inline-item delay-[100ms]"><a href="#!" class="text-[#42c0fb]"><i
+                                class="fab fa-twitter"></i></a></li>
+                          <li class="list-inline-item delay-[150ms]"><a href="#!" class="text-[#ec4a89]"><i
+                                class="fab fa-dribbble"></i></a></li>
+                          <li class="list-inline-item delay-[200ms]"><a href="#!" class="text-[#bf2131]"><i
+                                class="fab fa-pinterest"></i></a></li>
+                          <li class="list-inline-item delay-[250ms]"><a href="#!" class="text-[#e0291d]"><i
+                                class="fab fa-youtube"></i></a></li>
+                          <li class="list-inline-item delay-[300ms]"><a href="#!" class="text-[#c73e2e]"><i
+                                class="fab fa-google-plus-g"></i></a></li>
+                          <li class="list-inline-item delay-[350ms]"><a href="#!" class="text-[#0077b5]"><i
+                                class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="card-footer bg-theme-bodybg/50 dark:bg-themedark-bodybg/50">
+                      <div class="grid grid-cols-12 gap-6 text-center">
+                        <div class="col-span-4">
+                          <h6 class="mb-1">37</h6>
+                          <p class="mb-0">Mails</p>
+                        </div>
+                        <div class="col-span-4">
+                          <h6 class="mb-1">2749</h6>
+                          <p class="mb-0">Followers</p>
+                        </div>
+                        <div class="col-span-4">
+                          <h6 class="mb-1">678</h6>
+                          <p class="mb-0">Following</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-span-12 xl:col-span-4 md:col-span-6">
+                  <h6 class="text-center mb-3">User card 4</h6>
+                  <div class="card user-card user-card-1">
+                    <div class="card-header !border-b-0 !p-2 !pb-0">
+                      <div class="cover-img-block">
+                        <img src="../assets/images/widget/slider7.jpg" alt="" class="img-fluid" />
+                      </div>
+                    </div>
+                    <div class="card-body !pt-0">
+                      <div class="user-about-block text-center -mt-16">
+                        <img
+                          class="rounded-full inline-block w-32 mx-auto shadow-[0_0_0_5px_#fff] shadow-theme-cardbg dark:shadow-themedark-cardbg bg-theme-cardbg dark:bg-themedark-cardbg"
+                          src="../assets/images/widget/user-blur-bg.png" alt="User image" />
+                      </div>
+                      <div class="text-center">
+                        <h3 class="mb-1 mt-3">Lary Doe</h3>
+                        <p class="mb-3 text-muted">Web Designer</p>
+                        <p class="mb-1">Lorem Ipsum is simply dummy text</p>
+                        <p class="mb-10">been the industry's standard</p>
+                      </div>
+                      <div class="grid grid-cols-12 gap-6 text-center">
+                        <div class="col-span-4">
+                          <h6 class="mb-1">37</h6>
+                          <p class="mb-0">Mails</p>
+                        </div>
+                        <div class="col-span-4">
+                          <h6 class="mb-1">2749</h6>
+                          <p class="mb-0">Followers</p>
+                        </div>
+                        <div class="col-span-4">
+                          <h6 class="mb-1">678</h6>
+                          <p class="mb-0">Following</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-span-12 xl:col-span-4 md:col-span-6">
+                  <h6 class="text-center mb-3">User profile</h6>
+                  <div class="card user-card user-card-1">
+                    <div class="card-header !border-b-0 !p-2 !pb-0">
+                      <div class="cover-img-block">
+                        <img src="../assets/images/widget/slider5.jpg" alt="" class="img-fluid" />
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <div class="user-about-block text-center">
+                        <img
+                          class="rounded-full inline-block w-28 mx-auto shadow-[0_0_0_5px_#fff] shadow-theme-cardbg dark:shadow-themedark-cardbg bg-theme-cardbg dark:bg-themedark-cardbg"
+                          src="../assets/images/widget/img-round1.jpg" alt="User image" />
+                      </div>
+                      <div class="text-center">
+                        <h3 class="mb-1 mt-3">Jenny Joe</h3>
+                        <p class="mb-3 text-muted">Web Designer</p>
+                        <p class="mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci a, rem
+                          accusantium recusandae beatae.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-span-12 xl:col-span-4 md:col-span-6">
+                  <h6 class="text-center mb-3">User profile 2</h6>
+                  <div class="card user-card user-card-1">
+                    <div class="card-header !border-b-0 !p-2 !pb-0">
+                      <div class="cover-img-block relative">
+                        <img src="../assets/images/widget/slider5.jpg" alt="" class="img-fluid" />
+                        <div class="user-about-block text-center absolute inset-0 flex items-center justify-center">
+                          <img
+                            class="rounded-full inline-block w-28 mx-auto shadow-[0_0_0_5px_#fff] shadow-theme-cardbg dark:shadow-themedark-cardbg bg-theme-cardbg dark:bg-themedark-cardbg"
+                            src="../assets/images/widget/img-round1.jpg" alt="User image" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <div class="text-center">
+                        <h3 class="mb-1 mt-3">Jenny Joe</h3>
+                        <p class="mb-3 text-muted">Web Designer</p>
+                        <p class="mb-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci a, rem
+                          accusantium recusandae beatae.</p>
+                      </div>
+                      <div class="grid grid-cols-12 gap-6 text-center">
+                        <div class="col-span-4">
+                          <h4 class="mb-1">37</h4>
+                          <p class="mb-0">Mails</p>
+                        </div>
+                        <div class="col-span-4">
+                          <h4 class="mb-1">2749</h4>
+                          <p class="mb-0">Followers</p>
+                        </div>
+                        <div class="col-span-4">
+                          <h4 class="mb-1">678</h4>
+                          <p class="mb-0">Following</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-span-12 xl:col-span-4 md:col-span-6">
+                  <h6 class="text-center mb-3">Backround profile image</h6>
+                  <div class="card user-card user-card-1">
+                    <div class="card-header !border-b-0 !p-2 !pb-0">
+                      <div class="cover-img-block relative overflow-hidden max-h-[410px] w-full">
+                        <img src="../assets/images/widget/profile-person1.jpg" alt="" class="w-full" />
+                        <div class="user-about-block text-center absolute inset-x-0 bottom-0 flex items-end justify-center bg-[linear-gradient(transparent,rgba(0,0,0,0.72))]">
+                          <div class="card-body">
+                            <h3 class="text-white mb-3">John Steve</h3>
+                            <p class="text-white mb-4">UI/UX Designer at CreativesCastle Studio</p>
+                            <button class="btn btn-info">+ Follow</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <div class="grid grid-cols-12 gap-6 text-center">
+                        <div class="col-span-4">
+                          <h4 class="mb-1">37</h4>
+                          <p class="mb-0">Mails</p>
+                        </div>
+                        <div class="col-span-4">
+                          <h4 class="mb-1">2749</h4>
+                          <p class="mb-0">Followers</p>
+                        </div>
+                        <div class="col-span-4">
+                          <h4 class="mb-1">678</h4>
+                          <p class="mb-0">Following</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-span-12 xl:col-span-4 md:col-span-6">
+                  <h6 class="text-center mb-3">Backround cover image</h6>
+                  <div class="card user-card user-card-1 bg-[url('../images/widget/blur-bg.png')]">
+                    <div class="card-header !border-b-0 !p-2 !pb-0">
+                      <div class="cover-img-block relative overflow-hidden">
+                        <div class="user-about-block text-center">
+                          <div class="card-body">
+                            <div class="user-about-block text-center mb-4">
+                              <img class="rounded-full inline-block w-24 mx-auto shadow-[0_0_0_2px_#fff] shadow-theme-cardbg dark:shadow-themedark-cardbg bg-theme-cardbg dark:bg-themedark-cardbg" src="../assets/images/widget/user-blur-bg.png" alt="User image">
+                            </div>
+                            <h3 class="text-white mb-3">Linda Fox</h3>
+                            <p class="text-white mb-10">UI/UX Designer at CreativesCastle Studio</p>
+                            <button class="btn btn-info mb-3">+ Follow</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <div class="grid grid-cols-12 gap-6 text-center text-white">
+                        <div class="col-span-4">
+                          <h4 class="mb-1 text-white">37</h4>
+                          <p class="mb-0">Mails</p>
+                        </div>
+                        <div class="col-span-4">
+                          <h4 class="mb-1 text-white">2749</h4>
+                          <p class="mb-0">Followers</p>
+                        </div>
+                        <div class="col-span-4">
+                          <h4 class="mb-1 text-white">678</h4>
+                          <p class="mb-0">Following</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-span-12 xl:col-span-5 md:col-span-6">
+                  <h6 class="text-center mb-3">User settings</h6>
+                  <div class="card">
+                    <div class="card-header">
+                      <div class="flex items-center flex-wrap gap-3">
+                        <div class="shrink-0">
+                          <img class="rounded-full w-14" src="../assets/images/user/avatar-2.jpg" alt="User image" />
+                        </div>
+                        <div class="grow">
+                          <h6 class="mb-1">Josephin Doe</h6>
+                          <p class="mb-0">UI/UX Designer</p>
+                        </div>
+                        <div class="shrink-0">
+                          <button class="btn btn-primary">Edit</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <div class="grid grid-cols-12 gap-6 text-center">
+                        <div class="col-span-6 sm:col-span-3">
+                          <h6 class="mb-1">69</h6>
+                          <p class="mb-0">Shots</p>
+                        </div>
+                        <div class="col-span-6 sm:col-span-3">
+                          <h6 class="mb-1">2749</h6>
+                          <p class="mb-0">Followers</p>
+                        </div>
+                        <div class="col-span-6 sm:col-span-3">
+                          <h6 class="mb-1">678</h6>
+                          <p class="mb-0">Following</p>
+                        </div>
+                        <div class="col-span-6 sm:col-span-3">
+                          <h6 class="mb-1">78</h6>
+                          <p class="mb-0">Like</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-footer">
+                      <div class="flex justify-between items-center gap-6 flex-wrap">
+                        <div>
+                          <a href="#!" ><i class="feather icon-mail"></i> Message</a>
+                        </div>
+                        <div>
+                          <button class="btn btn-secondary btn-sm m-0">Follow</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- [ Main Content ] end -->
+    </div>
+  </div>
+  <!-- [ Main Content ] end -->
+  @@include('../layouts/footer-block.html') @@include('../layouts/footer-js.html')
+  @@include('../layouts/customizer.html')
+</body>
+
+</html>

@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en" @@bodySetup>
+<!-- [Head] start -->
+
+<head>
+  @@include('../layouts/head-page-meta.html', {'title': 'Analytics Dashboard'}) @@include('../layouts/head-css.html')
+</head>
+<!-- [Head] end -->
+<!-- [Body] Start -->
+
+<body>
+  @@include('../layouts/layout-vertical.html')
+
+  <!-- [ Main Content ] start -->
+  <div class="pc-container">
+    <div class="pc-content">
+      @@include('../layouts/breadcrumb.html', {'breadcrumb-item': 'Dashboard', 'breadcrumb-item-active': 'Analytics'})
+
+      <!-- [ Main Content ] start -->
+      <div class="grid grid-cols-12 gap-x-6">
+        <div class="col-span-12 xl:col-span-4">
+          <div class="card user-card">
+            <div class="card-body">
+              <h5 class="mb-4">Register User</h5>
+              <h4 class="font-light mb-2">1205</h4>
+              <span class="text-muted">
+                <label
+                  class="badge bg-theme-bg-1 text-white text-[12px] rounded-full ltr:mr-2 rtl:ml-2">20%</label>Monthly
+                Increase</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-12 xl:col-span-4 md:col-span-6">
+          <div class="card user-card">
+            <div class="card-body">
+              <h5 class="mb-4">Daily User</h5>
+              <h4 class="font-light mb-2">467</h4>
+              <span class="text-muted">
+                <label
+                  class="badge bg-theme-bg-1 text-white text-[12px] rounded-full ltr:mr-2 rtl:ml-2">10%</label>Weekly
+                Increase</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-12 xl:col-span-4 md:col-span-6">
+          <div class="card user-card">
+            <div class="card-body">
+              <h5 class="mb-4">Premium User</h5>
+              <h4 class="font-light mb-2">346</h4>
+              <span class="text-muted">
+                <label
+                  class="badge bg-theme-bg-1 text-white text-[12px] rounded-full ltr:mr-2 rtl:ml-2">50%</label>Yearly
+                Increase</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-12 xl:col-span-4 md:col-span-6">
+          <div class="card Active-visitor">
+            <div class="card-body text-center">
+              <h5 class="mb-4">Active Visitor</h5>
+              <i class="fas fa-user-friends text-[30px] text-success-500"></i>
+              <h2 class="font-light mt-3">1,285</h2>
+              <span class="text-muted">Active Visit On Sites</span>
+              <div class="w-full bg-theme-bodybg rounded-lg h-2 mt-6 mb-10 dark:bg-themedark-bodybg">
+                <div class="bg-theme-bg-1 h-full rounded-lg shadow-[0_10px_20px_0_rgba(0,0,0,0.3)]" style="width: 75%">
+                </div>
+              </div>
+              <div class="grid grid-cols-12 gap-3">
+                <div class="col-span-6 md:col-span-4">
+                  <h4 class="mb-2">52%</h4>
+                  <span class="text-muted">Desktop</span>
+                </div>
+                <div class="col-span-6 md:col-span-4">
+                  <h4 class="mb-2">80%</h4>
+                  <span class="text-muted">Mobile</span>
+                </div>
+                <div class="col-span-12 md:col-span-4">
+                  <h4 class="mb-2">68%</h4>
+                  <span class="text-muted">Tablet</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-12 xl:col-span-4 md:col-span-6">
+          <div class="card">
+            <div class="card-header">
+              <h5 class="mb-2">Age</h5>
+            </div>
+            <div class="card-body">
+              <div id="Stack-age" class="Stackchart" style="height: 220px"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-12 xl:col-span-4">
+          <div class="card bg-theme-bg-1 overflow-hidden relative mb-4">
+            <div class="card-body text-center">
+              <img class="absolute bottom-0 left-2.5" src="../assets/images/widget/user-1.png" alt="visitor-user" />
+              <h5 class="text-white m-0">TOTAL VISITORS</h5>
+              <h3 class="text-white my-2.5 font-light">235</h3>
+              <span class="text-white">20% More than last Month</span>
+              <img class="absolute bottom-0 right-2.5" src="../assets/images/widget/user-2.png" alt="visitor-user" />
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <div class="grid grid-cols-12 gap-x-6">
+                <div class="col-span-6">
+                  <i class="feather icon-shopping-cart text-[30px] text-success-500"></i>
+                  <h6 class="mt-[50px] mb-0">Last week’s orders</h6>
+                </div>
+                <div class="col-span-6 ltr:text-right rtl:text-left">
+                  <h3 class="text-success-500 font-light mb-2">589</h3>
+                  <span class="text-muted block">New Order</span>
+                  <span class="badge bg-theme-bg-1 text-white mt-5">1434</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-12 xl:col-span-8">
+          <div class="card">
+            <div class="card-header">
+              <h5>Statistics</h5>
+            </div>
+            <div class="card-body pb-0">
+              <div id="bar-chart2" class="bar-chart2"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-12 xl:col-span-4">
+          <div class="card bg-primary-500">
+            <div class="card-header !border-b-0">
+              <h5 class="text-white">Statistics</h5>
+            </div>
+            <div class="card-body">
+              <div id="Statistics-sale" class="last-week-sales"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-12 xl:col-span-4 md:col-span-6">
+          <div class="card">
+            <div class="card-header">
+              <h5>Transactions</h5>
+              <span class="block pt-2">Jun 23 - Jul 23</span>
+            </div>
+            <div class="card-body">
+              <div class="grid grid-cols-12 gap-6">
+                <div class="col-span-6 self-center">
+                  <h3 class="font-light mb-0">$ 59,48</h3>
+                </div>
+                <div class="col-span-6">
+                  <div id="transactions"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-12 xl:col-span-4 md:col-span-6">
+          <div class="card">
+            <div class="card-header">
+              <h5>Transactions</h5>
+              <span class="block pt-2">June - July</span>
+            </div>
+            <div class="card-body">
+              <div class="grid grid-cols-12 gap-6">
+                <div class="col-span-6">
+                  <div id="transactions1"></div>
+                  <h3 class="font-light pt-3 mb-0 text-center">$ 80,48</h3>
+                </div>
+                <div class="col-span-6">
+                  <div id="transactions2"></div>
+                  <h3 class="font-light pt-3 mb-0 text-center">$ 40,27</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-12 xl:col-span-4">
+          <div class="card">
+            <div class="card-header">
+              <h5>Transactions</h5>
+              <span class="block pt-2">Jun 23 - Jul 23</span>
+            </div>
+            <div class="card-body">
+              <div class="grid grid-cols-12 gap-6">
+                <div class="col-span-6">
+                  <div id="transactions3"></div>
+                </div>
+                <div class="col-span-6 self-center">
+                  <h3 class="font-light mb-0 ltr:text-right rtl:text-left">$ 59,48</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- [ Main Content ] end -->
+    </div>
+  </div>
+  <!-- [ Main Content ] end -->
+  @@include('../layouts/footer-block.html') @@include('../layouts/customizer.html')
+  <!-- [Page Specific JS] start -->
+  <script src="../assets/js/plugins/apexcharts.min.js"></script>
+  <!-- custom widget js -->
+  <script src="../assets/js/widgets/Stack-age.js"></script>
+  <script src="../assets/js/widgets/bar-chart2.js"></script>
+  <script src="../assets/js/widgets/Statistics-sale.js"></script>
+  <script src="../assets/js/widgets/transactions.js"></script>
+  <script src="../assets/js/widgets/transactions1-2.js"></script>
+  <script src="../assets/js/widgets/transactions3.js"></script>
+  <!-- [Page Specific JS] end -->
+  @@include('../layouts/footer-js.html')
+</body>
+<!-- [Body] end -->
+
+</html>
